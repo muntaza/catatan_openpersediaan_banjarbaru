@@ -1,0 +1,38 @@
+rel-1-1:
+
+    - stop apache2
+	rcctl stop apache2
+    - delete database
+	doas su _postgresql
+	dropdb -U _postgresql persediaan_banjarbaru_2020
+    - restore database 2019 terakhir
+	createdb -U _postgresql -O persediaan_banjarbaru_2020 persediaan_banjarbaru_2020
+	bunzip2 persediaan_banjarbaru_2019_2020-02-24_00_20.sql.bz2
+	psql -U _postgresql persediaan_banjarbaru_2020 < persediaan_banjarbaru_2019_2020-02-24_00_20.sql
+    - ganti kepemilikan dari persediaan_banjarbaru_2019 ke persediaan_banjarbaru_2020
+        psql -U _postgresql persediaan_banjarbaru_2020
+        REASSIGN OWNED BY persediaan_banjarbaru_2019 TO persediaan_banjarbaru_2020;
+    - delete isi table persediaan, masuk, keluar, transaksi dan django_admin_log
+	psql -U persediaan_banjarbaru_2020 -h localhost persediaan_banjarbaru_2020
+        persediaan_banjarbaru_2020=> delete from persediaan ;
+        persediaan_banjarbaru_2020=> delete from masuk;
+        persediaan_banjarbaru_2020=> delete from keluar;
+        persediaan_banjarbaru_2020=> delete from transaksi;
+        persediaan_banjarbaru_2020=> delete from django_admin_log ;
+    - restart apache2
+	doas rcctl restart apache2
+    - ganti password -OK-
+	yulie
+	imah
+	muhammad_2
+    - buat back_up harian -OK-
+
+rel-1-2:
+
+    - tambah 2020: -OK-
+	rsync_backup_persediaan_banjarbaru.sh -OK-
+    - cek back_up -OK-
+    - persediaan_2020 ganti links statics nya -OK-
+    - test
+	melambat di server persediaan.banjarbarukota.go.id
+    - kembalikan static ke server muhammad.muntaza.id -OK-
