@@ -22,9 +22,6 @@ rel-1-1:
     - restart apache2
 	doas rcctl restart apache2
     - ganti password -OK-
-	yulie
-	imah
-	muhammad_2
     - buat back_up harian -OK-
 
 rel-1-2:
@@ -36,3 +33,7 @@ rel-1-2:
     - test
 	melambat di server persediaan.banjarbarukota.go.id
     - kembalikan static ke server muhammad.muntaza.id -OK-
+
+rel-1-3:
+    - saldo awal
+    - entry data
