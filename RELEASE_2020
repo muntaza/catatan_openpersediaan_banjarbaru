@@ -35,8 +35,8 @@ rel-1-2:
     - kembalikan static ke server muhammad.muntaza.id -OK-
 
 rel-1-3:
-    - back_up global bulanan
-    - back_up 2019 mingguan
+    - back_up global bulanan -OK-
+    - back_up 2019 mingguan -OK-
     - back_up 2020 harian
     - ip_safe, masukkan IP github -OK-
     - saldo awal
