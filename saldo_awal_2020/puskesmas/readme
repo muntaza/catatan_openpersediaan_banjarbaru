@@ -7,3 +7,5 @@ Peralatan dan Perlengkapan Komputer
 psql -h localhost -U persediaan_banjarbaru_2020 persediaan_banjarbaru_2020 < gabungan_puskesmas.sql
 
 - pkm banjarbaru utara
+- pkm banjarbaru selatan
+
