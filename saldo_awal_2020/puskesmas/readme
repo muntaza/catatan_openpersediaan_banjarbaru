@@ -4,4 +4,6 @@ Jenis yang di tanggal:
 Alat Tulis Kantor
 Peralatan dan Perlengkapan Komputer
 
-psql -h localhost -U persediaan_banjarbaru_2020 persediaan_banjarbaru_2020 < gabungan_pkm_insert.sql
+psql -h localhost -U persediaan_banjarbaru_2020 persediaan_banjarbaru_2020 < gabungan_puskesmas.sql
+
+- pkm banjarbaru utara
