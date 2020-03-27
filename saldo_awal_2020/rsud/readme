@@ -1,4 +1,8 @@
 Insert saldo awal RSUD:
 
+Jenis yang di tanggal:
+Alat Tulis Kantor
+Peralatan dan Perlengkapan Komputer
+
 psql -h localhost -U persediaan_banjarbaru_2020 persediaan_banjarbaru_2020 < rsud_skpd_insert.sql
 psql -h localhost -U persediaan_banjarbaru_2020 persediaan_banjarbaru_2020 < rsud_blud_insert.sql
