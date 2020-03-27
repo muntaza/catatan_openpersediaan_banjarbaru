@@ -2,3 +2,8 @@ cat pkm_banjarbaru_utara.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transak
 cat pkm_banjarbaru_selatan.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(65881\,/g -e s/$/\)\;/g > pkm_banjarbaru_selatan_insert.sql
 cat pkm_rawat_inap_cempaka.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(65885\,/g -e s/$/\)\;/g > pkm_rawat_inap_cempaka_insert.sql
 cat pkm_guntung_payung.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(65886\,/g -e s/$/\)\;/g > pkm_guntung_payung_insert.sql
+cat pkm_landasan_ulin.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(65889\,/g -e s/$/\)\;/g > pkm_landasan_ulin_insert.sql
+cat pkm_liang_anggang.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(65890\,/g -e s/$/\)\;/g > pkm_liang_anggang_insert.sql
+cat pkm_sungai_ulin.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(65891\,/g -e s/$/\)\;/g > pkm_sungai_ulin_insert.sql
+cat pkm_guntung_manggis.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(65892\,/g -e s/$/\)\;/g > pkm_guntung_manggis_insert.sql
+cat pkm_landasan_ulin_timur.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(65893\,/g -e s/$/\)\;/g > pkm_landasan_ulin_timur_insert.sql
