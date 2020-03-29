@@ -1,0 +1,15 @@
+ERROR:  insert or update on table "persediaan" violates foreign key constraint "persediaan_id_barang_83d4e00f_fk_barang_id"
+DETAIL:  Key (id_barang)=(8524) is not present in table "barang".
+ERROR:  insert or update on table "persediaan" violates foreign key constraint "persediaan_id_barang_83d4e00f_fk_barang_id"
+DETAIL:  Key (id_barang)=(8525) is not present in table "barang".
+ERROR:  insert or update on table "persediaan" violates foreign key constraint "persediaan_id_barang_83d4e00f_fk_barang_id"
+DETAIL:  Key (id_barang)=(8525) is not present in table "barang".
+
+
+
+
+RROR:  insert or update on table "persediaan" violates foreign key constraint "persediaan_id_barang_83d4e00f_fk_barang_id"
+DETAIL:  Key (id_barang)=(8524) is not present in table "barang".
+ERROR:  insert or update on table "persediaan" violates foreign key constraint "persediaan_id_barang_83d4e00f_fk_barang_id"
+DETAIL:  Key (id_barang)=(8525) is not present in table "barang".
+
