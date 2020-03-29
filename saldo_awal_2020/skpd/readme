@@ -1,0 +1,11 @@
+Insert saldo awal SKPD Besar:
+
+Jenis yang di tanggal:
+Alat Tulis Kantor
+Peralatan dan Perlengkapan Komputer
+
+Materai dan Perangko di entry manual, bila mengandung 8524 dan 8525
+
+psql -h localhost -U persediaan_banjarbaru_2020 persediaan_banjarbaru_2020 < gabungan_skpd.sql
+
+
