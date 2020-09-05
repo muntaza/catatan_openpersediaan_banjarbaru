@@ -1,0 +1,6 @@
+rel-1-7:
+	- python manage.py migrate -OK-
+
+rel-1-9:
+	- python manage.py migrate  -OK-
+

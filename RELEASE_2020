@@ -71,5 +71,13 @@ rel-1-7:
    - test -OK-
 
 rel-1-8:
-   -  
-   - cvs tag rel-1-8
+   - cvs tag rel-1-8 -OK-
+
+rel-1-9:
+   - tambah field gudang di table transaksi -OK-
+   - cvs tag rel-1-9 -OK-
+
+rel-1-10:
+
+   - cvs tag rel-1-10 
+
