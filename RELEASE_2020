@@ -62,3 +62,14 @@ rel-1-5:
     - sekolah bosreg
     - cvs tag rel-1-5
 
+rel-1-6:
+    - cvs tag rel-1-6 -OK-
+
+rel-1-7:
+   - tambah model Gudang -OK-
+   - cvs tag rel-1-7 -OK-
+   - test -OK-
+
+rel-1-8:
+   -  
+   - cvs tag rel-1-8
