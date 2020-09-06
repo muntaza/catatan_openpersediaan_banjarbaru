@@ -67,3 +67,6 @@ AND jenis_transaksi.id = 1;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_masuk_kabupaten TO lap_kabupaten;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_masuk_kabupaten FROM lap_kabupaten;
+
+GRANT ALL PRIVILEGES ON gudang TO lap_kabupaten;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM lap_kabupaten;

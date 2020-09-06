@@ -113,3 +113,6 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_dinas_pendidikan TO dinas_pendidikan;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_dinas_pendidikan FROM dinas_pendidikan;
+
+GRANT ALL PRIVILEGES ON gudang TO dinas_pendidikan;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM dinas_pendidikan;
