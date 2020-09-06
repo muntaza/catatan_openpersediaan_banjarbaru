@@ -24,6 +24,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -46,6 +49,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -80,6 +85,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -102,6 +110,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -136,6 +146,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -158,6 +171,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -192,6 +207,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -214,6 +232,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -248,6 +268,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -270,6 +293,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -304,6 +329,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -326,6 +354,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -360,6 +390,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -382,6 +415,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -416,6 +451,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -438,6 +476,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -472,6 +512,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -494,6 +537,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -528,6 +573,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -550,6 +598,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -584,6 +634,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -606,6 +659,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -640,6 +695,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -662,6 +720,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -696,6 +756,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -718,6 +781,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -752,6 +817,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -774,6 +842,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -808,6 +878,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -830,6 +903,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -864,6 +939,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -886,6 +964,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -920,6 +1000,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -942,6 +1025,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -976,6 +1061,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -998,6 +1086,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -1032,6 +1122,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -1054,6 +1147,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -1088,6 +1183,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -1110,6 +1208,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -1144,6 +1244,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -1166,6 +1269,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -1200,6 +1305,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -1222,6 +1330,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -1256,6 +1366,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -1278,6 +1391,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -1312,6 +1427,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -1334,6 +1452,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -1368,6 +1488,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -1390,6 +1513,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -1424,6 +1549,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -1446,6 +1574,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -1480,6 +1610,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -1502,6 +1635,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -1536,6 +1671,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -1558,6 +1696,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -1592,6 +1732,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -1614,6 +1757,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -1648,6 +1793,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -1670,6 +1818,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -1704,6 +1854,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -1726,6 +1879,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -1760,6 +1915,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -1782,6 +1940,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -1816,6 +1976,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -1838,6 +2001,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -1872,6 +2037,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -1894,6 +2062,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -1928,6 +2098,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -1950,6 +2123,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -1984,6 +2159,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -2006,6 +2184,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2040,6 +2220,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -2062,6 +2245,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2096,6 +2281,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -2118,6 +2306,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2152,6 +2342,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -2174,6 +2367,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2208,6 +2403,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -2230,6 +2428,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2264,6 +2464,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -2286,6 +2489,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2320,6 +2525,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -2342,6 +2550,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2376,6 +2586,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -2398,6 +2611,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2432,6 +2647,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -2454,6 +2672,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2488,6 +2708,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -2510,6 +2733,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2544,6 +2769,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -2566,6 +2794,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2600,6 +2830,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -2622,6 +2855,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2656,6 +2891,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -2678,6 +2916,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2712,6 +2952,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -2734,6 +2977,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2768,6 +3013,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -2790,6 +3038,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2824,6 +3074,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -2846,6 +3099,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2880,6 +3135,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -2902,6 +3160,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2936,6 +3196,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -2958,6 +3221,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2992,6 +3257,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -3014,6 +3282,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -3048,6 +3318,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -3070,6 +3343,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -3104,6 +3379,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -3126,6 +3404,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -3160,6 +3440,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -3182,6 +3465,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -3216,6 +3501,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -3238,6 +3526,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -3272,6 +3562,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -3294,6 +3587,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -3328,6 +3623,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -3350,6 +3648,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -3384,6 +3684,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -3406,6 +3709,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -3440,6 +3745,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -3462,6 +3770,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -3496,6 +3806,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -3518,6 +3831,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -3552,6 +3867,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -3574,6 +3892,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -3608,6 +3928,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -3630,6 +3953,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -3664,6 +3989,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -3686,6 +4014,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -3720,6 +4050,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -3742,6 +4075,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -3776,6 +4111,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -3798,6 +4136,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -3832,6 +4172,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -3854,6 +4197,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -3888,6 +4233,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -3910,6 +4258,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -3944,6 +4294,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -3966,6 +4319,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4000,6 +4355,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -4022,6 +4380,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4056,6 +4416,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -4078,6 +4441,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4112,6 +4477,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -4134,6 +4502,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4168,6 +4538,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -4190,6 +4563,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4224,6 +4599,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -4246,6 +4624,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4280,6 +4660,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -4302,6 +4685,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4336,6 +4721,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -4358,6 +4746,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4392,6 +4782,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -4414,6 +4807,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4448,6 +4843,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -4470,6 +4868,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4504,6 +4904,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -4526,6 +4929,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4560,6 +4965,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -4582,6 +4990,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4616,6 +5026,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -4638,6 +5051,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4672,6 +5087,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -4694,6 +5112,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4728,6 +5148,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -4750,6 +5173,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4784,6 +5209,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -4806,6 +5234,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4840,6 +5270,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -4862,6 +5295,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4896,6 +5331,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -4918,6 +5356,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4952,6 +5392,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -4974,6 +5417,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -5008,6 +5453,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -5030,6 +5478,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -5064,6 +5514,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -5086,6 +5539,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -5120,6 +5575,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -5142,6 +5600,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -5176,6 +5636,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -5198,6 +5661,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -5232,6 +5697,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -5254,6 +5722,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -5288,6 +5758,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -5310,6 +5783,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -5344,6 +5819,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -5366,6 +5844,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -5400,6 +5880,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -5422,6 +5905,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -5456,6 +5941,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -5478,6 +5966,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -5512,6 +6002,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -5534,6 +6027,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -5568,6 +6063,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -5590,6 +6088,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -5624,6 +6124,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -5646,6 +6149,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -5680,6 +6185,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -5702,6 +6210,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -5736,6 +6246,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -5758,6 +6271,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -5792,6 +6307,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -5814,6 +6332,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -5848,6 +6368,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -5870,6 +6393,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -5904,6 +6429,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -5926,6 +6454,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -5960,6 +6490,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -5982,6 +6515,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6016,6 +6551,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -6038,6 +6576,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6072,6 +6612,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -6094,6 +6637,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6128,6 +6673,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -6150,6 +6698,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6184,6 +6734,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -6206,6 +6759,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6240,6 +6795,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -6262,6 +6820,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6296,6 +6856,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -6318,6 +6881,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6352,6 +6917,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -6374,6 +6942,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6408,6 +6978,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -6430,6 +7003,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6464,6 +7039,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -6486,6 +7064,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6520,6 +7100,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -6542,6 +7125,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6576,6 +7161,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -6598,6 +7186,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6632,6 +7222,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -6654,6 +7247,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6688,6 +7283,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -6710,6 +7308,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6744,6 +7344,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -6766,6 +7369,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6800,6 +7405,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -6822,6 +7430,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6856,6 +7466,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -6878,6 +7491,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6912,6 +7527,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -6934,6 +7552,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6968,6 +7588,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -6990,6 +7613,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -7024,6 +7649,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -7046,6 +7674,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -7080,6 +7710,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -7102,6 +7735,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -7136,6 +7771,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -7158,6 +7796,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -7192,6 +7832,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -7214,6 +7857,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -7248,6 +7893,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -7270,6 +7918,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -7304,6 +7954,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -7326,6 +7979,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -7360,6 +8015,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -7382,6 +8040,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -7416,6 +8076,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -7438,6 +8101,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -7472,6 +8137,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -7494,6 +8162,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -7528,6 +8198,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -7550,6 +8223,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -7584,6 +8259,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -7606,6 +8284,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -7640,6 +8320,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -7662,6 +8345,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -7696,6 +8381,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -7718,6 +8406,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -7752,6 +8442,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -7774,6 +8467,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -7808,6 +8503,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -7830,6 +8528,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -7864,6 +8564,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -7886,6 +8589,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -7920,6 +8625,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -7942,6 +8650,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -7976,6 +8686,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -7998,6 +8711,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8032,6 +8747,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -8054,6 +8772,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8088,6 +8808,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -8110,6 +8833,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8144,6 +8869,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -8166,6 +8894,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8200,6 +8930,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -8222,6 +8955,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8256,6 +8991,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -8278,6 +9016,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8312,6 +9052,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -8334,6 +9077,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8368,6 +9113,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -8390,6 +9138,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8424,6 +9174,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -8446,6 +9199,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8480,6 +9235,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -8502,6 +9260,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8536,6 +9296,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -8558,6 +9321,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8592,6 +9357,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -8614,6 +9382,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8648,6 +9418,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -8670,6 +9443,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8704,6 +9479,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -8726,6 +9504,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8760,6 +9540,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -8782,6 +9565,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8816,6 +9601,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -8838,6 +9626,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8872,6 +9662,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -8894,6 +9687,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8928,6 +9723,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -8950,6 +9748,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8984,6 +9784,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -9006,6 +9809,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -9040,6 +9845,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -9062,6 +9870,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -9096,6 +9906,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -9118,6 +9931,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -9152,6 +9967,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -9174,6 +9992,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -9208,6 +10028,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -9230,6 +10053,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -9264,6 +10089,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -9286,6 +10114,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -9320,6 +10150,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -9342,6 +10175,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -9376,6 +10211,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -9398,6 +10236,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -9432,6 +10272,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -9454,6 +10297,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -9488,6 +10333,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -9510,6 +10358,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -9544,6 +10394,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -9566,6 +10419,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -9600,6 +10455,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -9622,6 +10480,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -9656,6 +10516,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -9678,6 +10541,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -9712,6 +10577,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -9734,6 +10602,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 

@@ -4,7 +4,7 @@ CREATE VIEW view_kartu_barang2_dinas_pendidikan AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM

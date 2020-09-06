@@ -26,6 +26,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -82,6 +85,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -148,6 +154,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -204,6 +213,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -270,6 +282,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -326,6 +341,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -392,6 +410,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -448,6 +469,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -514,6 +538,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -570,6 +597,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -636,6 +666,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -692,6 +725,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -758,6 +794,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -814,6 +853,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -880,6 +922,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -936,6 +981,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -1002,6 +1050,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -1058,6 +1109,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -1124,6 +1178,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -1180,6 +1237,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -1246,6 +1306,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -1302,6 +1365,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -1368,6 +1434,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -1424,6 +1493,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -1490,6 +1562,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -1546,6 +1621,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -1612,6 +1690,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -1668,6 +1749,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -1734,6 +1818,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -1790,6 +1877,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -1856,6 +1946,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -1912,6 +2005,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -1978,6 +2074,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -2034,6 +2133,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -2100,6 +2202,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -2156,6 +2261,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -2222,6 +2330,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -2278,6 +2389,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -2344,6 +2458,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -2400,6 +2517,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -2466,6 +2586,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -2522,6 +2645,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -2588,6 +2714,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -2644,6 +2773,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -2710,6 +2842,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -2766,6 +2901,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -2832,6 +2970,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -2888,6 +3029,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -2954,6 +3098,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -3010,6 +3157,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -3076,6 +3226,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -3132,6 +3285,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -3198,6 +3354,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -3254,6 +3413,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -3320,6 +3482,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -3376,6 +3541,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -3442,6 +3610,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -3498,6 +3669,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -3564,6 +3738,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -3620,6 +3797,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -3686,6 +3866,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -3742,6 +3925,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -3808,6 +3994,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -3864,6 +4053,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -3930,6 +4122,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -3986,6 +4181,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -4052,6 +4250,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -4108,6 +4309,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -4174,6 +4378,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -4230,6 +4437,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -4296,6 +4506,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -4352,6 +4565,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -4418,6 +4634,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -4474,6 +4693,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -4540,6 +4762,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -4596,6 +4821,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -4662,6 +4890,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -4718,6 +4949,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -4784,6 +5018,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -4840,6 +5077,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -4906,6 +5146,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -4962,6 +5205,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -5028,6 +5274,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -5084,6 +5333,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -5150,6 +5402,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -5206,6 +5461,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -5272,6 +5530,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -5328,6 +5589,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -5394,6 +5658,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -5450,6 +5717,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -5516,6 +5786,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -5572,6 +5845,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -5638,6 +5914,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -5694,6 +5973,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -5760,6 +6042,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -5816,6 +6101,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -5882,6 +6170,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -5938,6 +6229,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -6004,6 +6298,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -6060,6 +6357,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -6126,6 +6426,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -6182,6 +6485,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -6248,6 +6554,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -6304,6 +6613,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -6370,6 +6682,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -6426,6 +6741,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -6492,6 +6810,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -6548,6 +6869,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -6614,6 +6938,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -6670,6 +6997,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -6736,6 +7066,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -6792,6 +7125,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -6858,6 +7194,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -6914,6 +7253,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -6980,6 +7322,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -7036,6 +7381,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -7102,6 +7450,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -7158,6 +7509,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -7224,6 +7578,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -7280,6 +7637,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -7346,6 +7706,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -7402,6 +7765,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -7468,6 +7834,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -7524,6 +7893,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -7590,6 +7962,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -7646,6 +8021,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -7712,6 +8090,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -7768,6 +8149,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -7834,6 +8218,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -7890,6 +8277,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -7956,6 +8346,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -8012,6 +8405,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -8078,6 +8474,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -8134,6 +8533,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -8200,6 +8602,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -8256,6 +8661,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -8322,6 +8730,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -8378,6 +8789,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -8444,6 +8858,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -8500,6 +8917,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -8566,6 +8986,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -8622,6 +9045,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -8688,6 +9114,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -8744,6 +9173,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -8810,6 +9242,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -8866,6 +9301,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -8932,6 +9370,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -8988,6 +9429,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -9054,6 +9498,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -9110,6 +9557,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -9176,6 +9626,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -9232,6 +9685,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -9298,6 +9754,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -9354,6 +9813,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -9420,6 +9882,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -9476,6 +9941,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -9542,6 +10010,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -9598,6 +10069,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -9664,6 +10138,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -9720,6 +10197,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -9786,6 +10266,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -9842,6 +10325,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -9908,6 +10394,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -9964,6 +10453,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -10030,6 +10522,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -10086,6 +10581,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -10152,6 +10650,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -10208,6 +10709,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -10274,6 +10778,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -10330,6 +10837,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -10396,6 +10906,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -10452,6 +10965,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -10518,6 +11034,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -10574,6 +11093,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -10640,6 +11162,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -10696,6 +11221,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -10762,6 +11290,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -10818,6 +11349,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -10884,6 +11418,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -10940,6 +11477,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -11006,6 +11546,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -11062,6 +11605,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -11128,6 +11674,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -11184,6 +11733,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -11250,6 +11802,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -11306,6 +11861,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -11372,6 +11930,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -11428,6 +11989,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -11494,6 +12058,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -11550,6 +12117,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -11616,6 +12186,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -11672,6 +12245,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -11738,6 +12314,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -11794,6 +12373,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -11860,6 +12442,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -11916,6 +12501,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -11982,6 +12570,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -12038,6 +12629,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -12104,6 +12698,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -12160,6 +12757,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -12226,6 +12826,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -12282,6 +12885,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -12348,6 +12954,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -12404,6 +13013,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -12470,6 +13082,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -12526,6 +13141,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -12592,6 +13210,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -12648,6 +13269,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -12714,6 +13338,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -12770,6 +13397,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -12836,6 +13466,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -12892,6 +13525,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -12958,6 +13594,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -13014,6 +13653,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -13080,6 +13722,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -13136,6 +13781,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -13202,6 +13850,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -13258,6 +13909,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -13324,6 +13978,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -13380,6 +14037,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -13446,6 +14106,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -13502,6 +14165,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -13568,6 +14234,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -13624,6 +14293,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -13690,6 +14362,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -13746,6 +14421,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -13812,6 +14490,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -13868,6 +14549,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -13934,6 +14618,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -13990,6 +14677,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -14056,6 +14746,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -14112,6 +14805,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -14178,6 +14874,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -14234,6 +14933,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -14300,6 +15002,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -14356,6 +15061,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -14422,6 +15130,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -14478,6 +15189,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -14544,6 +15258,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -14600,6 +15317,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -14666,6 +15386,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -14722,6 +15445,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -14788,6 +15514,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -14844,6 +15573,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -14910,6 +15642,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -14966,6 +15701,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -15032,6 +15770,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -15088,6 +15829,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -15154,6 +15898,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -15210,6 +15957,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -15276,6 +16026,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -15332,6 +16085,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -15398,6 +16154,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -15454,6 +16213,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -15520,6 +16282,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -15576,6 +16341,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -15642,6 +16410,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -15698,6 +16469,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -15764,6 +16538,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -15820,6 +16597,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -15886,6 +16666,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -15942,6 +16725,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -16008,6 +16794,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -16064,6 +16853,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -16130,6 +16922,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -16186,6 +16981,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -16252,6 +17050,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -16308,6 +17109,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -16374,6 +17178,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -16430,6 +17237,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -16496,6 +17306,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -16552,6 +17365,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -16618,6 +17434,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -16674,6 +17493,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -16740,6 +17562,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -16796,6 +17621,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -16862,6 +17690,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -16918,6 +17749,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -16984,6 +17818,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -17040,6 +17877,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -17106,6 +17946,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -17162,6 +18005,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -17228,6 +18074,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -17284,6 +18133,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -17350,6 +18202,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -17406,6 +18261,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -17472,6 +18330,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -17528,6 +18389,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -17594,6 +18458,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -17650,6 +18517,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -17716,6 +18586,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -17772,6 +18645,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -17838,6 +18714,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -17894,6 +18773,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -17960,6 +18842,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -18016,6 +18901,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -18082,6 +18970,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -18138,6 +19029,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -18204,6 +19098,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -18260,6 +19157,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -18326,6 +19226,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -18382,6 +19285,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -18448,6 +19354,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -18504,6 +19413,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -18570,6 +19482,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -18626,6 +19541,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -18692,6 +19610,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -18748,6 +19669,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -18814,6 +19738,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -18870,6 +19797,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -18936,6 +19866,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -18992,6 +19925,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -19058,6 +19994,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -19114,6 +20053,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -19180,6 +20122,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -19236,6 +20181,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -19302,6 +20250,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -19358,6 +20309,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -19424,6 +20378,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -19480,6 +20437,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -19546,6 +20506,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -19602,6 +20565,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -19668,6 +20634,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -19724,6 +20693,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -19790,6 +20762,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -19846,6 +20821,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -19912,6 +20890,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -19968,6 +20949,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -20034,6 +21018,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -20090,6 +21077,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -20156,6 +21146,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -20212,6 +21205,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -20278,6 +21274,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -20334,6 +21333,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -20400,6 +21402,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -20456,6 +21461,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -20522,6 +21530,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -20578,6 +21589,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -20644,6 +21658,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -20700,6 +21717,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -20766,6 +21786,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -20822,6 +21845,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -20888,6 +21914,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -20944,6 +21973,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -21010,6 +22042,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -21066,6 +22101,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
@@ -21132,6 +22170,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -21189,6 +22230,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 NULL as masuk,
@@ -21232,7 +22276,7 @@ CREATE VIEW view_kartu_barang2_badan_kesbangpol AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21252,7 +22296,7 @@ CREATE VIEW view_kartu_barang2_badan_p_pajak_retribusi AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21272,7 +22316,7 @@ CREATE VIEW view_kartu_barang2_badan_pp_litbang_da AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21292,7 +22336,7 @@ CREATE VIEW view_kartu_barang2_bag_ekobang AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21312,7 +22356,7 @@ CREATE VIEW view_kartu_barang2_bag_hukum AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21332,7 +22376,7 @@ CREATE VIEW view_kartu_barang2_bag_humas_dan_protokol AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21352,7 +22396,7 @@ CREATE VIEW view_kartu_barang2_bag_kerjasama_dan_agraria AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21372,7 +22416,7 @@ CREATE VIEW view_kartu_barang2_bag_kesra AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21392,7 +22436,7 @@ CREATE VIEW view_kartu_barang2_bag_organisasi AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21412,7 +22456,7 @@ CREATE VIEW view_kartu_barang2_bag_pbj AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21432,7 +22476,7 @@ CREATE VIEW view_kartu_barang2_bag_pemerintahan AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21452,7 +22496,7 @@ CREATE VIEW view_kartu_barang2_bag_umum AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21472,7 +22516,7 @@ CREATE VIEW view_kartu_barang2_bkppd AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21492,7 +22536,7 @@ CREATE VIEW view_kartu_barang2_bpbd AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21512,7 +22556,7 @@ CREATE VIEW view_kartu_barang2_bpkad_ppkd AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21532,7 +22576,7 @@ CREATE VIEW view_kartu_barang2_bpkad_skpd AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21552,7 +22596,7 @@ CREATE VIEW view_kartu_barang2_dinas_arsip_dan_perpust AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21572,7 +22616,7 @@ CREATE VIEW view_kartu_barang2_dinas_dukcatpil AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21592,7 +22636,7 @@ CREATE VIEW view_kartu_barang2_dinas_kesehatan AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21612,7 +22656,7 @@ CREATE VIEW view_kartu_barang2_dinas_kominfo AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21632,7 +22676,7 @@ CREATE VIEW view_kartu_barang2_dinas_kppp AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21652,7 +22696,7 @@ CREATE VIEW view_kartu_barang2_dinas_kukmtk AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21672,7 +22716,7 @@ CREATE VIEW view_kartu_barang2_dinas_lingkungan_hidup AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21692,7 +22736,7 @@ CREATE VIEW view_kartu_barang2_dinas_pendidikan AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21712,7 +22756,7 @@ CREATE VIEW view_kartu_barang2_dinas_perdagangan AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21732,7 +22776,7 @@ CREATE VIEW view_kartu_barang2_dinas_perhubungan AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21752,7 +22796,7 @@ CREATE VIEW view_kartu_barang2_dinas_perkim AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21772,7 +22816,7 @@ CREATE VIEW view_kartu_barang2_dinas_pokp AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21792,7 +22836,7 @@ CREATE VIEW view_kartu_barang2_dinas_sosial AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21812,7 +22856,7 @@ CREATE VIEW view_kartu_barang2_dpmptsp AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21832,7 +22876,7 @@ CREATE VIEW view_kartu_barang2_dppkbpmppa AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21852,7 +22896,7 @@ CREATE VIEW view_kartu_barang2_dprd AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21872,7 +22916,7 @@ CREATE VIEW view_kartu_barang2_dpupr AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21892,7 +22936,7 @@ CREATE VIEW view_kartu_barang2_inspektorat AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21912,7 +22956,7 @@ CREATE VIEW view_kartu_barang2_kec_banjarbaru_selatan AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21932,7 +22976,7 @@ CREATE VIEW view_kartu_barang2_kec_banjarbaru_utara AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21952,7 +22996,7 @@ CREATE VIEW view_kartu_barang2_kec_cempaka AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21972,7 +23016,7 @@ CREATE VIEW view_kartu_barang2_kec_landasan_ulin AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -21992,7 +23036,7 @@ CREATE VIEW view_kartu_barang2_kec_liang_anggang AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22012,7 +23056,7 @@ CREATE VIEW view_kartu_barang2_kel_bangkal AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22032,7 +23076,7 @@ CREATE VIEW view_kartu_barang2_kel_cempaka AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22052,7 +23096,7 @@ CREATE VIEW view_kartu_barang2_kel_guntung_manggis AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22072,7 +23116,7 @@ CREATE VIEW view_kartu_barang2_kel_guntung_paikat AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22092,7 +23136,7 @@ CREATE VIEW view_kartu_barang2_kel_guntung_payung AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22112,7 +23156,7 @@ CREATE VIEW view_kartu_barang2_kel_kemuning AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22132,7 +23176,7 @@ CREATE VIEW view_kartu_barang2_kel_komet AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22152,7 +23196,7 @@ CREATE VIEW view_kartu_barang2_kel_landasan_ulin_barat AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22172,7 +23216,7 @@ CREATE VIEW view_kartu_barang2_kel_landasan_ulin_selatan AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22192,7 +23236,7 @@ CREATE VIEW view_kartu_barang2_kel_landasan_ulin_tengah AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22212,7 +23256,7 @@ CREATE VIEW view_kartu_barang2_kel_landasan_ulin_timur AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22232,7 +23276,7 @@ CREATE VIEW view_kartu_barang2_kel_landasan_ulin_utara AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22252,7 +23296,7 @@ CREATE VIEW view_kartu_barang2_kel_loktabat_selatan AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22272,7 +23316,7 @@ CREATE VIEW view_kartu_barang2_kel_loktabat_utara AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22292,7 +23336,7 @@ CREATE VIEW view_kartu_barang2_kel_mentaos AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22312,7 +23356,7 @@ CREATE VIEW view_kartu_barang2_kel_palam AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22332,7 +23376,7 @@ CREATE VIEW view_kartu_barang2_kel_sungai_besar AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22352,7 +23396,7 @@ CREATE VIEW view_kartu_barang2_kel_sungai_tiung AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22372,7 +23416,7 @@ CREATE VIEW view_kartu_barang2_kel_sungai_ulin AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22392,7 +23436,7 @@ CREATE VIEW view_kartu_barang2_kel_syamsudin_noor AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22412,7 +23456,7 @@ CREATE VIEW view_kartu_barang2_kepala_daerah_dan_wakil AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22432,7 +23476,7 @@ CREATE VIEW view_kartu_barang2_pkm_banjarbaru_selatan AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22452,7 +23496,7 @@ CREATE VIEW view_kartu_barang2_pkm_banjarbaru_utara AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22472,7 +23516,7 @@ CREATE VIEW view_kartu_barang2_pkm_guntung_manggis AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22492,7 +23536,7 @@ CREATE VIEW view_kartu_barang2_pkm_guntung_payung AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22512,7 +23556,7 @@ CREATE VIEW view_kartu_barang2_pkm_landasan_ulin AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22532,7 +23576,7 @@ CREATE VIEW view_kartu_barang2_pkm_landasan_ulin_timur AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22552,7 +23596,7 @@ CREATE VIEW view_kartu_barang2_pkm_liang_anggang AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22572,7 +23616,7 @@ CREATE VIEW view_kartu_barang2_pkm_rawat_inap_cempaka AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22592,7 +23636,7 @@ CREATE VIEW view_kartu_barang2_pkm_sungai_besar AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22612,7 +23656,7 @@ CREATE VIEW view_kartu_barang2_pkm_sungai_ulin AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22632,7 +23676,7 @@ CREATE VIEW view_kartu_barang2_rsd_idaman_blud AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22652,7 +23696,7 @@ CREATE VIEW view_kartu_barang2_rsd_idaman_skpd AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22672,7 +23716,7 @@ CREATE VIEW view_kartu_barang2_satpolpp AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22692,7 +23736,7 @@ CREATE VIEW view_kartu_barang2_sdn_1_bangkal AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22712,7 +23756,7 @@ CREATE VIEW view_kartu_barang2_sdn_1_cempaka AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22732,7 +23776,7 @@ CREATE VIEW view_kartu_barang2_sdn_1_guntung_manggis AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22752,7 +23796,7 @@ CREATE VIEW view_kartu_barang2_sdn_1_guntung_paikat AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22772,7 +23816,7 @@ CREATE VIEW view_kartu_barang2_sdn_1_guntung_payung AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22792,7 +23836,7 @@ CREATE VIEW view_kartu_barang2_sdn_1_kemuning AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22812,7 +23856,7 @@ CREATE VIEW view_kartu_barang2_sdn_1_komet AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22832,7 +23876,7 @@ CREATE VIEW view_kartu_barang2_sdn_1_landasan_ulin_barat AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22852,7 +23896,7 @@ CREATE VIEW view_kartu_barang2_sdn_1_landasan_ulin_selatan AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22872,7 +23916,7 @@ CREATE VIEW view_kartu_barang2_sdn_1_landasan_ulin_tengah AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22892,7 +23936,7 @@ CREATE VIEW view_kartu_barang2_sdn_1_landasan_ulin_timur AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22912,7 +23956,7 @@ CREATE VIEW view_kartu_barang2_sdn_1_landasan_ulin_utara AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22932,7 +23976,7 @@ CREATE VIEW view_kartu_barang2_sdn_1_loktabat_selatan AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22952,7 +23996,7 @@ CREATE VIEW view_kartu_barang2_sdn_1_loktabat_utara AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22972,7 +24016,7 @@ CREATE VIEW view_kartu_barang2_sdn_1_mentaos AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -22992,7 +24036,7 @@ CREATE VIEW view_kartu_barang2_sdn_1_palam AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23012,7 +24056,7 @@ CREATE VIEW view_kartu_barang2_sdn_1_sungai_besar AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23032,7 +24076,7 @@ CREATE VIEW view_kartu_barang2_sdn_1_sungai_tiung AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23052,7 +24096,7 @@ CREATE VIEW view_kartu_barang2_sdn_1_sungai_ulin AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23072,7 +24116,7 @@ CREATE VIEW view_kartu_barang2_sdn_1_syamsudin_noor AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23092,7 +24136,7 @@ CREATE VIEW view_kartu_barang2_sdn_2_bangkal AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23112,7 +24156,7 @@ CREATE VIEW view_kartu_barang2_sdn_2_cempaka AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23132,7 +24176,7 @@ CREATE VIEW view_kartu_barang2_sdn_2_guntung_manggis AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23152,7 +24196,7 @@ CREATE VIEW view_kartu_barang2_sdn_2_guntung_paikat AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23172,7 +24216,7 @@ CREATE VIEW view_kartu_barang2_sdn_2_guntung_payung AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23192,7 +24236,7 @@ CREATE VIEW view_kartu_barang2_sdn_2_kemuning AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23212,7 +24256,7 @@ CREATE VIEW view_kartu_barang2_sdn_2_komet AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23232,7 +24276,7 @@ CREATE VIEW view_kartu_barang2_sdn_2_landasan_ulin_barat AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23252,7 +24296,7 @@ CREATE VIEW view_kartu_barang2_sdn_2_landasan_ulin_timur AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23272,7 +24316,7 @@ CREATE VIEW view_kartu_barang2_sdn_2_landasan_ulin_utara AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23292,7 +24336,7 @@ CREATE VIEW view_kartu_barang2_sdn_2_loktabat_selatan AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23312,7 +24356,7 @@ CREATE VIEW view_kartu_barang2_sdn_2_loktabat_utara AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23332,7 +24376,7 @@ CREATE VIEW view_kartu_barang2_sdn_2_mentaos AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23352,7 +24396,7 @@ CREATE VIEW view_kartu_barang2_sdn_2_palam AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23372,7 +24416,7 @@ CREATE VIEW view_kartu_barang2_sdn_2_sungai_besar AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23392,7 +24436,7 @@ CREATE VIEW view_kartu_barang2_sdn_2_sungai_tiung AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23412,7 +24456,7 @@ CREATE VIEW view_kartu_barang2_sdn_2_sungai_ulin AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23432,7 +24476,7 @@ CREATE VIEW view_kartu_barang2_sdn_2_syamsudin_noor AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23452,7 +24496,7 @@ CREATE VIEW view_kartu_barang2_sdn_3_bangkal AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23472,7 +24516,7 @@ CREATE VIEW view_kartu_barang2_sdn_3_cempaka AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23492,7 +24536,7 @@ CREATE VIEW view_kartu_barang2_sdn_3_guntung_manggis AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23512,7 +24556,7 @@ CREATE VIEW view_kartu_barang2_sdn_3_guntung_payung AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23532,7 +24576,7 @@ CREATE VIEW view_kartu_barang2_sdn_3_kemuning AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23552,7 +24596,7 @@ CREATE VIEW view_kartu_barang2_sdn_3_komet AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23572,7 +24616,7 @@ CREATE VIEW view_kartu_barang2_sdn_3_landasan_ulin_timur AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23592,7 +24636,7 @@ CREATE VIEW view_kartu_barang2_sdn_3_loktabat_utara AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23612,7 +24656,7 @@ CREATE VIEW view_kartu_barang2_sdn_3_palam AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23632,7 +24676,7 @@ CREATE VIEW view_kartu_barang2_sdn_3_sungai_besar AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23652,7 +24696,7 @@ CREATE VIEW view_kartu_barang2_sdn_3_sungai_tiung AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23672,7 +24716,7 @@ CREATE VIEW view_kartu_barang2_sdn_3_sungai_ulin AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23692,7 +24736,7 @@ CREATE VIEW view_kartu_barang2_sdn_3_syamsudin_noor AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23712,7 +24756,7 @@ CREATE VIEW view_kartu_barang2_sdn_4_cempaka AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23732,7 +24776,7 @@ CREATE VIEW view_kartu_barang2_sdn_4_guntung_manggis AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23752,7 +24796,7 @@ CREATE VIEW view_kartu_barang2_sdn_4_komet AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23772,7 +24816,7 @@ CREATE VIEW view_kartu_barang2_sdn_4_loktabat_utara AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23792,7 +24836,7 @@ CREATE VIEW view_kartu_barang2_sdn_4_sungai_besar AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23812,7 +24856,7 @@ CREATE VIEW view_kartu_barang2_sdn_4_sungai_ulin AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23832,7 +24876,7 @@ CREATE VIEW view_kartu_barang2_sdn_4_syamsudin_noor AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23852,7 +24896,7 @@ CREATE VIEW view_kartu_barang2_sdn_5_cempaka AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23872,7 +24916,7 @@ CREATE VIEW view_kartu_barang2_sdn_5_guntung_manggis AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23892,7 +24936,7 @@ CREATE VIEW view_kartu_barang2_sdn_5_komet AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23912,7 +24956,7 @@ CREATE VIEW view_kartu_barang2_sdn_5_loktabat_utara AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23932,7 +24976,7 @@ CREATE VIEW view_kartu_barang2_sdn_5_sungai_besar AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23952,7 +24996,7 @@ CREATE VIEW view_kartu_barang2_sdn_5_sungai_ulin AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23972,7 +25016,7 @@ CREATE VIEW view_kartu_barang2_sdn_5_syamsudin_noor AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -23992,7 +25036,7 @@ CREATE VIEW view_kartu_barang2_sdn_6_cempaka AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24012,7 +25056,7 @@ CREATE VIEW view_kartu_barang2_sekretariat_daerah AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24032,7 +25076,7 @@ CREATE VIEW view_kartu_barang2_sekretariat_dprd AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24052,7 +25096,7 @@ CREATE VIEW view_kartu_barang2_smp_negeri_1 AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24072,7 +25116,7 @@ CREATE VIEW view_kartu_barang2_smp_negeri_10 AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24092,7 +25136,7 @@ CREATE VIEW view_kartu_barang2_smp_negeri_11 AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24112,7 +25156,7 @@ CREATE VIEW view_kartu_barang2_smp_negeri_12 AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24132,7 +25176,7 @@ CREATE VIEW view_kartu_barang2_smp_negeri_13 AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24152,7 +25196,7 @@ CREATE VIEW view_kartu_barang2_smp_negeri_14 AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24172,7 +25216,7 @@ CREATE VIEW view_kartu_barang2_smp_negeri_15 AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24192,7 +25236,7 @@ CREATE VIEW view_kartu_barang2_smp_negeri_2 AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24212,7 +25256,7 @@ CREATE VIEW view_kartu_barang2_smp_negeri_3 AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24232,7 +25276,7 @@ CREATE VIEW view_kartu_barang2_smp_negeri_4 AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24252,7 +25296,7 @@ CREATE VIEW view_kartu_barang2_smp_negeri_5 AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24272,7 +25316,7 @@ CREATE VIEW view_kartu_barang2_smp_negeri_6 AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24292,7 +25336,7 @@ CREATE VIEW view_kartu_barang2_smp_negeri_8 AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24312,7 +25356,7 @@ CREATE VIEW view_kartu_barang2_smp_negeri_9 AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24332,7 +25376,7 @@ CREATE VIEW view_kartu_barang2_tk_negeri_idaman AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24352,7 +25396,7 @@ CREATE VIEW view_kartu_barang2_tk_negeri_pembina_cempaka AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24372,7 +25416,7 @@ CREATE VIEW view_kartu_barang2_tk_negeri_pembina_kota AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24392,7 +25436,7 @@ CREATE VIEW view_kartu_barang2_tk_negeri_pembina_l_anggang AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24412,7 +25456,7 @@ CREATE VIEW view_kartu_barang2_tk_negeri_pembina_l_ulin AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24432,7 +25476,7 @@ CREATE VIEW view_kartu_barang2_upt_pajak_daerah_wilayah_i AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24452,7 +25496,7 @@ CREATE VIEW view_kartu_barang2_upt_pajak_daerah_wilayah_ii AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24472,7 +25516,7 @@ CREATE VIEW view_kartu_barang2_upt_pemb_ternak_puskewan AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24492,7 +25536,7 @@ CREATE VIEW view_kartu_barang2_upt_pengujian_kend_berm AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24512,7 +25556,7 @@ CREATE VIEW view_kartu_barang2_upt_perparkiran AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24532,7 +25576,7 @@ CREATE VIEW view_kartu_barang2_uptd_disdik_wil_i AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24552,7 +25596,7 @@ CREATE VIEW view_kartu_barang2_uptd_disdik_wil_ii AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24572,7 +25616,7 @@ CREATE VIEW view_kartu_barang2_uptd_gudang_obat AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24592,7 +25636,7 @@ CREATE VIEW view_kartu_barang2_uptd_gudang_transito AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24612,7 +25656,7 @@ CREATE VIEW view_kartu_barang2_uptd_laboratorium_l_h AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24632,7 +25676,7 @@ CREATE VIEW view_kartu_barang2_uptd_metrologi AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24652,7 +25696,7 @@ CREATE VIEW view_kartu_barang2_uptd_pasar_bauntung AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24672,7 +25716,7 @@ CREATE VIEW view_kartu_barang2_uptd_pasar_ulin_raya AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24692,7 +25736,7 @@ CREATE VIEW view_kartu_barang2_uptd_sgr_keg_belajar AS
 
 SELECT
 *,
-sum(pra_saldo) OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as saldo
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
 
 
 FROM
@@ -24732,6 +25776,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -24754,6 +25801,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -24788,6 +25837,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -24810,6 +25862,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -24844,6 +25898,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -24866,6 +25923,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -24900,6 +25959,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -24922,6 +25984,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -24956,6 +26020,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -24978,6 +26045,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -25012,6 +26081,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -25034,6 +26106,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -25068,6 +26142,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -25090,6 +26167,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -25124,6 +26203,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -25146,6 +26228,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -25180,6 +26264,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -25202,6 +26289,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -25236,6 +26325,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -25258,6 +26350,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -25292,6 +26386,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -25314,6 +26411,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -25348,6 +26447,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -25370,6 +26472,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -25404,6 +26508,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -25426,6 +26533,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -25460,6 +26569,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -25482,6 +26594,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -25516,6 +26630,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -25538,6 +26655,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -25572,6 +26691,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -25594,6 +26716,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -25628,6 +26752,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -25650,6 +26777,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -25684,6 +26813,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -25706,6 +26838,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -25740,6 +26874,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -25762,6 +26899,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -25796,6 +26935,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -25818,6 +26960,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -25852,6 +26996,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -25874,6 +27021,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -25908,6 +27057,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -25930,6 +27082,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -25964,6 +27118,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -25986,6 +27143,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -26020,6 +27179,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -26042,6 +27204,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -26076,6 +27240,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -26098,6 +27265,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -26132,6 +27301,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -26154,6 +27326,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -26188,6 +27362,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -26210,6 +27387,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -26244,6 +27423,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -26266,6 +27448,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -26300,6 +27484,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -26322,6 +27509,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -26356,6 +27545,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -26378,6 +27570,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -26412,6 +27606,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -26434,6 +27631,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -26468,6 +27667,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -26490,6 +27692,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -26524,6 +27728,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -26546,6 +27753,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -26580,6 +27789,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -26602,6 +27814,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -26636,6 +27850,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -26658,6 +27875,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -26692,6 +27911,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -26714,6 +27936,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -26748,6 +27972,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -26770,6 +27997,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -26804,6 +28033,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -26826,6 +28058,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -26860,6 +28094,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -26882,6 +28119,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -26916,6 +28155,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -26938,6 +28180,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -26972,6 +28216,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -26994,6 +28241,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -27028,6 +28277,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -27050,6 +28302,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -27084,6 +28338,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -27106,6 +28363,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -27140,6 +28399,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -27162,6 +28424,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -27196,6 +28460,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -27218,6 +28485,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -27252,6 +28521,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -27274,6 +28546,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -27308,6 +28582,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -27330,6 +28607,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -27364,6 +28643,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -27386,6 +28668,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -27420,6 +28704,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -27442,6 +28729,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -27476,6 +28765,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -27498,6 +28790,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -27532,6 +28826,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -27554,6 +28851,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -27588,6 +28887,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -27610,6 +28912,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -27644,6 +28948,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -27666,6 +28973,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -27700,6 +29009,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -27722,6 +29034,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -27756,6 +29070,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -27778,6 +29095,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -27812,6 +29131,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -27834,6 +29156,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -27868,6 +29192,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -27890,6 +29217,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -27924,6 +29253,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -27946,6 +29278,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -27980,6 +29314,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -28002,6 +29339,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -28036,6 +29375,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -28058,6 +29400,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -28092,6 +29436,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -28114,6 +29461,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -28148,6 +29497,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -28170,6 +29522,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -28204,6 +29558,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -28226,6 +29583,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -28260,6 +29619,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -28282,6 +29644,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -28316,6 +29680,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -28338,6 +29705,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -28372,6 +29741,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -28394,6 +29766,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -28428,6 +29802,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -28450,6 +29827,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -28484,6 +29863,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -28506,6 +29888,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -28540,6 +29924,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -28562,6 +29949,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -28596,6 +29985,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -28618,6 +30010,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -28652,6 +30046,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -28674,6 +30071,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -28708,6 +30107,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -28730,6 +30132,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -28764,6 +30168,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -28786,6 +30193,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -28820,6 +30229,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -28842,6 +30254,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -28876,6 +30290,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -28898,6 +30315,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -28932,6 +30351,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -28954,6 +30376,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -28988,6 +30412,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -29010,6 +30437,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -29044,6 +30473,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -29066,6 +30498,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -29100,6 +30534,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -29122,6 +30559,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -29156,6 +30595,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -29178,6 +30620,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -29212,6 +30656,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -29234,6 +30681,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -29268,6 +30717,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -29290,6 +30742,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -29324,6 +30778,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -29346,6 +30803,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -29380,6 +30839,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -29402,6 +30864,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -29436,6 +30900,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -29458,6 +30925,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -29492,6 +30961,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -29514,6 +30986,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -29548,6 +31022,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -29570,6 +31047,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -29604,6 +31083,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -29626,6 +31108,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -29660,6 +31144,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -29682,6 +31169,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -29716,6 +31205,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -29738,6 +31230,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -29772,6 +31266,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -29794,6 +31291,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -29828,6 +31327,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -29850,6 +31352,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -29884,6 +31388,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -29906,6 +31413,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -29940,6 +31449,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -29962,6 +31474,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -29996,6 +31510,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -30018,6 +31535,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -30052,6 +31571,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -30074,6 +31596,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -30108,6 +31632,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -30130,6 +31657,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -30164,6 +31693,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -30186,6 +31718,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -30220,6 +31754,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -30242,6 +31779,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -30276,6 +31815,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -30298,6 +31840,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -30332,6 +31876,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -30354,6 +31901,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -30388,6 +31937,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -30410,6 +31962,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -30444,6 +31998,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -30466,6 +32023,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -30500,6 +32059,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -30522,6 +32084,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -30556,6 +32120,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -30578,6 +32145,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -30612,6 +32181,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -30634,6 +32206,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -30668,6 +32242,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -30690,6 +32267,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -30724,6 +32303,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -30746,6 +32328,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -30780,6 +32364,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -30802,6 +32389,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -30836,6 +32425,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -30858,6 +32450,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -30892,6 +32486,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -30914,6 +32511,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -30948,6 +32547,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -30970,6 +32572,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -31004,6 +32608,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -31026,6 +32633,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -31060,6 +32669,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -31082,6 +32694,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -31116,6 +32730,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -31138,6 +32755,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -31172,6 +32791,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -31194,6 +32816,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -31228,6 +32852,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -31250,6 +32877,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -31284,6 +32913,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -31306,6 +32938,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -31340,6 +32974,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -31362,6 +32999,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -31396,6 +33035,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -31418,6 +33060,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -31452,6 +33096,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -31474,6 +33121,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -31508,6 +33157,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -31530,6 +33182,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -31564,6 +33218,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -31586,6 +33243,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -31620,6 +33279,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -31642,6 +33304,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -31676,6 +33340,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -31698,6 +33365,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -31732,6 +33401,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -31754,6 +33426,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -31788,6 +33462,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -31810,6 +33487,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -31844,6 +33523,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -31866,6 +33548,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -31900,6 +33584,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -31922,6 +33609,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -31956,6 +33645,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -31978,6 +33670,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -32012,6 +33706,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -32034,6 +33731,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -32068,6 +33767,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -32090,6 +33792,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -32124,6 +33828,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -32146,6 +33853,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -32180,6 +33889,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -32202,6 +33914,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -32236,6 +33950,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -32258,6 +33975,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -32292,6 +34011,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -32314,6 +34036,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -32348,6 +34072,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -32370,6 +34097,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -32404,6 +34133,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -32426,6 +34158,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -32460,6 +34194,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -32482,6 +34219,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -32516,6 +34255,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -32538,6 +34280,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -32572,6 +34316,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -32594,6 +34341,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -32628,6 +34377,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -32650,6 +34402,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -32684,6 +34438,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -32706,6 +34463,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -32740,6 +34499,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -32762,6 +34524,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -32796,6 +34560,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -32818,6 +34585,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -32852,6 +34621,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -32874,6 +34646,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -32908,6 +34682,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -32930,6 +34707,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -32964,6 +34743,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -32986,6 +34768,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -33020,6 +34804,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -33042,6 +34829,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -33076,6 +34865,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -33098,6 +34890,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -33132,6 +34926,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -33154,6 +34951,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -33188,6 +34987,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -33210,6 +35012,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -33244,6 +35048,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -33266,6 +35073,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -33300,6 +35109,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -33322,6 +35134,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -33356,6 +35170,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -33378,6 +35195,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -33412,6 +35231,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -33434,6 +35256,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -33468,6 +35292,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -33490,6 +35317,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -33524,6 +35353,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -33546,6 +35378,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -33580,6 +35414,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -33602,6 +35439,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -33636,6 +35475,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -33658,6 +35500,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -33692,6 +35536,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -33714,6 +35561,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -33748,6 +35597,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -33770,6 +35622,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -33804,6 +35658,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -33826,6 +35683,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -33860,6 +35719,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -33882,6 +35744,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -33916,6 +35780,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -33938,6 +35805,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -33972,6 +35841,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -33994,6 +35866,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -34028,6 +35902,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -34050,6 +35927,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -34084,6 +35963,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -34106,6 +35988,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -34140,6 +36024,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -34162,6 +36049,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -34196,6 +36085,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -34218,6 +36110,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -34252,6 +36146,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -34274,6 +36171,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -34308,6 +36207,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -34330,6 +36232,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -34364,6 +36268,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -34386,6 +36293,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -34420,6 +36329,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(pra_saldo) AS saldo_barang
 
 FROM
@@ -34442,6 +36354,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 

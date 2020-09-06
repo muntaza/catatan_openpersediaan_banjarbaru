@@ -26,6 +26,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 
 jumlah as masuk,
@@ -82,6 +85,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 
