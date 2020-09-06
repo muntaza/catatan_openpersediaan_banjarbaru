@@ -50,6 +50,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
