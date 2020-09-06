@@ -27,6 +27,9 @@ transaksi.keterangan,
 jenis_transaksi.jenis_transaksi,
 transaksi.id_jenis_transaksi,
 
+gudang.gudang,
+transaksi.id_gudang,
+
 persediaan.id as id_persediaan,
 persediaan.jumlah,
 persediaan.harga,
@@ -48,6 +51,7 @@ join skpd ON skpd.id_lokasi_bidang = lokasi_bidang.id
 join sub_skpd ON sub_skpd.id_skpd = skpd.id
 join transaksi ON transaksi.id_sub_skpd = sub_skpd.id
 join jenis_transaksi ON transaksi.id_jenis_transaksi = jenis_transaksi.id
+join gudang ON transaksi.id_gudang = gudang.id
 join persediaan ON persediaan.id_transaksi = transaksi.id
 join barang ON persediaan.id_barang = barang.id
 join satuan ON barang.id_satuan = satuan.id
@@ -92,6 +96,9 @@ transaksi.keterangan,
 jenis_transaksi.jenis_transaksi,
 transaksi.id_jenis_transaksi,
 
+gudang.gudang,
+transaksi.id_gudang,
+
 persediaan.id as id_persediaan,
 persediaan.jumlah as jumlah,
 persediaan.harga,
@@ -113,6 +120,7 @@ join skpd ON skpd.id_lokasi_bidang = lokasi_bidang.id
 join sub_skpd ON sub_skpd.id_skpd = skpd.id
 join transaksi ON transaksi.id_sub_skpd = sub_skpd.id
 join jenis_transaksi ON transaksi.id_jenis_transaksi = jenis_transaksi.id
+join gudang ON transaksi.id_gudang = gudang.id
 join persediaan ON persediaan.id_transaksi = transaksi.id
 join barang ON persediaan.id_barang = barang.id
 join satuan ON barang.id_satuan = satuan.id
@@ -133,7 +141,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_badan_kesbangpol CASCADE;
 CREATE VIEW view_persediaan_barang_badan_kesbangpol AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -156,6 +164,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -207,6 +218,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -242,7 +256,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_badan_p_pajak_retribusi CASCADE;
 CREATE VIEW view_persediaan_barang_badan_p_pajak_retribusi AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -265,6 +279,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -316,6 +333,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -351,7 +371,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_badan_pp_litbang_da CASCADE;
 CREATE VIEW view_persediaan_barang_badan_pp_litbang_da AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -374,6 +394,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -425,6 +448,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -460,7 +486,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_bag_ekobang CASCADE;
 CREATE VIEW view_persediaan_barang_bag_ekobang AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -483,6 +509,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -534,6 +563,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -569,7 +601,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_bag_hukum CASCADE;
 CREATE VIEW view_persediaan_barang_bag_hukum AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -592,6 +624,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -643,6 +678,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -678,7 +716,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_bag_humas_dan_protokol CASCADE;
 CREATE VIEW view_persediaan_barang_bag_humas_dan_protokol AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -701,6 +739,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -752,6 +793,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -787,7 +831,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_bag_kerjasama_dan_agraria CASCADE;
 CREATE VIEW view_persediaan_barang_bag_kerjasama_dan_agraria AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -810,6 +854,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -861,6 +908,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -896,7 +946,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_bag_kesra CASCADE;
 CREATE VIEW view_persediaan_barang_bag_kesra AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -919,6 +969,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -970,6 +1023,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -1005,7 +1061,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_bag_organisasi CASCADE;
 CREATE VIEW view_persediaan_barang_bag_organisasi AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -1028,6 +1084,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -1079,6 +1138,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -1114,7 +1176,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_bag_pbj CASCADE;
 CREATE VIEW view_persediaan_barang_bag_pbj AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -1137,6 +1199,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -1188,6 +1253,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -1223,7 +1291,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_bag_pemerintahan CASCADE;
 CREATE VIEW view_persediaan_barang_bag_pemerintahan AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -1246,6 +1314,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -1297,6 +1368,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -1332,7 +1406,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_bag_umum CASCADE;
 CREATE VIEW view_persediaan_barang_bag_umum AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -1355,6 +1429,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -1406,6 +1483,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -1441,7 +1521,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_bkppd CASCADE;
 CREATE VIEW view_persediaan_barang_bkppd AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -1464,6 +1544,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -1515,6 +1598,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -1550,7 +1636,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_bpbd CASCADE;
 CREATE VIEW view_persediaan_barang_bpbd AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -1573,6 +1659,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -1624,6 +1713,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -1659,7 +1751,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_bpkad_ppkd CASCADE;
 CREATE VIEW view_persediaan_barang_bpkad_ppkd AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -1682,6 +1774,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -1733,6 +1828,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -1768,7 +1866,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_bpkad_skpd CASCADE;
 CREATE VIEW view_persediaan_barang_bpkad_skpd AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -1791,6 +1889,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -1842,6 +1943,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -1877,7 +1981,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_dinas_arsip_dan_perpust CASCADE;
 CREATE VIEW view_persediaan_barang_dinas_arsip_dan_perpust AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -1900,6 +2004,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -1951,6 +2058,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -1986,7 +2096,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_dinas_dukcatpil CASCADE;
 CREATE VIEW view_persediaan_barang_dinas_dukcatpil AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -2009,6 +2119,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -2060,6 +2173,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -2095,7 +2211,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_dinas_kesehatan CASCADE;
 CREATE VIEW view_persediaan_barang_dinas_kesehatan AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -2118,6 +2234,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -2169,6 +2288,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -2204,7 +2326,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_dinas_kominfo CASCADE;
 CREATE VIEW view_persediaan_barang_dinas_kominfo AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -2227,6 +2349,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -2278,6 +2403,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -2313,7 +2441,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_dinas_kppp CASCADE;
 CREATE VIEW view_persediaan_barang_dinas_kppp AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -2336,6 +2464,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -2387,6 +2518,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -2422,7 +2556,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_dinas_kukmtk CASCADE;
 CREATE VIEW view_persediaan_barang_dinas_kukmtk AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -2445,6 +2579,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -2496,6 +2633,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -2531,7 +2671,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_dinas_lingkungan_hidup CASCADE;
 CREATE VIEW view_persediaan_barang_dinas_lingkungan_hidup AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -2554,6 +2694,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -2605,6 +2748,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -2640,7 +2786,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_dinas_pendidikan CASCADE;
 CREATE VIEW view_persediaan_barang_dinas_pendidikan AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -2663,6 +2809,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -2714,6 +2863,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -2749,7 +2901,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_dinas_perdagangan CASCADE;
 CREATE VIEW view_persediaan_barang_dinas_perdagangan AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -2772,6 +2924,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -2823,6 +2978,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -2858,7 +3016,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_dinas_perhubungan CASCADE;
 CREATE VIEW view_persediaan_barang_dinas_perhubungan AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -2881,6 +3039,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -2932,6 +3093,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -2967,7 +3131,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_dinas_perkim CASCADE;
 CREATE VIEW view_persediaan_barang_dinas_perkim AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -2990,6 +3154,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -3041,6 +3208,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -3076,7 +3246,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_dinas_pokp CASCADE;
 CREATE VIEW view_persediaan_barang_dinas_pokp AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -3099,6 +3269,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -3150,6 +3323,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -3185,7 +3361,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_dinas_sosial CASCADE;
 CREATE VIEW view_persediaan_barang_dinas_sosial AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -3208,6 +3384,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -3259,6 +3438,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -3294,7 +3476,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_dpmptsp CASCADE;
 CREATE VIEW view_persediaan_barang_dpmptsp AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -3317,6 +3499,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -3368,6 +3553,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -3403,7 +3591,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_dppkbpmppa CASCADE;
 CREATE VIEW view_persediaan_barang_dppkbpmppa AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -3426,6 +3614,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -3477,6 +3668,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -3512,7 +3706,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_dprd CASCADE;
 CREATE VIEW view_persediaan_barang_dprd AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -3535,6 +3729,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -3586,6 +3783,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -3621,7 +3821,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_dpupr CASCADE;
 CREATE VIEW view_persediaan_barang_dpupr AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -3644,6 +3844,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -3695,6 +3898,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -3730,7 +3936,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_inspektorat CASCADE;
 CREATE VIEW view_persediaan_barang_inspektorat AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -3753,6 +3959,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -3804,6 +4013,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -3839,7 +4051,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_kec_banjarbaru_selatan CASCADE;
 CREATE VIEW view_persediaan_barang_kec_banjarbaru_selatan AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -3862,6 +4074,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -3913,6 +4128,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -3948,7 +4166,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_kec_banjarbaru_utara CASCADE;
 CREATE VIEW view_persediaan_barang_kec_banjarbaru_utara AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -3971,6 +4189,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -4022,6 +4243,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -4057,7 +4281,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_kec_cempaka CASCADE;
 CREATE VIEW view_persediaan_barang_kec_cempaka AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -4080,6 +4304,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -4131,6 +4358,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -4166,7 +4396,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_kec_landasan_ulin CASCADE;
 CREATE VIEW view_persediaan_barang_kec_landasan_ulin AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -4189,6 +4419,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -4240,6 +4473,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -4275,7 +4511,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_kec_liang_anggang CASCADE;
 CREATE VIEW view_persediaan_barang_kec_liang_anggang AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -4298,6 +4534,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -4349,6 +4588,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -4384,7 +4626,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_kel_bangkal CASCADE;
 CREATE VIEW view_persediaan_barang_kel_bangkal AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -4407,6 +4649,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -4458,6 +4703,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -4493,7 +4741,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_kel_cempaka CASCADE;
 CREATE VIEW view_persediaan_barang_kel_cempaka AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -4516,6 +4764,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -4567,6 +4818,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -4602,7 +4856,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_kel_guntung_manggis CASCADE;
 CREATE VIEW view_persediaan_barang_kel_guntung_manggis AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -4625,6 +4879,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -4676,6 +4933,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -4711,7 +4971,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_kel_guntung_paikat CASCADE;
 CREATE VIEW view_persediaan_barang_kel_guntung_paikat AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -4734,6 +4994,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -4785,6 +5048,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -4820,7 +5086,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_kel_guntung_payung CASCADE;
 CREATE VIEW view_persediaan_barang_kel_guntung_payung AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -4843,6 +5109,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -4894,6 +5163,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -4929,7 +5201,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_kel_kemuning CASCADE;
 CREATE VIEW view_persediaan_barang_kel_kemuning AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -4952,6 +5224,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -5003,6 +5278,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -5038,7 +5316,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_kel_komet CASCADE;
 CREATE VIEW view_persediaan_barang_kel_komet AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -5061,6 +5339,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -5112,6 +5393,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -5147,7 +5431,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_kel_landasan_ulin_barat CASCADE;
 CREATE VIEW view_persediaan_barang_kel_landasan_ulin_barat AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -5170,6 +5454,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -5221,6 +5508,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -5256,7 +5546,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_kel_landasan_ulin_selatan CASCADE;
 CREATE VIEW view_persediaan_barang_kel_landasan_ulin_selatan AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -5279,6 +5569,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -5330,6 +5623,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -5365,7 +5661,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_kel_landasan_ulin_tengah CASCADE;
 CREATE VIEW view_persediaan_barang_kel_landasan_ulin_tengah AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -5388,6 +5684,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -5439,6 +5738,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -5474,7 +5776,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_kel_landasan_ulin_timur CASCADE;
 CREATE VIEW view_persediaan_barang_kel_landasan_ulin_timur AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -5497,6 +5799,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -5548,6 +5853,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -5583,7 +5891,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_kel_landasan_ulin_utara CASCADE;
 CREATE VIEW view_persediaan_barang_kel_landasan_ulin_utara AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -5606,6 +5914,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -5657,6 +5968,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -5692,7 +6006,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_kel_loktabat_selatan CASCADE;
 CREATE VIEW view_persediaan_barang_kel_loktabat_selatan AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -5715,6 +6029,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -5766,6 +6083,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -5801,7 +6121,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_kel_loktabat_utara CASCADE;
 CREATE VIEW view_persediaan_barang_kel_loktabat_utara AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -5824,6 +6144,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -5875,6 +6198,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -5910,7 +6236,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_kel_mentaos CASCADE;
 CREATE VIEW view_persediaan_barang_kel_mentaos AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -5933,6 +6259,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -5984,6 +6313,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -6019,7 +6351,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_kel_palam CASCADE;
 CREATE VIEW view_persediaan_barang_kel_palam AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -6042,6 +6374,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -6093,6 +6428,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -6128,7 +6466,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_kel_sungai_besar CASCADE;
 CREATE VIEW view_persediaan_barang_kel_sungai_besar AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -6151,6 +6489,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -6202,6 +6543,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -6237,7 +6581,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_kel_sungai_tiung CASCADE;
 CREATE VIEW view_persediaan_barang_kel_sungai_tiung AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -6260,6 +6604,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -6311,6 +6658,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -6346,7 +6696,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_kel_sungai_ulin CASCADE;
 CREATE VIEW view_persediaan_barang_kel_sungai_ulin AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -6369,6 +6719,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -6420,6 +6773,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -6455,7 +6811,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_kel_syamsudin_noor CASCADE;
 CREATE VIEW view_persediaan_barang_kel_syamsudin_noor AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -6478,6 +6834,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -6529,6 +6888,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -6564,7 +6926,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_kepala_daerah_dan_wakil CASCADE;
 CREATE VIEW view_persediaan_barang_kepala_daerah_dan_wakil AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -6587,6 +6949,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -6638,6 +7003,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -6673,7 +7041,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_pkm_banjarbaru_selatan CASCADE;
 CREATE VIEW view_persediaan_barang_pkm_banjarbaru_selatan AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -6696,6 +7064,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -6747,6 +7118,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -6782,7 +7156,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_pkm_banjarbaru_utara CASCADE;
 CREATE VIEW view_persediaan_barang_pkm_banjarbaru_utara AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -6805,6 +7179,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -6856,6 +7233,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -6891,7 +7271,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_pkm_guntung_manggis CASCADE;
 CREATE VIEW view_persediaan_barang_pkm_guntung_manggis AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -6914,6 +7294,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -6965,6 +7348,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -7000,7 +7386,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_pkm_guntung_payung CASCADE;
 CREATE VIEW view_persediaan_barang_pkm_guntung_payung AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -7023,6 +7409,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -7074,6 +7463,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -7109,7 +7501,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_pkm_landasan_ulin CASCADE;
 CREATE VIEW view_persediaan_barang_pkm_landasan_ulin AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -7132,6 +7524,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -7183,6 +7578,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -7218,7 +7616,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_pkm_landasan_ulin_timur CASCADE;
 CREATE VIEW view_persediaan_barang_pkm_landasan_ulin_timur AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -7241,6 +7639,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -7292,6 +7693,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -7327,7 +7731,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_pkm_liang_anggang CASCADE;
 CREATE VIEW view_persediaan_barang_pkm_liang_anggang AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -7350,6 +7754,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -7401,6 +7808,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -7436,7 +7846,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_pkm_rawat_inap_cempaka CASCADE;
 CREATE VIEW view_persediaan_barang_pkm_rawat_inap_cempaka AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -7459,6 +7869,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -7510,6 +7923,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -7545,7 +7961,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_pkm_sungai_besar CASCADE;
 CREATE VIEW view_persediaan_barang_pkm_sungai_besar AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -7568,6 +7984,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -7619,6 +8038,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -7654,7 +8076,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_pkm_sungai_ulin CASCADE;
 CREATE VIEW view_persediaan_barang_pkm_sungai_ulin AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -7677,6 +8099,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -7728,6 +8153,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -7763,7 +8191,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_rsd_idaman_blud CASCADE;
 CREATE VIEW view_persediaan_barang_rsd_idaman_blud AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -7786,6 +8214,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -7837,6 +8268,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -7872,7 +8306,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_rsd_idaman_skpd CASCADE;
 CREATE VIEW view_persediaan_barang_rsd_idaman_skpd AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -7895,6 +8329,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -7946,6 +8383,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -7981,7 +8421,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_satpolpp CASCADE;
 CREATE VIEW view_persediaan_barang_satpolpp AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -8004,6 +8444,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -8055,6 +8498,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -8090,7 +8536,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_bangkal CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_1_bangkal AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -8113,6 +8559,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -8164,6 +8613,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -8199,7 +8651,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_cempaka CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_1_cempaka AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -8222,6 +8674,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -8273,6 +8728,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -8308,7 +8766,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_guntung_manggis CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_1_guntung_manggis AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -8331,6 +8789,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -8382,6 +8843,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -8417,7 +8881,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_guntung_paikat CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_1_guntung_paikat AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -8440,6 +8904,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -8491,6 +8958,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -8526,7 +8996,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_guntung_payung CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_1_guntung_payung AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -8549,6 +9019,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -8600,6 +9073,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -8635,7 +9111,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_kemuning CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_1_kemuning AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -8658,6 +9134,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -8709,6 +9188,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -8744,7 +9226,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_komet CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_1_komet AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -8767,6 +9249,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -8818,6 +9303,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -8853,7 +9341,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_landasan_ulin_barat CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_1_landasan_ulin_barat AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -8876,6 +9364,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -8927,6 +9418,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -8962,7 +9456,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_landasan_ulin_selatan CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_1_landasan_ulin_selatan AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -8985,6 +9479,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -9036,6 +9533,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -9071,7 +9571,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_landasan_ulin_tengah CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_1_landasan_ulin_tengah AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -9094,6 +9594,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -9145,6 +9648,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -9180,7 +9686,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_landasan_ulin_timur CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_1_landasan_ulin_timur AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -9203,6 +9709,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -9254,6 +9763,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -9289,7 +9801,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_landasan_ulin_utara CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_1_landasan_ulin_utara AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -9312,6 +9824,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -9363,6 +9878,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -9398,7 +9916,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_loktabat_selatan CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_1_loktabat_selatan AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -9421,6 +9939,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -9472,6 +9993,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -9507,7 +10031,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_loktabat_utara CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_1_loktabat_utara AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -9530,6 +10054,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -9581,6 +10108,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -9616,7 +10146,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_mentaos CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_1_mentaos AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -9639,6 +10169,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -9690,6 +10223,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -9725,7 +10261,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_palam CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_1_palam AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -9748,6 +10284,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -9799,6 +10338,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -9834,7 +10376,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_sungai_besar CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_1_sungai_besar AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -9857,6 +10399,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -9908,6 +10453,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -9943,7 +10491,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_sungai_tiung CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_1_sungai_tiung AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -9966,6 +10514,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -10017,6 +10568,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -10052,7 +10606,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_sungai_ulin CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_1_sungai_ulin AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -10075,6 +10629,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -10126,6 +10683,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -10161,7 +10721,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_syamsudin_noor CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_1_syamsudin_noor AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -10184,6 +10744,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -10235,6 +10798,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -10270,7 +10836,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_bangkal CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_2_bangkal AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -10293,6 +10859,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -10344,6 +10913,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -10379,7 +10951,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_cempaka CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_2_cempaka AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -10402,6 +10974,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -10453,6 +11028,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -10488,7 +11066,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_guntung_manggis CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_2_guntung_manggis AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -10511,6 +11089,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -10562,6 +11143,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -10597,7 +11181,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_guntung_paikat CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_2_guntung_paikat AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -10620,6 +11204,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -10671,6 +11258,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -10706,7 +11296,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_guntung_payung CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_2_guntung_payung AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -10729,6 +11319,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -10780,6 +11373,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -10815,7 +11411,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_kemuning CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_2_kemuning AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -10838,6 +11434,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -10889,6 +11488,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -10924,7 +11526,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_komet CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_2_komet AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -10947,6 +11549,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -10998,6 +11603,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -11033,7 +11641,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_landasan_ulin_barat CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_2_landasan_ulin_barat AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -11056,6 +11664,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -11107,6 +11718,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -11142,7 +11756,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_landasan_ulin_timur CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_2_landasan_ulin_timur AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -11165,6 +11779,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -11216,6 +11833,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -11251,7 +11871,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_landasan_ulin_utara CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_2_landasan_ulin_utara AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -11274,6 +11894,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -11325,6 +11948,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -11360,7 +11986,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_loktabat_selatan CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_2_loktabat_selatan AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -11383,6 +12009,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -11434,6 +12063,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -11469,7 +12101,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_loktabat_utara CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_2_loktabat_utara AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -11492,6 +12124,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -11543,6 +12178,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -11578,7 +12216,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_mentaos CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_2_mentaos AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -11601,6 +12239,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -11652,6 +12293,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -11687,7 +12331,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_palam CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_2_palam AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -11710,6 +12354,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -11761,6 +12408,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -11796,7 +12446,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_sungai_besar CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_2_sungai_besar AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -11819,6 +12469,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -11870,6 +12523,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -11905,7 +12561,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_sungai_tiung CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_2_sungai_tiung AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -11928,6 +12584,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -11979,6 +12638,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -12014,7 +12676,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_sungai_ulin CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_2_sungai_ulin AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -12037,6 +12699,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -12088,6 +12753,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -12123,7 +12791,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_syamsudin_noor CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_2_syamsudin_noor AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -12146,6 +12814,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -12197,6 +12868,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -12232,7 +12906,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_3_bangkal CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_3_bangkal AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -12255,6 +12929,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -12306,6 +12983,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -12341,7 +13021,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_3_cempaka CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_3_cempaka AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -12364,6 +13044,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -12415,6 +13098,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -12450,7 +13136,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_3_guntung_manggis CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_3_guntung_manggis AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -12473,6 +13159,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -12524,6 +13213,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -12559,7 +13251,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_3_guntung_payung CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_3_guntung_payung AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -12582,6 +13274,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -12633,6 +13328,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -12668,7 +13366,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_3_kemuning CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_3_kemuning AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -12691,6 +13389,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -12742,6 +13443,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -12777,7 +13481,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_3_komet CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_3_komet AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -12800,6 +13504,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -12851,6 +13558,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -12886,7 +13596,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_3_landasan_ulin_timur CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_3_landasan_ulin_timur AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -12909,6 +13619,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -12960,6 +13673,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -12995,7 +13711,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_3_loktabat_utara CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_3_loktabat_utara AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -13018,6 +13734,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -13069,6 +13788,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -13104,7 +13826,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_3_palam CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_3_palam AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -13127,6 +13849,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -13178,6 +13903,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -13213,7 +13941,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_3_sungai_besar CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_3_sungai_besar AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -13236,6 +13964,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -13287,6 +14018,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -13322,7 +14056,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_3_sungai_tiung CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_3_sungai_tiung AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -13345,6 +14079,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -13396,6 +14133,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -13431,7 +14171,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_3_sungai_ulin CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_3_sungai_ulin AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -13454,6 +14194,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -13505,6 +14248,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -13540,7 +14286,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_3_syamsudin_noor CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_3_syamsudin_noor AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -13563,6 +14309,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -13614,6 +14363,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -13649,7 +14401,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_4_cempaka CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_4_cempaka AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -13672,6 +14424,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -13723,6 +14478,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -13758,7 +14516,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_4_guntung_manggis CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_4_guntung_manggis AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -13781,6 +14539,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -13832,6 +14593,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -13867,7 +14631,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_4_komet CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_4_komet AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -13890,6 +14654,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -13941,6 +14708,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -13976,7 +14746,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_4_loktabat_utara CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_4_loktabat_utara AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -13999,6 +14769,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -14050,6 +14823,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -14085,7 +14861,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_4_sungai_besar CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_4_sungai_besar AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -14108,6 +14884,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -14159,6 +14938,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -14194,7 +14976,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_4_sungai_ulin CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_4_sungai_ulin AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -14217,6 +14999,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -14268,6 +15053,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -14303,7 +15091,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_4_syamsudin_noor CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_4_syamsudin_noor AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -14326,6 +15114,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -14377,6 +15168,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -14412,7 +15206,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_5_cempaka CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_5_cempaka AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -14435,6 +15229,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -14486,6 +15283,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -14521,7 +15321,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_5_guntung_manggis CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_5_guntung_manggis AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -14544,6 +15344,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -14595,6 +15398,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -14630,7 +15436,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_5_komet CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_5_komet AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -14653,6 +15459,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -14704,6 +15513,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -14739,7 +15551,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_5_loktabat_utara CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_5_loktabat_utara AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -14762,6 +15574,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -14813,6 +15628,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -14848,7 +15666,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_5_sungai_besar CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_5_sungai_besar AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -14871,6 +15689,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -14922,6 +15743,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -14957,7 +15781,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_5_sungai_ulin CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_5_sungai_ulin AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -14980,6 +15804,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -15031,6 +15858,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -15066,7 +15896,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_5_syamsudin_noor CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_5_syamsudin_noor AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -15089,6 +15919,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -15140,6 +15973,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -15175,7 +16011,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sdn_6_cempaka CASCADE;
 CREATE VIEW view_persediaan_barang_sdn_6_cempaka AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -15198,6 +16034,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -15249,6 +16088,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -15284,7 +16126,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sekretariat_daerah CASCADE;
 CREATE VIEW view_persediaan_barang_sekretariat_daerah AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -15307,6 +16149,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -15358,6 +16203,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -15393,7 +16241,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_sekretariat_dprd CASCADE;
 CREATE VIEW view_persediaan_barang_sekretariat_dprd AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -15416,6 +16264,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -15467,6 +16318,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -15502,7 +16356,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_smp_negeri_1 CASCADE;
 CREATE VIEW view_persediaan_barang_smp_negeri_1 AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -15525,6 +16379,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -15576,6 +16433,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -15611,7 +16471,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_smp_negeri_10 CASCADE;
 CREATE VIEW view_persediaan_barang_smp_negeri_10 AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -15634,6 +16494,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -15685,6 +16548,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -15720,7 +16586,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_smp_negeri_11 CASCADE;
 CREATE VIEW view_persediaan_barang_smp_negeri_11 AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -15743,6 +16609,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -15794,6 +16663,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -15829,7 +16701,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_smp_negeri_12 CASCADE;
 CREATE VIEW view_persediaan_barang_smp_negeri_12 AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -15852,6 +16724,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -15903,6 +16778,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -15938,7 +16816,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_smp_negeri_13 CASCADE;
 CREATE VIEW view_persediaan_barang_smp_negeri_13 AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -15961,6 +16839,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -16012,6 +16893,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -16047,7 +16931,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_smp_negeri_14 CASCADE;
 CREATE VIEW view_persediaan_barang_smp_negeri_14 AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -16070,6 +16954,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -16121,6 +17008,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -16156,7 +17046,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_smp_negeri_15 CASCADE;
 CREATE VIEW view_persediaan_barang_smp_negeri_15 AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -16179,6 +17069,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -16230,6 +17123,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -16265,7 +17161,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_smp_negeri_2 CASCADE;
 CREATE VIEW view_persediaan_barang_smp_negeri_2 AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -16288,6 +17184,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -16339,6 +17238,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -16374,7 +17276,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_smp_negeri_3 CASCADE;
 CREATE VIEW view_persediaan_barang_smp_negeri_3 AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -16397,6 +17299,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -16448,6 +17353,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -16483,7 +17391,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_smp_negeri_4 CASCADE;
 CREATE VIEW view_persediaan_barang_smp_negeri_4 AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -16506,6 +17414,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -16557,6 +17468,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -16592,7 +17506,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_smp_negeri_5 CASCADE;
 CREATE VIEW view_persediaan_barang_smp_negeri_5 AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -16615,6 +17529,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -16666,6 +17583,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -16701,7 +17621,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_smp_negeri_6 CASCADE;
 CREATE VIEW view_persediaan_barang_smp_negeri_6 AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -16724,6 +17644,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -16775,6 +17698,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -16810,7 +17736,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_smp_negeri_8 CASCADE;
 CREATE VIEW view_persediaan_barang_smp_negeri_8 AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -16833,6 +17759,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -16884,6 +17813,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -16919,7 +17851,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_smp_negeri_9 CASCADE;
 CREATE VIEW view_persediaan_barang_smp_negeri_9 AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -16942,6 +17874,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -16993,6 +17928,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -17028,7 +17966,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_tk_negeri_idaman CASCADE;
 CREATE VIEW view_persediaan_barang_tk_negeri_idaman AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -17051,6 +17989,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -17102,6 +18043,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -17137,7 +18081,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_tk_negeri_pembina_cempaka CASCADE;
 CREATE VIEW view_persediaan_barang_tk_negeri_pembina_cempaka AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -17160,6 +18104,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -17211,6 +18158,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -17246,7 +18196,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_tk_negeri_pembina_kota CASCADE;
 CREATE VIEW view_persediaan_barang_tk_negeri_pembina_kota AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -17269,6 +18219,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -17320,6 +18273,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -17355,7 +18311,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_tk_negeri_pembina_l_anggang CASCADE;
 CREATE VIEW view_persediaan_barang_tk_negeri_pembina_l_anggang AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -17378,6 +18334,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -17429,6 +18388,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -17464,7 +18426,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_tk_negeri_pembina_l_ulin CASCADE;
 CREATE VIEW view_persediaan_barang_tk_negeri_pembina_l_ulin AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -17487,6 +18449,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -17538,6 +18503,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -17573,7 +18541,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_upt_pajak_daerah_wilayah_i CASCADE;
 CREATE VIEW view_persediaan_barang_upt_pajak_daerah_wilayah_i AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -17596,6 +18564,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -17647,6 +18618,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -17682,7 +18656,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_upt_pajak_daerah_wilayah_ii CASCADE;
 CREATE VIEW view_persediaan_barang_upt_pajak_daerah_wilayah_ii AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -17705,6 +18679,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -17756,6 +18733,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -17791,7 +18771,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_upt_pemb_ternak_puskewan CASCADE;
 CREATE VIEW view_persediaan_barang_upt_pemb_ternak_puskewan AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -17814,6 +18794,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -17865,6 +18848,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -17900,7 +18886,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_upt_pengujian_kend_berm CASCADE;
 CREATE VIEW view_persediaan_barang_upt_pengujian_kend_berm AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -17923,6 +18909,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -17974,6 +18963,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -18009,7 +19001,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_upt_perparkiran CASCADE;
 CREATE VIEW view_persediaan_barang_upt_perparkiran AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -18032,6 +19024,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -18083,6 +19078,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -18118,7 +19116,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_uptd_disdik_wil_i CASCADE;
 CREATE VIEW view_persediaan_barang_uptd_disdik_wil_i AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -18141,6 +19139,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -18192,6 +19193,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -18227,7 +19231,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_uptd_disdik_wil_ii CASCADE;
 CREATE VIEW view_persediaan_barang_uptd_disdik_wil_ii AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -18250,6 +19254,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -18301,6 +19308,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -18336,7 +19346,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_uptd_gudang_obat CASCADE;
 CREATE VIEW view_persediaan_barang_uptd_gudang_obat AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -18359,6 +19369,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -18410,6 +19423,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -18445,7 +19461,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_uptd_gudang_transito CASCADE;
 CREATE VIEW view_persediaan_barang_uptd_gudang_transito AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -18468,6 +19484,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -18519,6 +19538,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -18554,7 +19576,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_uptd_laboratorium_l_h CASCADE;
 CREATE VIEW view_persediaan_barang_uptd_laboratorium_l_h AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -18577,6 +19599,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -18628,6 +19653,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -18663,7 +19691,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_uptd_metrologi CASCADE;
 CREATE VIEW view_persediaan_barang_uptd_metrologi AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -18686,6 +19714,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -18737,6 +19768,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -18772,7 +19806,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_uptd_pasar_bauntung CASCADE;
 CREATE VIEW view_persediaan_barang_uptd_pasar_bauntung AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -18795,6 +19829,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -18846,6 +19883,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -18881,7 +19921,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_uptd_pasar_ulin_raya CASCADE;
 CREATE VIEW view_persediaan_barang_uptd_pasar_ulin_raya AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -18904,6 +19944,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -18956,6 +19999,9 @@ keterangan,
 jenis_transaksi,
 id_jenis_transaksi,
 
+gudang,
+id_gudang,
+
 id_persediaan,
 0 - jumlah as jumlah,
 harga,
@@ -18990,7 +20036,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_uptd_sgr_keg_belajar CASCADE;
 CREATE VIEW view_persediaan_barang_uptd_sgr_keg_belajar AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -19013,6 +20059,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -19064,6 +20113,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
@@ -19100,7 +20152,7 @@ CREATE VIEW view_persediaan_barang2_badan_kesbangpol AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19120,7 +20172,7 @@ CREATE VIEW view_persediaan_barang2_badan_p_pajak_retribusi AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19140,7 +20192,7 @@ CREATE VIEW view_persediaan_barang2_badan_pp_litbang_da AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19160,7 +20212,7 @@ CREATE VIEW view_persediaan_barang2_bag_ekobang AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19180,7 +20232,7 @@ CREATE VIEW view_persediaan_barang2_bag_hukum AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19200,7 +20252,7 @@ CREATE VIEW view_persediaan_barang2_bag_humas_dan_protokol AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19220,7 +20272,7 @@ CREATE VIEW view_persediaan_barang2_bag_kerjasama_dan_agraria AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19240,7 +20292,7 @@ CREATE VIEW view_persediaan_barang2_bag_kesra AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19260,7 +20312,7 @@ CREATE VIEW view_persediaan_barang2_bag_organisasi AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19280,7 +20332,7 @@ CREATE VIEW view_persediaan_barang2_bag_pbj AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19300,7 +20352,7 @@ CREATE VIEW view_persediaan_barang2_bag_pemerintahan AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19320,7 +20372,7 @@ CREATE VIEW view_persediaan_barang2_bag_umum AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19340,7 +20392,7 @@ CREATE VIEW view_persediaan_barang2_bkppd AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19360,7 +20412,7 @@ CREATE VIEW view_persediaan_barang2_bpbd AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19380,7 +20432,7 @@ CREATE VIEW view_persediaan_barang2_bpkad_ppkd AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19400,7 +20452,7 @@ CREATE VIEW view_persediaan_barang2_bpkad_skpd AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19420,7 +20472,7 @@ CREATE VIEW view_persediaan_barang2_dinas_arsip_dan_perpust AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19440,7 +20492,7 @@ CREATE VIEW view_persediaan_barang2_dinas_dukcatpil AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19460,7 +20512,7 @@ CREATE VIEW view_persediaan_barang2_dinas_kesehatan AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19480,7 +20532,7 @@ CREATE VIEW view_persediaan_barang2_dinas_kominfo AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19500,7 +20552,7 @@ CREATE VIEW view_persediaan_barang2_dinas_kppp AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19520,7 +20572,7 @@ CREATE VIEW view_persediaan_barang2_dinas_kukmtk AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19540,7 +20592,7 @@ CREATE VIEW view_persediaan_barang2_dinas_lingkungan_hidup AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19560,7 +20612,7 @@ CREATE VIEW view_persediaan_barang2_dinas_pendidikan AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19580,7 +20632,7 @@ CREATE VIEW view_persediaan_barang2_dinas_perdagangan AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19600,7 +20652,7 @@ CREATE VIEW view_persediaan_barang2_dinas_perhubungan AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19620,7 +20672,7 @@ CREATE VIEW view_persediaan_barang2_dinas_perkim AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19640,7 +20692,7 @@ CREATE VIEW view_persediaan_barang2_dinas_pokp AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19660,7 +20712,7 @@ CREATE VIEW view_persediaan_barang2_dinas_sosial AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19680,7 +20732,7 @@ CREATE VIEW view_persediaan_barang2_dpmptsp AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19700,7 +20752,7 @@ CREATE VIEW view_persediaan_barang2_dppkbpmppa AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19720,7 +20772,7 @@ CREATE VIEW view_persediaan_barang2_dprd AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19740,7 +20792,7 @@ CREATE VIEW view_persediaan_barang2_dpupr AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19760,7 +20812,7 @@ CREATE VIEW view_persediaan_barang2_inspektorat AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19780,7 +20832,7 @@ CREATE VIEW view_persediaan_barang2_kec_banjarbaru_selatan AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19800,7 +20852,7 @@ CREATE VIEW view_persediaan_barang2_kec_banjarbaru_utara AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19820,7 +20872,7 @@ CREATE VIEW view_persediaan_barang2_kec_cempaka AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19840,7 +20892,7 @@ CREATE VIEW view_persediaan_barang2_kec_landasan_ulin AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19860,7 +20912,7 @@ CREATE VIEW view_persediaan_barang2_kec_liang_anggang AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19880,7 +20932,7 @@ CREATE VIEW view_persediaan_barang2_kel_bangkal AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19900,7 +20952,7 @@ CREATE VIEW view_persediaan_barang2_kel_cempaka AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19920,7 +20972,7 @@ CREATE VIEW view_persediaan_barang2_kel_guntung_manggis AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19940,7 +20992,7 @@ CREATE VIEW view_persediaan_barang2_kel_guntung_paikat AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19960,7 +21012,7 @@ CREATE VIEW view_persediaan_barang2_kel_guntung_payung AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -19980,7 +21032,7 @@ CREATE VIEW view_persediaan_barang2_kel_kemuning AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20000,7 +21052,7 @@ CREATE VIEW view_persediaan_barang2_kel_komet AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20020,7 +21072,7 @@ CREATE VIEW view_persediaan_barang2_kel_landasan_ulin_barat AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20040,7 +21092,7 @@ CREATE VIEW view_persediaan_barang2_kel_landasan_ulin_selatan AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20060,7 +21112,7 @@ CREATE VIEW view_persediaan_barang2_kel_landasan_ulin_tengah AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20080,7 +21132,7 @@ CREATE VIEW view_persediaan_barang2_kel_landasan_ulin_timur AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20100,7 +21152,7 @@ CREATE VIEW view_persediaan_barang2_kel_landasan_ulin_utara AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20120,7 +21172,7 @@ CREATE VIEW view_persediaan_barang2_kel_loktabat_selatan AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20140,7 +21192,7 @@ CREATE VIEW view_persediaan_barang2_kel_loktabat_utara AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20160,7 +21212,7 @@ CREATE VIEW view_persediaan_barang2_kel_mentaos AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20180,7 +21232,7 @@ CREATE VIEW view_persediaan_barang2_kel_palam AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20200,7 +21252,7 @@ CREATE VIEW view_persediaan_barang2_kel_sungai_besar AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20220,7 +21272,7 @@ CREATE VIEW view_persediaan_barang2_kel_sungai_tiung AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20240,7 +21292,7 @@ CREATE VIEW view_persediaan_barang2_kel_sungai_ulin AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20260,7 +21312,7 @@ CREATE VIEW view_persediaan_barang2_kel_syamsudin_noor AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20280,7 +21332,7 @@ CREATE VIEW view_persediaan_barang2_kepala_daerah_dan_wakil AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20300,7 +21352,7 @@ CREATE VIEW view_persediaan_barang2_pkm_banjarbaru_selatan AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20320,7 +21372,7 @@ CREATE VIEW view_persediaan_barang2_pkm_banjarbaru_utara AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20340,7 +21392,7 @@ CREATE VIEW view_persediaan_barang2_pkm_guntung_manggis AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20360,7 +21412,7 @@ CREATE VIEW view_persediaan_barang2_pkm_guntung_payung AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20380,7 +21432,7 @@ CREATE VIEW view_persediaan_barang2_pkm_landasan_ulin AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20400,7 +21452,7 @@ CREATE VIEW view_persediaan_barang2_pkm_landasan_ulin_timur AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20420,7 +21472,7 @@ CREATE VIEW view_persediaan_barang2_pkm_liang_anggang AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20440,7 +21492,7 @@ CREATE VIEW view_persediaan_barang2_pkm_rawat_inap_cempaka AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20460,7 +21512,7 @@ CREATE VIEW view_persediaan_barang2_pkm_sungai_besar AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20480,7 +21532,7 @@ CREATE VIEW view_persediaan_barang2_pkm_sungai_ulin AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20500,7 +21552,7 @@ CREATE VIEW view_persediaan_barang2_rsd_idaman_blud AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20520,7 +21572,7 @@ CREATE VIEW view_persediaan_barang2_rsd_idaman_skpd AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20540,7 +21592,7 @@ CREATE VIEW view_persediaan_barang2_satpolpp AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20560,7 +21612,7 @@ CREATE VIEW view_persediaan_barang2_sdn_1_bangkal AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20580,7 +21632,7 @@ CREATE VIEW view_persediaan_barang2_sdn_1_cempaka AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20600,7 +21652,7 @@ CREATE VIEW view_persediaan_barang2_sdn_1_guntung_manggis AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20620,7 +21672,7 @@ CREATE VIEW view_persediaan_barang2_sdn_1_guntung_paikat AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20640,7 +21692,7 @@ CREATE VIEW view_persediaan_barang2_sdn_1_guntung_payung AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20660,7 +21712,7 @@ CREATE VIEW view_persediaan_barang2_sdn_1_kemuning AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20680,7 +21732,7 @@ CREATE VIEW view_persediaan_barang2_sdn_1_komet AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20700,7 +21752,7 @@ CREATE VIEW view_persediaan_barang2_sdn_1_landasan_ulin_barat AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20720,7 +21772,7 @@ CREATE VIEW view_persediaan_barang2_sdn_1_landasan_ulin_selatan AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20740,7 +21792,7 @@ CREATE VIEW view_persediaan_barang2_sdn_1_landasan_ulin_tengah AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20760,7 +21812,7 @@ CREATE VIEW view_persediaan_barang2_sdn_1_landasan_ulin_timur AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20780,7 +21832,7 @@ CREATE VIEW view_persediaan_barang2_sdn_1_landasan_ulin_utara AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20800,7 +21852,7 @@ CREATE VIEW view_persediaan_barang2_sdn_1_loktabat_selatan AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20820,7 +21872,7 @@ CREATE VIEW view_persediaan_barang2_sdn_1_loktabat_utara AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20840,7 +21892,7 @@ CREATE VIEW view_persediaan_barang2_sdn_1_mentaos AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20860,7 +21912,7 @@ CREATE VIEW view_persediaan_barang2_sdn_1_palam AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20880,7 +21932,7 @@ CREATE VIEW view_persediaan_barang2_sdn_1_sungai_besar AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20900,7 +21952,7 @@ CREATE VIEW view_persediaan_barang2_sdn_1_sungai_tiung AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20920,7 +21972,7 @@ CREATE VIEW view_persediaan_barang2_sdn_1_sungai_ulin AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20940,7 +21992,7 @@ CREATE VIEW view_persediaan_barang2_sdn_1_syamsudin_noor AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20960,7 +22012,7 @@ CREATE VIEW view_persediaan_barang2_sdn_2_bangkal AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -20980,7 +22032,7 @@ CREATE VIEW view_persediaan_barang2_sdn_2_cempaka AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21000,7 +22052,7 @@ CREATE VIEW view_persediaan_barang2_sdn_2_guntung_manggis AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21020,7 +22072,7 @@ CREATE VIEW view_persediaan_barang2_sdn_2_guntung_paikat AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21040,7 +22092,7 @@ CREATE VIEW view_persediaan_barang2_sdn_2_guntung_payung AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21060,7 +22112,7 @@ CREATE VIEW view_persediaan_barang2_sdn_2_kemuning AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21080,7 +22132,7 @@ CREATE VIEW view_persediaan_barang2_sdn_2_komet AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21100,7 +22152,7 @@ CREATE VIEW view_persediaan_barang2_sdn_2_landasan_ulin_barat AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21120,7 +22172,7 @@ CREATE VIEW view_persediaan_barang2_sdn_2_landasan_ulin_timur AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21140,7 +22192,7 @@ CREATE VIEW view_persediaan_barang2_sdn_2_landasan_ulin_utara AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21160,7 +22212,7 @@ CREATE VIEW view_persediaan_barang2_sdn_2_loktabat_selatan AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21180,7 +22232,7 @@ CREATE VIEW view_persediaan_barang2_sdn_2_loktabat_utara AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21200,7 +22252,7 @@ CREATE VIEW view_persediaan_barang2_sdn_2_mentaos AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21220,7 +22272,7 @@ CREATE VIEW view_persediaan_barang2_sdn_2_palam AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21240,7 +22292,7 @@ CREATE VIEW view_persediaan_barang2_sdn_2_sungai_besar AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21260,7 +22312,7 @@ CREATE VIEW view_persediaan_barang2_sdn_2_sungai_tiung AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21280,7 +22332,7 @@ CREATE VIEW view_persediaan_barang2_sdn_2_sungai_ulin AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21300,7 +22352,7 @@ CREATE VIEW view_persediaan_barang2_sdn_2_syamsudin_noor AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21320,7 +22372,7 @@ CREATE VIEW view_persediaan_barang2_sdn_3_bangkal AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21340,7 +22392,7 @@ CREATE VIEW view_persediaan_barang2_sdn_3_cempaka AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21360,7 +22412,7 @@ CREATE VIEW view_persediaan_barang2_sdn_3_guntung_manggis AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21380,7 +22432,7 @@ CREATE VIEW view_persediaan_barang2_sdn_3_guntung_payung AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21400,7 +22452,7 @@ CREATE VIEW view_persediaan_barang2_sdn_3_kemuning AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21420,7 +22472,7 @@ CREATE VIEW view_persediaan_barang2_sdn_3_komet AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21440,7 +22492,7 @@ CREATE VIEW view_persediaan_barang2_sdn_3_landasan_ulin_timur AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21460,7 +22512,7 @@ CREATE VIEW view_persediaan_barang2_sdn_3_loktabat_utara AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21480,7 +22532,7 @@ CREATE VIEW view_persediaan_barang2_sdn_3_palam AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21500,7 +22552,7 @@ CREATE VIEW view_persediaan_barang2_sdn_3_sungai_besar AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21520,7 +22572,7 @@ CREATE VIEW view_persediaan_barang2_sdn_3_sungai_tiung AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21540,7 +22592,7 @@ CREATE VIEW view_persediaan_barang2_sdn_3_sungai_ulin AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21560,7 +22612,7 @@ CREATE VIEW view_persediaan_barang2_sdn_3_syamsudin_noor AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21580,7 +22632,7 @@ CREATE VIEW view_persediaan_barang2_sdn_4_cempaka AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21600,7 +22652,7 @@ CREATE VIEW view_persediaan_barang2_sdn_4_guntung_manggis AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21620,7 +22672,7 @@ CREATE VIEW view_persediaan_barang2_sdn_4_komet AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21640,7 +22692,7 @@ CREATE VIEW view_persediaan_barang2_sdn_4_loktabat_utara AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21660,7 +22712,7 @@ CREATE VIEW view_persediaan_barang2_sdn_4_sungai_besar AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21680,7 +22732,7 @@ CREATE VIEW view_persediaan_barang2_sdn_4_sungai_ulin AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21700,7 +22752,7 @@ CREATE VIEW view_persediaan_barang2_sdn_4_syamsudin_noor AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21720,7 +22772,7 @@ CREATE VIEW view_persediaan_barang2_sdn_5_cempaka AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21740,7 +22792,7 @@ CREATE VIEW view_persediaan_barang2_sdn_5_guntung_manggis AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21760,7 +22812,7 @@ CREATE VIEW view_persediaan_barang2_sdn_5_komet AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21780,7 +22832,7 @@ CREATE VIEW view_persediaan_barang2_sdn_5_loktabat_utara AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21800,7 +22852,7 @@ CREATE VIEW view_persediaan_barang2_sdn_5_sungai_besar AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21820,7 +22872,7 @@ CREATE VIEW view_persediaan_barang2_sdn_5_sungai_ulin AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21840,7 +22892,7 @@ CREATE VIEW view_persediaan_barang2_sdn_5_syamsudin_noor AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21860,7 +22912,7 @@ CREATE VIEW view_persediaan_barang2_sdn_6_cempaka AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21880,7 +22932,7 @@ CREATE VIEW view_persediaan_barang2_sekretariat_daerah AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21900,7 +22952,7 @@ CREATE VIEW view_persediaan_barang2_sekretariat_dprd AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21920,7 +22972,7 @@ CREATE VIEW view_persediaan_barang2_smp_negeri_1 AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21940,7 +22992,7 @@ CREATE VIEW view_persediaan_barang2_smp_negeri_10 AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21960,7 +23012,7 @@ CREATE VIEW view_persediaan_barang2_smp_negeri_11 AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -21980,7 +23032,7 @@ CREATE VIEW view_persediaan_barang2_smp_negeri_12 AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -22000,7 +23052,7 @@ CREATE VIEW view_persediaan_barang2_smp_negeri_13 AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -22020,7 +23072,7 @@ CREATE VIEW view_persediaan_barang2_smp_negeri_14 AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -22040,7 +23092,7 @@ CREATE VIEW view_persediaan_barang2_smp_negeri_15 AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -22060,7 +23112,7 @@ CREATE VIEW view_persediaan_barang2_smp_negeri_2 AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -22080,7 +23132,7 @@ CREATE VIEW view_persediaan_barang2_smp_negeri_3 AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -22100,7 +23152,7 @@ CREATE VIEW view_persediaan_barang2_smp_negeri_4 AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -22120,7 +23172,7 @@ CREATE VIEW view_persediaan_barang2_smp_negeri_5 AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -22140,7 +23192,7 @@ CREATE VIEW view_persediaan_barang2_smp_negeri_6 AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -22160,7 +23212,7 @@ CREATE VIEW view_persediaan_barang2_smp_negeri_8 AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -22180,7 +23232,7 @@ CREATE VIEW view_persediaan_barang2_smp_negeri_9 AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -22200,7 +23252,7 @@ CREATE VIEW view_persediaan_barang2_tk_negeri_idaman AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -22220,7 +23272,7 @@ CREATE VIEW view_persediaan_barang2_tk_negeri_pembina_cempaka AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -22240,7 +23292,7 @@ CREATE VIEW view_persediaan_barang2_tk_negeri_pembina_kota AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -22260,7 +23312,7 @@ CREATE VIEW view_persediaan_barang2_tk_negeri_pembina_l_anggang AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -22280,7 +23332,7 @@ CREATE VIEW view_persediaan_barang2_tk_negeri_pembina_l_ulin AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -22300,7 +23352,7 @@ CREATE VIEW view_persediaan_barang2_upt_pajak_daerah_wilayah_i AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -22320,7 +23372,7 @@ CREATE VIEW view_persediaan_barang2_upt_pajak_daerah_wilayah_ii AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -22340,7 +23392,7 @@ CREATE VIEW view_persediaan_barang2_upt_pemb_ternak_puskewan AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -22360,7 +23412,7 @@ CREATE VIEW view_persediaan_barang2_upt_pengujian_kend_berm AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -22380,7 +23432,7 @@ CREATE VIEW view_persediaan_barang2_upt_perparkiran AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -22400,7 +23452,7 @@ CREATE VIEW view_persediaan_barang2_uptd_disdik_wil_i AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -22420,7 +23472,7 @@ CREATE VIEW view_persediaan_barang2_uptd_disdik_wil_ii AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -22440,7 +23492,7 @@ CREATE VIEW view_persediaan_barang2_uptd_gudang_obat AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -22460,7 +23512,7 @@ CREATE VIEW view_persediaan_barang2_uptd_gudang_transito AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -22480,7 +23532,7 @@ CREATE VIEW view_persediaan_barang2_uptd_laboratorium_l_h AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -22500,7 +23552,7 @@ CREATE VIEW view_persediaan_barang2_uptd_metrologi AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -22520,7 +23572,7 @@ CREATE VIEW view_persediaan_barang2_uptd_pasar_bauntung AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -22540,7 +23592,7 @@ CREATE VIEW view_persediaan_barang2_uptd_pasar_ulin_raya AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -22560,7 +23612,7 @@ CREATE VIEW view_persediaan_barang2_uptd_sgr_keg_belajar AS
 
 SELECT
 *,
-sum(jumlah) OVER (PARTITION BY kode_barang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
+sum(jumlah) OVER (PARTITION BY kode_barang, id_gudang ORDER BY serial, tanggal, id_persediaan) as pra_saldo
 
 
 FROM
@@ -30430,6 +31482,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -30486,6 +31541,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -30544,6 +31602,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -30600,6 +31661,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -30658,6 +31722,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -30714,6 +31781,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -30772,6 +31842,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -30828,6 +31901,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -30886,6 +31962,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -30942,6 +32021,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -31000,6 +32082,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -31056,6 +32141,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -31114,6 +32202,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -31170,6 +32261,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -31228,6 +32322,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -31284,6 +32381,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -31342,6 +32442,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -31398,6 +32501,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -31456,6 +32562,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -31512,6 +32621,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -31570,6 +32682,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -31626,6 +32741,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -31684,6 +32802,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -31740,6 +32861,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -31798,6 +32922,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -31854,6 +32981,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -31912,6 +33042,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -31968,6 +33101,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -32026,6 +33162,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -32082,6 +33221,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -32140,6 +33282,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -32196,6 +33341,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -32254,6 +33402,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -32310,6 +33461,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -32368,6 +33522,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -32424,6 +33581,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -32482,6 +33642,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -32538,6 +33701,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -32596,6 +33762,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -32652,6 +33821,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -32710,6 +33882,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -32766,6 +33941,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -32824,6 +34002,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -32880,6 +34061,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -32938,6 +34122,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -32994,6 +34181,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -33052,6 +34242,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -33108,6 +34301,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -33166,6 +34362,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -33222,6 +34421,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -33280,6 +34482,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -33336,6 +34541,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -33394,6 +34602,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -33450,6 +34661,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -33508,6 +34722,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -33564,6 +34781,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -33622,6 +34842,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -33678,6 +34901,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -33736,6 +34962,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -33792,6 +35021,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -33850,6 +35082,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -33906,6 +35141,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -33964,6 +35202,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -34020,6 +35261,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -34078,6 +35322,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -34134,6 +35381,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -34192,6 +35442,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -34248,6 +35501,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -34306,6 +35562,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -34362,6 +35621,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -34420,6 +35682,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -34476,6 +35741,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -34534,6 +35802,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -34590,6 +35861,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -34648,6 +35922,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -34704,6 +35981,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -34762,6 +36042,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -34818,6 +36101,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -34876,6 +36162,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -34932,6 +36221,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -34990,6 +36282,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -35046,6 +36341,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -35104,6 +36402,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -35160,6 +36461,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -35218,6 +36522,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -35274,6 +36581,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -35332,6 +36642,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -35388,6 +36701,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -35446,6 +36762,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -35502,6 +36821,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -35560,6 +36882,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -35616,6 +36941,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -35674,6 +37002,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -35730,6 +37061,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -35788,6 +37122,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -35844,6 +37181,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -35902,6 +37242,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -35958,6 +37301,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -36016,6 +37362,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -36072,6 +37421,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -36130,6 +37482,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -36186,6 +37541,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -36244,6 +37602,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -36300,6 +37661,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -36358,6 +37722,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -36414,6 +37781,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -36472,6 +37842,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -36528,6 +37901,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -36586,6 +37962,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -36642,6 +38021,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -36700,6 +38082,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -36756,6 +38141,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -36814,6 +38202,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -36870,6 +38261,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -36928,6 +38322,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -36984,6 +38381,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -37042,6 +38442,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -37098,6 +38501,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -37156,6 +38562,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -37212,6 +38621,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -37270,6 +38682,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -37326,6 +38741,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -37384,6 +38802,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -37440,6 +38861,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -37498,6 +38922,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -37554,6 +38981,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -37612,6 +39042,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -37668,6 +39101,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -37726,6 +39162,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -37782,6 +39221,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -37840,6 +39282,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -37896,6 +39341,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -37954,6 +39402,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -38010,6 +39461,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -38068,6 +39522,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -38124,6 +39581,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -38182,6 +39642,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -38238,6 +39701,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -38296,6 +39762,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -38352,6 +39821,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -38410,6 +39882,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -38466,6 +39941,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -38524,6 +40002,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -38580,6 +40061,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -38638,6 +40122,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -38694,6 +40181,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -38752,6 +40242,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -38808,6 +40301,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -38866,6 +40362,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -38922,6 +40421,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -38980,6 +40482,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -39036,6 +40541,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -39094,6 +40602,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -39150,6 +40661,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -39208,6 +40722,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -39264,6 +40781,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -39322,6 +40842,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -39378,6 +40901,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -39436,6 +40962,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -39492,6 +41021,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -39550,6 +41082,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -39606,6 +41141,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -39664,6 +41202,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -39720,6 +41261,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -39778,6 +41322,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -39834,6 +41381,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -39892,6 +41442,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -39948,6 +41501,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -40006,6 +41562,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -40062,6 +41621,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -40120,6 +41682,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -40176,6 +41741,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -40234,6 +41802,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -40290,6 +41861,9 @@ id_satuan,
 
 jenis_barang,
 id_jenis_barang,
+
+gudang,
+id_gudang,
 
 sum(saldo) AS total_saldo_barang,
 sum(jumlah_harga) AS total_harga
@@ -40351,6 +41925,9 @@ transaksi.keterangan,
 jenis_transaksi.jenis_transaksi,
 transaksi.id_jenis_transaksi,
 
+gudang.gudang,
+transaksi.id_gudang,
+
 persediaan.jumlah,
 persediaan.harga,
 
@@ -40379,6 +41956,7 @@ join skpd ON skpd.id_lokasi_bidang = lokasi_bidang.id
 join sub_skpd ON sub_skpd.id_skpd = skpd.id
 join transaksi ON transaksi.id_sub_skpd = sub_skpd.id
 join jenis_transaksi ON transaksi.id_jenis_transaksi = jenis_transaksi.id
+join gudang ON transaksi.id_gudang = gudang.id
 join persediaan ON persediaan.id_transaksi = transaksi.id
 join barang ON persediaan.id_barang = barang.id
 join satuan ON barang.id_satuan = satuan.id
@@ -40424,6 +42002,9 @@ transaksi.keterangan,
 jenis_transaksi.jenis_transaksi,
 transaksi.id_jenis_transaksi,
 
+gudang.gudang,
+transaksi.id_gudang,
+
 persediaan.jumlah,
 persediaan.harga,
 
@@ -40449,6 +42030,7 @@ join skpd ON skpd.id_lokasi_bidang = lokasi_bidang.id
 join sub_skpd ON sub_skpd.id_skpd = skpd.id
 join transaksi ON transaksi.id_sub_skpd = sub_skpd.id
 join jenis_transaksi ON transaksi.id_jenis_transaksi = jenis_transaksi.id
+join gudang ON transaksi.id_gudang = gudang.id
 join persediaan ON persediaan.id_transaksi = transaksi.id
 join barang ON persediaan.id_barang = barang.id
 join satuan ON barang.id_satuan = satuan.id
@@ -40496,6 +42078,9 @@ transaksi.keterangan,
 jenis_transaksi.jenis_transaksi,
 transaksi.id_jenis_transaksi,
 
+gudang.gudang,
+transaksi.id_gudang,
+
 persediaan.jumlah,
 --persediaan.harga,
 
@@ -40529,6 +42114,7 @@ join skpd ON skpd.id_lokasi_bidang = lokasi_bidang.id
 join sub_skpd ON sub_skpd.id_skpd = skpd.id
 join transaksi ON transaksi.id_sub_skpd = sub_skpd.id
 join jenis_transaksi ON transaksi.id_jenis_transaksi = jenis_transaksi.id
+join gudang ON transaksi.id_gudang = gudang.id
 join persediaan ON persediaan.id_transaksi = transaksi.id
 join barang ON persediaan.id_barang = barang.id
 join satuan ON barang.id_satuan = satuan.id
@@ -40577,6 +42163,9 @@ transaksi.keterangan,
 jenis_transaksi.jenis_transaksi,
 transaksi.id_jenis_transaksi,
 
+gudang.gudang,
+transaksi.id_gudang,
+
 --persediaan.jumlah,
 --persediaan.harga,
 
@@ -40605,6 +42194,7 @@ join skpd ON skpd.id_lokasi_bidang = lokasi_bidang.id
 join sub_skpd ON sub_skpd.id_skpd = skpd.id
 join transaksi ON transaksi.id_sub_skpd = sub_skpd.id
 join jenis_transaksi ON transaksi.id_jenis_transaksi = jenis_transaksi.id
+join gudang ON transaksi.id_gudang = gudang.id
 join persediaan ON persediaan.id_transaksi = transaksi.id
 join barang ON persediaan.id_barang = barang.id
 join satuan ON barang.id_satuan = satuan.id
@@ -40686,6 +42276,9 @@ transaksi.keterangan,
 jenis_transaksi.jenis_transaksi,
 transaksi.id_jenis_transaksi,
 
+gudang.gudang,
+transaksi.id_gudang,
+
 --persediaan.jumlah,
 --persediaan.harga,
 
@@ -40715,6 +42308,7 @@ join skpd ON skpd.id_lokasi_bidang = lokasi_bidang.id
 join sub_skpd ON sub_skpd.id_skpd = skpd.id
 join transaksi ON transaksi.id_sub_skpd = sub_skpd.id
 join jenis_transaksi ON transaksi.id_jenis_transaksi = jenis_transaksi.id
+join gudang ON transaksi.id_gudang = gudang.id
 join persediaan ON persediaan.id_transaksi = transaksi.id
 join barang ON persediaan.id_barang = barang.id
 join satuan ON barang.id_satuan = satuan.id

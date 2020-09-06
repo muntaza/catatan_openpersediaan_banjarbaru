@@ -3,7 +3,7 @@ DROP VIEW IF EXISTS view_persediaan_barang_dinas_pendidikan CASCADE;
 CREATE VIEW view_persediaan_barang_dinas_pendidikan AS
 
 SELECT
-row_number() OVER (PARTITION BY kode_barang ORDER BY tanggal, id_persediaan) as serial,
+row_number() OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as serial,
 nama_provinsi,
 id_provinsi,
 
@@ -26,6 +26,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 jumlah,
@@ -77,6 +80,9 @@ keterangan,
 
 jenis_transaksi,
 id_jenis_transaksi,
+
+gudang,
+id_gudang,
 
 id_persediaan,
 0 - jumlah as jumlah,
