@@ -24,6 +24,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -47,6 +50,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -81,6 +86,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -104,6 +112,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -138,6 +148,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -161,6 +174,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -195,6 +210,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -218,6 +236,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -252,6 +272,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -275,6 +298,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -309,6 +334,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -332,6 +360,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -366,6 +396,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -389,6 +422,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -423,6 +458,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -446,6 +484,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -480,6 +520,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -503,6 +546,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -537,6 +582,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -560,6 +608,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -594,6 +644,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -617,6 +670,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -651,6 +706,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -674,6 +732,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -708,6 +768,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -731,6 +794,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -765,6 +830,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -788,6 +856,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -822,6 +892,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -845,6 +918,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -879,6 +954,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -902,6 +980,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -936,6 +1016,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -959,6 +1042,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -993,6 +1078,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -1016,6 +1104,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -1050,6 +1140,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -1073,6 +1166,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -1107,6 +1202,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -1130,6 +1228,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -1164,6 +1264,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -1187,6 +1290,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -1221,6 +1326,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -1244,6 +1352,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -1278,6 +1388,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -1301,6 +1414,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -1335,6 +1450,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -1358,6 +1476,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -1392,6 +1512,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -1415,6 +1538,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -1449,6 +1574,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -1472,6 +1600,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -1506,6 +1636,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -1529,6 +1662,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -1563,6 +1698,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -1586,6 +1724,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -1620,6 +1760,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -1643,6 +1786,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -1677,6 +1822,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -1700,6 +1848,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -1734,6 +1884,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -1757,6 +1910,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -1791,6 +1946,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -1814,6 +1972,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -1848,6 +2008,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -1871,6 +2034,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -1905,6 +2070,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -1928,6 +2096,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -1962,6 +2132,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -1985,6 +2158,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2019,6 +2194,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -2042,6 +2220,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2076,6 +2256,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -2099,6 +2282,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2133,6 +2318,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -2156,6 +2344,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2190,6 +2380,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -2213,6 +2406,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2247,6 +2442,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -2270,6 +2468,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2304,6 +2504,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -2327,6 +2530,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2361,6 +2566,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -2384,6 +2592,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2418,6 +2628,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -2441,6 +2654,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2475,6 +2690,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -2498,6 +2716,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2532,6 +2752,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -2555,6 +2778,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2589,6 +2814,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -2612,6 +2840,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2646,6 +2876,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -2669,6 +2902,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2703,6 +2938,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -2726,6 +2964,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2760,6 +3000,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -2783,6 +3026,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2817,6 +3062,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -2840,6 +3088,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2874,6 +3124,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -2897,6 +3150,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2931,6 +3186,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -2954,6 +3212,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -2988,6 +3248,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -3011,6 +3274,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -3045,6 +3310,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -3068,6 +3336,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -3102,6 +3372,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -3125,6 +3398,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -3159,6 +3434,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -3182,6 +3460,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -3216,6 +3496,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -3239,6 +3522,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -3273,6 +3558,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -3296,6 +3584,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -3330,6 +3620,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -3353,6 +3646,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -3387,6 +3682,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -3410,6 +3708,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -3444,6 +3744,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -3467,6 +3770,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -3501,6 +3806,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -3524,6 +3832,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -3558,6 +3868,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -3581,6 +3894,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -3615,6 +3930,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -3638,6 +3956,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -3672,6 +3992,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -3695,6 +4018,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -3729,6 +4054,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -3752,6 +4080,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -3786,6 +4116,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -3809,6 +4142,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -3843,6 +4178,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -3866,6 +4204,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -3900,6 +4240,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -3923,6 +4266,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -3957,6 +4302,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -3980,6 +4328,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4014,6 +4364,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -4037,6 +4390,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4071,6 +4426,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -4094,6 +4452,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4128,6 +4488,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -4151,6 +4514,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4185,6 +4550,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -4208,6 +4576,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4242,6 +4612,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -4265,6 +4638,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4299,6 +4674,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -4322,6 +4700,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4356,6 +4736,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -4379,6 +4762,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4413,6 +4798,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -4436,6 +4824,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4470,6 +4860,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -4493,6 +4886,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4527,6 +4922,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -4550,6 +4948,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4584,6 +4984,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -4607,6 +5010,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4641,6 +5046,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -4664,6 +5072,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4698,6 +5108,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -4721,6 +5134,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4755,6 +5170,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -4778,6 +5196,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4812,6 +5232,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -4835,6 +5258,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4869,6 +5294,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -4892,6 +5320,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4926,6 +5356,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -4949,6 +5382,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -4983,6 +5418,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -5006,6 +5444,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -5040,6 +5480,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -5063,6 +5506,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -5097,6 +5542,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -5120,6 +5568,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -5154,6 +5604,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -5177,6 +5630,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -5211,6 +5666,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -5234,6 +5692,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -5268,6 +5728,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -5291,6 +5754,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -5325,6 +5790,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -5348,6 +5816,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -5382,6 +5852,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -5405,6 +5878,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -5439,6 +5914,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -5462,6 +5940,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -5496,6 +5976,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -5519,6 +6002,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -5553,6 +6038,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -5576,6 +6064,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -5610,6 +6100,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -5633,6 +6126,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -5667,6 +6162,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -5690,6 +6188,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -5724,6 +6224,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -5747,6 +6250,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -5781,6 +6286,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -5804,6 +6312,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -5838,6 +6348,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -5861,6 +6374,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -5895,6 +6410,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -5918,6 +6436,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -5952,6 +6472,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -5975,6 +6498,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6009,6 +6534,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -6032,6 +6560,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6066,6 +6596,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -6089,6 +6622,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6123,6 +6658,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -6146,6 +6684,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6180,6 +6720,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -6203,6 +6746,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6237,6 +6782,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -6260,6 +6808,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6294,6 +6844,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -6317,6 +6870,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6351,6 +6906,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -6374,6 +6932,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6408,6 +6968,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -6431,6 +6994,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6465,6 +7030,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -6488,6 +7056,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6522,6 +7092,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -6545,6 +7118,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6579,6 +7154,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -6602,6 +7180,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6636,6 +7216,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -6659,6 +7242,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6693,6 +7278,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -6716,6 +7304,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6750,6 +7340,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -6773,6 +7366,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6807,6 +7402,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -6830,6 +7428,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6864,6 +7464,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -6887,6 +7490,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6921,6 +7526,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -6944,6 +7552,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -6978,6 +7588,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -7001,6 +7614,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -7035,6 +7650,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -7058,6 +7676,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -7092,6 +7712,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -7115,6 +7738,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -7149,6 +7774,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -7172,6 +7800,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -7206,6 +7836,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -7229,6 +7862,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -7263,6 +7898,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -7286,6 +7924,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -7320,6 +7960,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -7343,6 +7986,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -7377,6 +8022,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -7400,6 +8048,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -7434,6 +8084,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -7457,6 +8110,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -7491,6 +8146,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -7514,6 +8172,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -7548,6 +8208,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -7571,6 +8234,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -7605,6 +8270,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -7628,6 +8296,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -7662,6 +8332,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -7685,6 +8358,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -7719,6 +8394,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -7742,6 +8420,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -7776,6 +8456,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -7799,6 +8482,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -7833,6 +8518,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -7856,6 +8544,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -7890,6 +8580,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -7913,6 +8606,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -7947,6 +8642,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -7970,6 +8668,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8004,6 +8704,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -8027,6 +8730,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8061,6 +8766,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -8084,6 +8792,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8118,6 +8828,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -8141,6 +8854,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8175,6 +8890,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -8198,6 +8916,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8232,6 +8952,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -8255,6 +8978,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8289,6 +9014,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -8312,6 +9040,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8346,6 +9076,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -8369,6 +9102,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8403,6 +9138,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -8426,6 +9164,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8460,6 +9200,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -8483,6 +9226,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8517,6 +9262,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -8540,6 +9288,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8574,6 +9324,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -8597,6 +9350,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8631,6 +9386,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -8654,6 +9412,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8688,6 +9448,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -8711,6 +9474,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8745,6 +9510,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -8768,6 +9536,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8802,6 +9572,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -8825,6 +9598,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8859,6 +9634,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -8882,6 +9660,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8916,6 +9696,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -8939,6 +9722,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -8973,6 +9758,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -8996,6 +9784,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -9030,6 +9820,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -9053,6 +9846,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -9087,6 +9882,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -9110,6 +9908,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -9144,6 +9944,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -9167,6 +9970,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -9201,6 +10006,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -9224,6 +10032,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -9258,6 +10068,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -9281,6 +10094,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -9315,6 +10130,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -9338,6 +10156,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -9372,6 +10192,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -9395,6 +10218,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -9429,6 +10254,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -9452,6 +10280,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -9486,6 +10316,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -9509,6 +10342,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -9543,6 +10378,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -9566,6 +10404,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -9600,6 +10440,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -9623,6 +10466,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -9657,6 +10502,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -9680,6 +10528,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -9714,6 +10564,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -9737,6 +10590,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -9771,6 +10626,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -9794,6 +10652,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -9828,6 +10688,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -9851,6 +10714,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 
@@ -9885,6 +10750,9 @@ id_satuan,
 jenis_barang,
 id_jenis_barang,
 
+gudang,
+id_gudang,
+
 sum(beban) AS total_beban_barang,
 sum(jumlah_harga) AS total_harga
 
@@ -9908,6 +10776,8 @@ nama_barang,
 kode_barang,
 satuan,
 id_satuan,
+gudang,
+id_gudang,
 jenis_barang,
 id_jenis_barang
 

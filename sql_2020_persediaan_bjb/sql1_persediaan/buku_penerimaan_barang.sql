@@ -97,6 +97,9 @@ transaksi.keterangan,
 jenis_transaksi.jenis_transaksi,
 transaksi.id_jenis_transaksi,
 
+gudang.gudang,
+transaksi.id_gudang,
+
 jenis_barang.jenis_barang,
 barang.id_jenis_barang,
 
