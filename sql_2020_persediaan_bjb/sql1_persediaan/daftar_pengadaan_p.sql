@@ -27,6 +27,9 @@ transaksi.keterangan,
 jenis_transaksi.jenis_transaksi,
 transaksi.id_jenis_transaksi,
 
+gudang.gudang,
+transaksi.id_gudang,
+
 persediaan.jumlah,
 persediaan.harga,
 
