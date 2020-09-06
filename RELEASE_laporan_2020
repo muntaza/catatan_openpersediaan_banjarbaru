@@ -1,0 +1,13 @@
+rel-2.0:
+
+	- cvs tag rel-2-0 -OK-
+	- test framework -OK-
+
+rel-2-1:
+	- sql view pindah ke git
+	    cek sql view 2020
+	    pindah ke git
+	    push di git
+	- refactoring semua script per skpd
+	- daftar pengadaan dengan gudang
+	- cvs tag rel-2-1
