@@ -78,6 +78,11 @@ rel-1-9:
    - cvs tag rel-1-9 -OK-
 
 rel-1-10:
+   - tambah list_filter di transaksi untuk memfilter gudang -OK-
+   - cvs tag rel-1-10 -OK-
 
-   - cvs tag rel-1-10 
+rel-1-11:
+
+   - cvs tag rel-1-11
+
 
