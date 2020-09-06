@@ -27,6 +27,9 @@ transaksi.keterangan,
 jenis_transaksi.jenis_transaksi,
 transaksi.id_jenis_transaksi,
 
+gudang.gudang,
+transaksi.id_gudang,
+
 persediaan.id as id_persediaan,
 persediaan.jumlah,
 persediaan.harga,
@@ -48,6 +51,7 @@ join skpd ON skpd.id_lokasi_bidang = lokasi_bidang.id
 join sub_skpd ON sub_skpd.id_skpd = skpd.id
 join transaksi ON transaksi.id_sub_skpd = sub_skpd.id
 join jenis_transaksi ON transaksi.id_jenis_transaksi = jenis_transaksi.id
+join gudang ON transaksi.id_gudang = gudang.id
 join persediaan ON persediaan.id_transaksi = transaksi.id
 join barang ON persediaan.id_barang = barang.id
 join satuan ON barang.id_satuan = satuan.id
