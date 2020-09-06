@@ -67,6 +67,9 @@ AND jenis_transaksi.id = 1;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_masuk_kabupaten TO lap_kabupaten;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_masuk_kabupaten FROM lap_kabupaten;
+
+GRANT ALL PRIVILEGES ON gudang TO lap_kabupaten;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM lap_kabupaten;
 DROP VIEW IF EXISTS view_persediaan_barang_keluar_kabupaten CASCADE;
 
 
@@ -251,6 +254,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_badan_kesbangpol TO badan_kesbangpol;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_badan_kesbangpol FROM badan_kesbangpol;
+
+GRANT ALL PRIVILEGES ON gudang TO badan_kesbangpol;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM badan_kesbangpol;
 DROP VIEW IF EXISTS view_persediaan_barang_badan_p_pajak_retribusi CASCADE;
 
 CREATE VIEW view_persediaan_barang_badan_p_pajak_retribusi AS
@@ -366,6 +372,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_badan_p_pajak_retribusi TO badan_p_pajak_retribusi;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_badan_p_pajak_retribusi FROM badan_p_pajak_retribusi;
+
+GRANT ALL PRIVILEGES ON gudang TO badan_p_pajak_retribusi;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM badan_p_pajak_retribusi;
 DROP VIEW IF EXISTS view_persediaan_barang_badan_pp_litbang_da CASCADE;
 
 CREATE VIEW view_persediaan_barang_badan_pp_litbang_da AS
@@ -481,6 +490,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_badan_pp_litbang_da TO badan_pp_litbang_da;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_badan_pp_litbang_da FROM badan_pp_litbang_da;
+
+GRANT ALL PRIVILEGES ON gudang TO badan_pp_litbang_da;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM badan_pp_litbang_da;
 DROP VIEW IF EXISTS view_persediaan_barang_bag_ekobang CASCADE;
 
 CREATE VIEW view_persediaan_barang_bag_ekobang AS
@@ -596,6 +608,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_bag_ekobang TO bag_ekobang;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_bag_ekobang FROM bag_ekobang;
+
+GRANT ALL PRIVILEGES ON gudang TO bag_ekobang;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM bag_ekobang;
 DROP VIEW IF EXISTS view_persediaan_barang_bag_hukum CASCADE;
 
 CREATE VIEW view_persediaan_barang_bag_hukum AS
@@ -711,6 +726,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_bag_hukum TO bag_hukum;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_bag_hukum FROM bag_hukum;
+
+GRANT ALL PRIVILEGES ON gudang TO bag_hukum;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM bag_hukum;
 DROP VIEW IF EXISTS view_persediaan_barang_bag_humas_dan_protokol CASCADE;
 
 CREATE VIEW view_persediaan_barang_bag_humas_dan_protokol AS
@@ -826,6 +844,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_bag_humas_dan_protokol TO bag_humas_dan_protokol;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_bag_humas_dan_protokol FROM bag_humas_dan_protokol;
+
+GRANT ALL PRIVILEGES ON gudang TO bag_humas_dan_protokol;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM bag_humas_dan_protokol;
 DROP VIEW IF EXISTS view_persediaan_barang_bag_kerjasama_dan_agraria CASCADE;
 
 CREATE VIEW view_persediaan_barang_bag_kerjasama_dan_agraria AS
@@ -941,6 +962,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_bag_kerjasama_dan_agraria TO bag_kerjasama_dan_agraria;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_bag_kerjasama_dan_agraria FROM bag_kerjasama_dan_agraria;
+
+GRANT ALL PRIVILEGES ON gudang TO bag_kerjasama_dan_agraria;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM bag_kerjasama_dan_agraria;
 DROP VIEW IF EXISTS view_persediaan_barang_bag_kesra CASCADE;
 
 CREATE VIEW view_persediaan_barang_bag_kesra AS
@@ -1056,6 +1080,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_bag_kesra TO bag_kesra;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_bag_kesra FROM bag_kesra;
+
+GRANT ALL PRIVILEGES ON gudang TO bag_kesra;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM bag_kesra;
 DROP VIEW IF EXISTS view_persediaan_barang_bag_organisasi CASCADE;
 
 CREATE VIEW view_persediaan_barang_bag_organisasi AS
@@ -1171,6 +1198,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_bag_organisasi TO bag_organisasi;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_bag_organisasi FROM bag_organisasi;
+
+GRANT ALL PRIVILEGES ON gudang TO bag_organisasi;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM bag_organisasi;
 DROP VIEW IF EXISTS view_persediaan_barang_bag_pbj CASCADE;
 
 CREATE VIEW view_persediaan_barang_bag_pbj AS
@@ -1286,6 +1316,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_bag_pbj TO bag_pbj;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_bag_pbj FROM bag_pbj;
+
+GRANT ALL PRIVILEGES ON gudang TO bag_pbj;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM bag_pbj;
 DROP VIEW IF EXISTS view_persediaan_barang_bag_pemerintahan CASCADE;
 
 CREATE VIEW view_persediaan_barang_bag_pemerintahan AS
@@ -1401,6 +1434,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_bag_pemerintahan TO bag_pemerintahan;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_bag_pemerintahan FROM bag_pemerintahan;
+
+GRANT ALL PRIVILEGES ON gudang TO bag_pemerintahan;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM bag_pemerintahan;
 DROP VIEW IF EXISTS view_persediaan_barang_bag_umum CASCADE;
 
 CREATE VIEW view_persediaan_barang_bag_umum AS
@@ -1516,6 +1552,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_bag_umum TO bag_umum;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_bag_umum FROM bag_umum;
+
+GRANT ALL PRIVILEGES ON gudang TO bag_umum;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM bag_umum;
 DROP VIEW IF EXISTS view_persediaan_barang_bkppd CASCADE;
 
 CREATE VIEW view_persediaan_barang_bkppd AS
@@ -1631,6 +1670,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_bkppd TO bkppd;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_bkppd FROM bkppd;
+
+GRANT ALL PRIVILEGES ON gudang TO bkppd;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM bkppd;
 DROP VIEW IF EXISTS view_persediaan_barang_bpbd CASCADE;
 
 CREATE VIEW view_persediaan_barang_bpbd AS
@@ -1746,6 +1788,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_bpbd TO bpbd;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_bpbd FROM bpbd;
+
+GRANT ALL PRIVILEGES ON gudang TO bpbd;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM bpbd;
 DROP VIEW IF EXISTS view_persediaan_barang_bpkad_ppkd CASCADE;
 
 CREATE VIEW view_persediaan_barang_bpkad_ppkd AS
@@ -1861,6 +1906,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_bpkad_ppkd TO bpkad_ppkd;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_bpkad_ppkd FROM bpkad_ppkd;
+
+GRANT ALL PRIVILEGES ON gudang TO bpkad_ppkd;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM bpkad_ppkd;
 DROP VIEW IF EXISTS view_persediaan_barang_bpkad_skpd CASCADE;
 
 CREATE VIEW view_persediaan_barang_bpkad_skpd AS
@@ -1976,6 +2024,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_bpkad_skpd TO bpkad_skpd;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_bpkad_skpd FROM bpkad_skpd;
+
+GRANT ALL PRIVILEGES ON gudang TO bpkad_skpd;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM bpkad_skpd;
 DROP VIEW IF EXISTS view_persediaan_barang_dinas_arsip_dan_perpust CASCADE;
 
 CREATE VIEW view_persediaan_barang_dinas_arsip_dan_perpust AS
@@ -2091,6 +2142,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_dinas_arsip_dan_perpust TO dinas_arsip_dan_perpust;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_dinas_arsip_dan_perpust FROM dinas_arsip_dan_perpust;
+
+GRANT ALL PRIVILEGES ON gudang TO dinas_arsip_dan_perpust;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM dinas_arsip_dan_perpust;
 DROP VIEW IF EXISTS view_persediaan_barang_dinas_dukcatpil CASCADE;
 
 CREATE VIEW view_persediaan_barang_dinas_dukcatpil AS
@@ -2206,6 +2260,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_dinas_dukcatpil TO dinas_dukcatpil;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_dinas_dukcatpil FROM dinas_dukcatpil;
+
+GRANT ALL PRIVILEGES ON gudang TO dinas_dukcatpil;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM dinas_dukcatpil;
 DROP VIEW IF EXISTS view_persediaan_barang_dinas_kesehatan CASCADE;
 
 CREATE VIEW view_persediaan_barang_dinas_kesehatan AS
@@ -2321,6 +2378,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_dinas_kesehatan TO dinas_kesehatan;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_dinas_kesehatan FROM dinas_kesehatan;
+
+GRANT ALL PRIVILEGES ON gudang TO dinas_kesehatan;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM dinas_kesehatan;
 DROP VIEW IF EXISTS view_persediaan_barang_dinas_kominfo CASCADE;
 
 CREATE VIEW view_persediaan_barang_dinas_kominfo AS
@@ -2436,6 +2496,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_dinas_kominfo TO dinas_kominfo;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_dinas_kominfo FROM dinas_kominfo;
+
+GRANT ALL PRIVILEGES ON gudang TO dinas_kominfo;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM dinas_kominfo;
 DROP VIEW IF EXISTS view_persediaan_barang_dinas_kppp CASCADE;
 
 CREATE VIEW view_persediaan_barang_dinas_kppp AS
@@ -2551,6 +2614,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_dinas_kppp TO dinas_kppp;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_dinas_kppp FROM dinas_kppp;
+
+GRANT ALL PRIVILEGES ON gudang TO dinas_kppp;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM dinas_kppp;
 DROP VIEW IF EXISTS view_persediaan_barang_dinas_kukmtk CASCADE;
 
 CREATE VIEW view_persediaan_barang_dinas_kukmtk AS
@@ -2666,6 +2732,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_dinas_kukmtk TO dinas_kukmtk;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_dinas_kukmtk FROM dinas_kukmtk;
+
+GRANT ALL PRIVILEGES ON gudang TO dinas_kukmtk;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM dinas_kukmtk;
 DROP VIEW IF EXISTS view_persediaan_barang_dinas_lingkungan_hidup CASCADE;
 
 CREATE VIEW view_persediaan_barang_dinas_lingkungan_hidup AS
@@ -2781,6 +2850,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_dinas_lingkungan_hidup TO dinas_lingkungan_hidup;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_dinas_lingkungan_hidup FROM dinas_lingkungan_hidup;
+
+GRANT ALL PRIVILEGES ON gudang TO dinas_lingkungan_hidup;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM dinas_lingkungan_hidup;
 DROP VIEW IF EXISTS view_persediaan_barang_dinas_pendidikan CASCADE;
 
 CREATE VIEW view_persediaan_barang_dinas_pendidikan AS
@@ -2896,6 +2968,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_dinas_pendidikan TO dinas_pendidikan;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_dinas_pendidikan FROM dinas_pendidikan;
+
+GRANT ALL PRIVILEGES ON gudang TO dinas_pendidikan;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM dinas_pendidikan;
 DROP VIEW IF EXISTS view_persediaan_barang_dinas_perdagangan CASCADE;
 
 CREATE VIEW view_persediaan_barang_dinas_perdagangan AS
@@ -3011,6 +3086,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_dinas_perdagangan TO dinas_perdagangan;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_dinas_perdagangan FROM dinas_perdagangan;
+
+GRANT ALL PRIVILEGES ON gudang TO dinas_perdagangan;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM dinas_perdagangan;
 DROP VIEW IF EXISTS view_persediaan_barang_dinas_perhubungan CASCADE;
 
 CREATE VIEW view_persediaan_barang_dinas_perhubungan AS
@@ -3126,6 +3204,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_dinas_perhubungan TO dinas_perhubungan;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_dinas_perhubungan FROM dinas_perhubungan;
+
+GRANT ALL PRIVILEGES ON gudang TO dinas_perhubungan;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM dinas_perhubungan;
 DROP VIEW IF EXISTS view_persediaan_barang_dinas_perkim CASCADE;
 
 CREATE VIEW view_persediaan_barang_dinas_perkim AS
@@ -3241,6 +3322,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_dinas_perkim TO dinas_perkim;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_dinas_perkim FROM dinas_perkim;
+
+GRANT ALL PRIVILEGES ON gudang TO dinas_perkim;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM dinas_perkim;
 DROP VIEW IF EXISTS view_persediaan_barang_dinas_pokp CASCADE;
 
 CREATE VIEW view_persediaan_barang_dinas_pokp AS
@@ -3356,6 +3440,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_dinas_pokp TO dinas_pokp;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_dinas_pokp FROM dinas_pokp;
+
+GRANT ALL PRIVILEGES ON gudang TO dinas_pokp;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM dinas_pokp;
 DROP VIEW IF EXISTS view_persediaan_barang_dinas_sosial CASCADE;
 
 CREATE VIEW view_persediaan_barang_dinas_sosial AS
@@ -3471,6 +3558,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_dinas_sosial TO dinas_sosial;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_dinas_sosial FROM dinas_sosial;
+
+GRANT ALL PRIVILEGES ON gudang TO dinas_sosial;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM dinas_sosial;
 DROP VIEW IF EXISTS view_persediaan_barang_dpmptsp CASCADE;
 
 CREATE VIEW view_persediaan_barang_dpmptsp AS
@@ -3586,6 +3676,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_dpmptsp TO dpmptsp;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_dpmptsp FROM dpmptsp;
+
+GRANT ALL PRIVILEGES ON gudang TO dpmptsp;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM dpmptsp;
 DROP VIEW IF EXISTS view_persediaan_barang_dppkbpmppa CASCADE;
 
 CREATE VIEW view_persediaan_barang_dppkbpmppa AS
@@ -3701,6 +3794,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_dppkbpmppa TO dppkbpmppa;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_dppkbpmppa FROM dppkbpmppa;
+
+GRANT ALL PRIVILEGES ON gudang TO dppkbpmppa;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM dppkbpmppa;
 DROP VIEW IF EXISTS view_persediaan_barang_dprd CASCADE;
 
 CREATE VIEW view_persediaan_barang_dprd AS
@@ -3816,6 +3912,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_dprd TO dprd;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_dprd FROM dprd;
+
+GRANT ALL PRIVILEGES ON gudang TO dprd;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM dprd;
 DROP VIEW IF EXISTS view_persediaan_barang_dpupr CASCADE;
 
 CREATE VIEW view_persediaan_barang_dpupr AS
@@ -3931,6 +4030,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_dpupr TO dpupr;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_dpupr FROM dpupr;
+
+GRANT ALL PRIVILEGES ON gudang TO dpupr;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM dpupr;
 DROP VIEW IF EXISTS view_persediaan_barang_inspektorat CASCADE;
 
 CREATE VIEW view_persediaan_barang_inspektorat AS
@@ -4046,6 +4148,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_inspektorat TO inspektorat;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_inspektorat FROM inspektorat;
+
+GRANT ALL PRIVILEGES ON gudang TO inspektorat;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM inspektorat;
 DROP VIEW IF EXISTS view_persediaan_barang_kec_banjarbaru_selatan CASCADE;
 
 CREATE VIEW view_persediaan_barang_kec_banjarbaru_selatan AS
@@ -4161,6 +4266,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_kec_banjarbaru_selatan TO kec_banjarbaru_selatan;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_kec_banjarbaru_selatan FROM kec_banjarbaru_selatan;
+
+GRANT ALL PRIVILEGES ON gudang TO kec_banjarbaru_selatan;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM kec_banjarbaru_selatan;
 DROP VIEW IF EXISTS view_persediaan_barang_kec_banjarbaru_utara CASCADE;
 
 CREATE VIEW view_persediaan_barang_kec_banjarbaru_utara AS
@@ -4276,6 +4384,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_kec_banjarbaru_utara TO kec_banjarbaru_utara;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_kec_banjarbaru_utara FROM kec_banjarbaru_utara;
+
+GRANT ALL PRIVILEGES ON gudang TO kec_banjarbaru_utara;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM kec_banjarbaru_utara;
 DROP VIEW IF EXISTS view_persediaan_barang_kec_cempaka CASCADE;
 
 CREATE VIEW view_persediaan_barang_kec_cempaka AS
@@ -4391,6 +4502,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_kec_cempaka TO kec_cempaka;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_kec_cempaka FROM kec_cempaka;
+
+GRANT ALL PRIVILEGES ON gudang TO kec_cempaka;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM kec_cempaka;
 DROP VIEW IF EXISTS view_persediaan_barang_kec_landasan_ulin CASCADE;
 
 CREATE VIEW view_persediaan_barang_kec_landasan_ulin AS
@@ -4506,6 +4620,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_kec_landasan_ulin TO kec_landasan_ulin;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_kec_landasan_ulin FROM kec_landasan_ulin;
+
+GRANT ALL PRIVILEGES ON gudang TO kec_landasan_ulin;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM kec_landasan_ulin;
 DROP VIEW IF EXISTS view_persediaan_barang_kec_liang_anggang CASCADE;
 
 CREATE VIEW view_persediaan_barang_kec_liang_anggang AS
@@ -4621,6 +4738,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_kec_liang_anggang TO kec_liang_anggang;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_kec_liang_anggang FROM kec_liang_anggang;
+
+GRANT ALL PRIVILEGES ON gudang TO kec_liang_anggang;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM kec_liang_anggang;
 DROP VIEW IF EXISTS view_persediaan_barang_kel_bangkal CASCADE;
 
 CREATE VIEW view_persediaan_barang_kel_bangkal AS
@@ -4736,6 +4856,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_kel_bangkal TO kel_bangkal;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_kel_bangkal FROM kel_bangkal;
+
+GRANT ALL PRIVILEGES ON gudang TO kel_bangkal;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM kel_bangkal;
 DROP VIEW IF EXISTS view_persediaan_barang_kel_cempaka CASCADE;
 
 CREATE VIEW view_persediaan_barang_kel_cempaka AS
@@ -4851,6 +4974,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_kel_cempaka TO kel_cempaka;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_kel_cempaka FROM kel_cempaka;
+
+GRANT ALL PRIVILEGES ON gudang TO kel_cempaka;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM kel_cempaka;
 DROP VIEW IF EXISTS view_persediaan_barang_kel_guntung_manggis CASCADE;
 
 CREATE VIEW view_persediaan_barang_kel_guntung_manggis AS
@@ -4966,6 +5092,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_kel_guntung_manggis TO kel_guntung_manggis;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_kel_guntung_manggis FROM kel_guntung_manggis;
+
+GRANT ALL PRIVILEGES ON gudang TO kel_guntung_manggis;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM kel_guntung_manggis;
 DROP VIEW IF EXISTS view_persediaan_barang_kel_guntung_paikat CASCADE;
 
 CREATE VIEW view_persediaan_barang_kel_guntung_paikat AS
@@ -5081,6 +5210,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_kel_guntung_paikat TO kel_guntung_paikat;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_kel_guntung_paikat FROM kel_guntung_paikat;
+
+GRANT ALL PRIVILEGES ON gudang TO kel_guntung_paikat;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM kel_guntung_paikat;
 DROP VIEW IF EXISTS view_persediaan_barang_kel_guntung_payung CASCADE;
 
 CREATE VIEW view_persediaan_barang_kel_guntung_payung AS
@@ -5196,6 +5328,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_kel_guntung_payung TO kel_guntung_payung;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_kel_guntung_payung FROM kel_guntung_payung;
+
+GRANT ALL PRIVILEGES ON gudang TO kel_guntung_payung;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM kel_guntung_payung;
 DROP VIEW IF EXISTS view_persediaan_barang_kel_kemuning CASCADE;
 
 CREATE VIEW view_persediaan_barang_kel_kemuning AS
@@ -5311,6 +5446,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_kel_kemuning TO kel_kemuning;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_kel_kemuning FROM kel_kemuning;
+
+GRANT ALL PRIVILEGES ON gudang TO kel_kemuning;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM kel_kemuning;
 DROP VIEW IF EXISTS view_persediaan_barang_kel_komet CASCADE;
 
 CREATE VIEW view_persediaan_barang_kel_komet AS
@@ -5426,6 +5564,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_kel_komet TO kel_komet;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_kel_komet FROM kel_komet;
+
+GRANT ALL PRIVILEGES ON gudang TO kel_komet;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM kel_komet;
 DROP VIEW IF EXISTS view_persediaan_barang_kel_landasan_ulin_barat CASCADE;
 
 CREATE VIEW view_persediaan_barang_kel_landasan_ulin_barat AS
@@ -5541,6 +5682,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_kel_landasan_ulin_barat TO kel_landasan_ulin_barat;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_kel_landasan_ulin_barat FROM kel_landasan_ulin_barat;
+
+GRANT ALL PRIVILEGES ON gudang TO kel_landasan_ulin_barat;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM kel_landasan_ulin_barat;
 DROP VIEW IF EXISTS view_persediaan_barang_kel_landasan_ulin_selatan CASCADE;
 
 CREATE VIEW view_persediaan_barang_kel_landasan_ulin_selatan AS
@@ -5656,6 +5800,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_kel_landasan_ulin_selatan TO kel_landasan_ulin_selatan;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_kel_landasan_ulin_selatan FROM kel_landasan_ulin_selatan;
+
+GRANT ALL PRIVILEGES ON gudang TO kel_landasan_ulin_selatan;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM kel_landasan_ulin_selatan;
 DROP VIEW IF EXISTS view_persediaan_barang_kel_landasan_ulin_tengah CASCADE;
 
 CREATE VIEW view_persediaan_barang_kel_landasan_ulin_tengah AS
@@ -5771,6 +5918,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_kel_landasan_ulin_tengah TO kel_landasan_ulin_tengah;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_kel_landasan_ulin_tengah FROM kel_landasan_ulin_tengah;
+
+GRANT ALL PRIVILEGES ON gudang TO kel_landasan_ulin_tengah;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM kel_landasan_ulin_tengah;
 DROP VIEW IF EXISTS view_persediaan_barang_kel_landasan_ulin_timur CASCADE;
 
 CREATE VIEW view_persediaan_barang_kel_landasan_ulin_timur AS
@@ -5886,6 +6036,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_kel_landasan_ulin_timur TO kel_landasan_ulin_timur;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_kel_landasan_ulin_timur FROM kel_landasan_ulin_timur;
+
+GRANT ALL PRIVILEGES ON gudang TO kel_landasan_ulin_timur;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM kel_landasan_ulin_timur;
 DROP VIEW IF EXISTS view_persediaan_barang_kel_landasan_ulin_utara CASCADE;
 
 CREATE VIEW view_persediaan_barang_kel_landasan_ulin_utara AS
@@ -6001,6 +6154,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_kel_landasan_ulin_utara TO kel_landasan_ulin_utara;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_kel_landasan_ulin_utara FROM kel_landasan_ulin_utara;
+
+GRANT ALL PRIVILEGES ON gudang TO kel_landasan_ulin_utara;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM kel_landasan_ulin_utara;
 DROP VIEW IF EXISTS view_persediaan_barang_kel_loktabat_selatan CASCADE;
 
 CREATE VIEW view_persediaan_barang_kel_loktabat_selatan AS
@@ -6116,6 +6272,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_kel_loktabat_selatan TO kel_loktabat_selatan;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_kel_loktabat_selatan FROM kel_loktabat_selatan;
+
+GRANT ALL PRIVILEGES ON gudang TO kel_loktabat_selatan;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM kel_loktabat_selatan;
 DROP VIEW IF EXISTS view_persediaan_barang_kel_loktabat_utara CASCADE;
 
 CREATE VIEW view_persediaan_barang_kel_loktabat_utara AS
@@ -6231,6 +6390,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_kel_loktabat_utara TO kel_loktabat_utara;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_kel_loktabat_utara FROM kel_loktabat_utara;
+
+GRANT ALL PRIVILEGES ON gudang TO kel_loktabat_utara;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM kel_loktabat_utara;
 DROP VIEW IF EXISTS view_persediaan_barang_kel_mentaos CASCADE;
 
 CREATE VIEW view_persediaan_barang_kel_mentaos AS
@@ -6346,6 +6508,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_kel_mentaos TO kel_mentaos;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_kel_mentaos FROM kel_mentaos;
+
+GRANT ALL PRIVILEGES ON gudang TO kel_mentaos;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM kel_mentaos;
 DROP VIEW IF EXISTS view_persediaan_barang_kel_palam CASCADE;
 
 CREATE VIEW view_persediaan_barang_kel_palam AS
@@ -6461,6 +6626,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_kel_palam TO kel_palam;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_kel_palam FROM kel_palam;
+
+GRANT ALL PRIVILEGES ON gudang TO kel_palam;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM kel_palam;
 DROP VIEW IF EXISTS view_persediaan_barang_kel_sungai_besar CASCADE;
 
 CREATE VIEW view_persediaan_barang_kel_sungai_besar AS
@@ -6576,6 +6744,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_kel_sungai_besar TO kel_sungai_besar;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_kel_sungai_besar FROM kel_sungai_besar;
+
+GRANT ALL PRIVILEGES ON gudang TO kel_sungai_besar;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM kel_sungai_besar;
 DROP VIEW IF EXISTS view_persediaan_barang_kel_sungai_tiung CASCADE;
 
 CREATE VIEW view_persediaan_barang_kel_sungai_tiung AS
@@ -6691,6 +6862,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_kel_sungai_tiung TO kel_sungai_tiung;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_kel_sungai_tiung FROM kel_sungai_tiung;
+
+GRANT ALL PRIVILEGES ON gudang TO kel_sungai_tiung;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM kel_sungai_tiung;
 DROP VIEW IF EXISTS view_persediaan_barang_kel_sungai_ulin CASCADE;
 
 CREATE VIEW view_persediaan_barang_kel_sungai_ulin AS
@@ -6806,6 +6980,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_kel_sungai_ulin TO kel_sungai_ulin;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_kel_sungai_ulin FROM kel_sungai_ulin;
+
+GRANT ALL PRIVILEGES ON gudang TO kel_sungai_ulin;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM kel_sungai_ulin;
 DROP VIEW IF EXISTS view_persediaan_barang_kel_syamsudin_noor CASCADE;
 
 CREATE VIEW view_persediaan_barang_kel_syamsudin_noor AS
@@ -6921,6 +7098,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_kel_syamsudin_noor TO kel_syamsudin_noor;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_kel_syamsudin_noor FROM kel_syamsudin_noor;
+
+GRANT ALL PRIVILEGES ON gudang TO kel_syamsudin_noor;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM kel_syamsudin_noor;
 DROP VIEW IF EXISTS view_persediaan_barang_kepala_daerah_dan_wakil CASCADE;
 
 CREATE VIEW view_persediaan_barang_kepala_daerah_dan_wakil AS
@@ -7036,6 +7216,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_kepala_daerah_dan_wakil TO kepala_daerah_dan_wakil;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_kepala_daerah_dan_wakil FROM kepala_daerah_dan_wakil;
+
+GRANT ALL PRIVILEGES ON gudang TO kepala_daerah_dan_wakil;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM kepala_daerah_dan_wakil;
 DROP VIEW IF EXISTS view_persediaan_barang_pkm_banjarbaru_selatan CASCADE;
 
 CREATE VIEW view_persediaan_barang_pkm_banjarbaru_selatan AS
@@ -7151,6 +7334,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_pkm_banjarbaru_selatan TO pkm_banjarbaru_selatan;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_pkm_banjarbaru_selatan FROM pkm_banjarbaru_selatan;
+
+GRANT ALL PRIVILEGES ON gudang TO pkm_banjarbaru_selatan;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM pkm_banjarbaru_selatan;
 DROP VIEW IF EXISTS view_persediaan_barang_pkm_banjarbaru_utara CASCADE;
 
 CREATE VIEW view_persediaan_barang_pkm_banjarbaru_utara AS
@@ -7266,6 +7452,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_pkm_banjarbaru_utara TO pkm_banjarbaru_utara;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_pkm_banjarbaru_utara FROM pkm_banjarbaru_utara;
+
+GRANT ALL PRIVILEGES ON gudang TO pkm_banjarbaru_utara;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM pkm_banjarbaru_utara;
 DROP VIEW IF EXISTS view_persediaan_barang_pkm_guntung_manggis CASCADE;
 
 CREATE VIEW view_persediaan_barang_pkm_guntung_manggis AS
@@ -7381,6 +7570,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_pkm_guntung_manggis TO pkm_guntung_manggis;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_pkm_guntung_manggis FROM pkm_guntung_manggis;
+
+GRANT ALL PRIVILEGES ON gudang TO pkm_guntung_manggis;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM pkm_guntung_manggis;
 DROP VIEW IF EXISTS view_persediaan_barang_pkm_guntung_payung CASCADE;
 
 CREATE VIEW view_persediaan_barang_pkm_guntung_payung AS
@@ -7496,6 +7688,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_pkm_guntung_payung TO pkm_guntung_payung;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_pkm_guntung_payung FROM pkm_guntung_payung;
+
+GRANT ALL PRIVILEGES ON gudang TO pkm_guntung_payung;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM pkm_guntung_payung;
 DROP VIEW IF EXISTS view_persediaan_barang_pkm_landasan_ulin CASCADE;
 
 CREATE VIEW view_persediaan_barang_pkm_landasan_ulin AS
@@ -7611,6 +7806,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_pkm_landasan_ulin TO pkm_landasan_ulin;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_pkm_landasan_ulin FROM pkm_landasan_ulin;
+
+GRANT ALL PRIVILEGES ON gudang TO pkm_landasan_ulin;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM pkm_landasan_ulin;
 DROP VIEW IF EXISTS view_persediaan_barang_pkm_landasan_ulin_timur CASCADE;
 
 CREATE VIEW view_persediaan_barang_pkm_landasan_ulin_timur AS
@@ -7726,6 +7924,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_pkm_landasan_ulin_timur TO pkm_landasan_ulin_timur;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_pkm_landasan_ulin_timur FROM pkm_landasan_ulin_timur;
+
+GRANT ALL PRIVILEGES ON gudang TO pkm_landasan_ulin_timur;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM pkm_landasan_ulin_timur;
 DROP VIEW IF EXISTS view_persediaan_barang_pkm_liang_anggang CASCADE;
 
 CREATE VIEW view_persediaan_barang_pkm_liang_anggang AS
@@ -7841,6 +8042,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_pkm_liang_anggang TO pkm_liang_anggang;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_pkm_liang_anggang FROM pkm_liang_anggang;
+
+GRANT ALL PRIVILEGES ON gudang TO pkm_liang_anggang;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM pkm_liang_anggang;
 DROP VIEW IF EXISTS view_persediaan_barang_pkm_rawat_inap_cempaka CASCADE;
 
 CREATE VIEW view_persediaan_barang_pkm_rawat_inap_cempaka AS
@@ -7956,6 +8160,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_pkm_rawat_inap_cempaka TO pkm_rawat_inap_cempaka;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_pkm_rawat_inap_cempaka FROM pkm_rawat_inap_cempaka;
+
+GRANT ALL PRIVILEGES ON gudang TO pkm_rawat_inap_cempaka;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM pkm_rawat_inap_cempaka;
 DROP VIEW IF EXISTS view_persediaan_barang_pkm_sungai_besar CASCADE;
 
 CREATE VIEW view_persediaan_barang_pkm_sungai_besar AS
@@ -8071,6 +8278,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_pkm_sungai_besar TO pkm_sungai_besar;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_pkm_sungai_besar FROM pkm_sungai_besar;
+
+GRANT ALL PRIVILEGES ON gudang TO pkm_sungai_besar;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM pkm_sungai_besar;
 DROP VIEW IF EXISTS view_persediaan_barang_pkm_sungai_ulin CASCADE;
 
 CREATE VIEW view_persediaan_barang_pkm_sungai_ulin AS
@@ -8186,6 +8396,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_pkm_sungai_ulin TO pkm_sungai_ulin;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_pkm_sungai_ulin FROM pkm_sungai_ulin;
+
+GRANT ALL PRIVILEGES ON gudang TO pkm_sungai_ulin;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM pkm_sungai_ulin;
 DROP VIEW IF EXISTS view_persediaan_barang_rsd_idaman_blud CASCADE;
 
 CREATE VIEW view_persediaan_barang_rsd_idaman_blud AS
@@ -8301,6 +8514,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_rsd_idaman_blud TO rsd_idaman_blud;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_rsd_idaman_blud FROM rsd_idaman_blud;
+
+GRANT ALL PRIVILEGES ON gudang TO rsd_idaman_blud;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM rsd_idaman_blud;
 DROP VIEW IF EXISTS view_persediaan_barang_rsd_idaman_skpd CASCADE;
 
 CREATE VIEW view_persediaan_barang_rsd_idaman_skpd AS
@@ -8416,6 +8632,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_rsd_idaman_skpd TO rsd_idaman_skpd;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_rsd_idaman_skpd FROM rsd_idaman_skpd;
+
+GRANT ALL PRIVILEGES ON gudang TO rsd_idaman_skpd;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM rsd_idaman_skpd;
 DROP VIEW IF EXISTS view_persediaan_barang_satpolpp CASCADE;
 
 CREATE VIEW view_persediaan_barang_satpolpp AS
@@ -8531,6 +8750,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_satpolpp TO satpolpp;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_satpolpp FROM satpolpp;
+
+GRANT ALL PRIVILEGES ON gudang TO satpolpp;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM satpolpp;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_bangkal CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_1_bangkal AS
@@ -8646,6 +8868,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_1_bangkal TO sdn_1_bangkal;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_1_bangkal FROM sdn_1_bangkal;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_1_bangkal;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_1_bangkal;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_cempaka CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_1_cempaka AS
@@ -8761,6 +8986,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_1_cempaka TO sdn_1_cempaka;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_1_cempaka FROM sdn_1_cempaka;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_1_cempaka;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_1_cempaka;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_guntung_manggis CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_1_guntung_manggis AS
@@ -8876,6 +9104,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_1_guntung_manggis TO sdn_1_guntung_manggis;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_1_guntung_manggis FROM sdn_1_guntung_manggis;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_1_guntung_manggis;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_1_guntung_manggis;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_guntung_paikat CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_1_guntung_paikat AS
@@ -8991,6 +9222,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_1_guntung_paikat TO sdn_1_guntung_paikat;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_1_guntung_paikat FROM sdn_1_guntung_paikat;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_1_guntung_paikat;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_1_guntung_paikat;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_guntung_payung CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_1_guntung_payung AS
@@ -9106,6 +9340,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_1_guntung_payung TO sdn_1_guntung_payung;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_1_guntung_payung FROM sdn_1_guntung_payung;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_1_guntung_payung;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_1_guntung_payung;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_kemuning CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_1_kemuning AS
@@ -9221,6 +9458,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_1_kemuning TO sdn_1_kemuning;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_1_kemuning FROM sdn_1_kemuning;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_1_kemuning;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_1_kemuning;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_komet CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_1_komet AS
@@ -9336,6 +9576,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_1_komet TO sdn_1_komet;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_1_komet FROM sdn_1_komet;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_1_komet;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_1_komet;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_landasan_ulin_barat CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_1_landasan_ulin_barat AS
@@ -9451,6 +9694,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_1_landasan_ulin_barat TO sdn_1_landasan_ulin_barat;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_1_landasan_ulin_barat FROM sdn_1_landasan_ulin_barat;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_1_landasan_ulin_barat;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_1_landasan_ulin_barat;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_landasan_ulin_selatan CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_1_landasan_ulin_selatan AS
@@ -9566,6 +9812,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_1_landasan_ulin_selatan TO sdn_1_landasan_ulin_selatan;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_1_landasan_ulin_selatan FROM sdn_1_landasan_ulin_selatan;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_1_landasan_ulin_selatan;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_1_landasan_ulin_selatan;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_landasan_ulin_tengah CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_1_landasan_ulin_tengah AS
@@ -9681,6 +9930,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_1_landasan_ulin_tengah TO sdn_1_landasan_ulin_tengah;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_1_landasan_ulin_tengah FROM sdn_1_landasan_ulin_tengah;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_1_landasan_ulin_tengah;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_1_landasan_ulin_tengah;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_landasan_ulin_timur CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_1_landasan_ulin_timur AS
@@ -9796,6 +10048,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_1_landasan_ulin_timur TO sdn_1_landasan_ulin_timur;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_1_landasan_ulin_timur FROM sdn_1_landasan_ulin_timur;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_1_landasan_ulin_timur;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_1_landasan_ulin_timur;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_landasan_ulin_utara CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_1_landasan_ulin_utara AS
@@ -9911,6 +10166,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_1_landasan_ulin_utara TO sdn_1_landasan_ulin_utara;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_1_landasan_ulin_utara FROM sdn_1_landasan_ulin_utara;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_1_landasan_ulin_utara;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_1_landasan_ulin_utara;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_loktabat_selatan CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_1_loktabat_selatan AS
@@ -10026,6 +10284,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_1_loktabat_selatan TO sdn_1_loktabat_selatan;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_1_loktabat_selatan FROM sdn_1_loktabat_selatan;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_1_loktabat_selatan;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_1_loktabat_selatan;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_loktabat_utara CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_1_loktabat_utara AS
@@ -10141,6 +10402,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_1_loktabat_utara TO sdn_1_loktabat_utara;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_1_loktabat_utara FROM sdn_1_loktabat_utara;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_1_loktabat_utara;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_1_loktabat_utara;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_mentaos CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_1_mentaos AS
@@ -10256,6 +10520,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_1_mentaos TO sdn_1_mentaos;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_1_mentaos FROM sdn_1_mentaos;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_1_mentaos;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_1_mentaos;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_palam CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_1_palam AS
@@ -10371,6 +10638,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_1_palam TO sdn_1_palam;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_1_palam FROM sdn_1_palam;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_1_palam;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_1_palam;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_sungai_besar CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_1_sungai_besar AS
@@ -10486,6 +10756,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_1_sungai_besar TO sdn_1_sungai_besar;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_1_sungai_besar FROM sdn_1_sungai_besar;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_1_sungai_besar;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_1_sungai_besar;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_sungai_tiung CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_1_sungai_tiung AS
@@ -10601,6 +10874,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_1_sungai_tiung TO sdn_1_sungai_tiung;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_1_sungai_tiung FROM sdn_1_sungai_tiung;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_1_sungai_tiung;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_1_sungai_tiung;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_sungai_ulin CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_1_sungai_ulin AS
@@ -10716,6 +10992,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_1_sungai_ulin TO sdn_1_sungai_ulin;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_1_sungai_ulin FROM sdn_1_sungai_ulin;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_1_sungai_ulin;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_1_sungai_ulin;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_1_syamsudin_noor CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_1_syamsudin_noor AS
@@ -10831,6 +11110,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_1_syamsudin_noor TO sdn_1_syamsudin_noor;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_1_syamsudin_noor FROM sdn_1_syamsudin_noor;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_1_syamsudin_noor;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_1_syamsudin_noor;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_bangkal CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_2_bangkal AS
@@ -10946,6 +11228,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_2_bangkal TO sdn_2_bangkal;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_2_bangkal FROM sdn_2_bangkal;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_2_bangkal;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_2_bangkal;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_cempaka CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_2_cempaka AS
@@ -11061,6 +11346,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_2_cempaka TO sdn_2_cempaka;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_2_cempaka FROM sdn_2_cempaka;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_2_cempaka;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_2_cempaka;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_guntung_manggis CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_2_guntung_manggis AS
@@ -11176,6 +11464,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_2_guntung_manggis TO sdn_2_guntung_manggis;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_2_guntung_manggis FROM sdn_2_guntung_manggis;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_2_guntung_manggis;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_2_guntung_manggis;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_guntung_paikat CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_2_guntung_paikat AS
@@ -11291,6 +11582,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_2_guntung_paikat TO sdn_2_guntung_paikat;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_2_guntung_paikat FROM sdn_2_guntung_paikat;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_2_guntung_paikat;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_2_guntung_paikat;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_guntung_payung CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_2_guntung_payung AS
@@ -11406,6 +11700,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_2_guntung_payung TO sdn_2_guntung_payung;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_2_guntung_payung FROM sdn_2_guntung_payung;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_2_guntung_payung;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_2_guntung_payung;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_kemuning CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_2_kemuning AS
@@ -11521,6 +11818,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_2_kemuning TO sdn_2_kemuning;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_2_kemuning FROM sdn_2_kemuning;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_2_kemuning;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_2_kemuning;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_komet CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_2_komet AS
@@ -11636,6 +11936,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_2_komet TO sdn_2_komet;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_2_komet FROM sdn_2_komet;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_2_komet;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_2_komet;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_landasan_ulin_barat CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_2_landasan_ulin_barat AS
@@ -11751,6 +12054,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_2_landasan_ulin_barat TO sdn_2_landasan_ulin_barat;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_2_landasan_ulin_barat FROM sdn_2_landasan_ulin_barat;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_2_landasan_ulin_barat;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_2_landasan_ulin_barat;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_landasan_ulin_timur CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_2_landasan_ulin_timur AS
@@ -11866,6 +12172,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_2_landasan_ulin_timur TO sdn_2_landasan_ulin_timur;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_2_landasan_ulin_timur FROM sdn_2_landasan_ulin_timur;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_2_landasan_ulin_timur;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_2_landasan_ulin_timur;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_landasan_ulin_utara CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_2_landasan_ulin_utara AS
@@ -11981,6 +12290,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_2_landasan_ulin_utara TO sdn_2_landasan_ulin_utara;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_2_landasan_ulin_utara FROM sdn_2_landasan_ulin_utara;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_2_landasan_ulin_utara;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_2_landasan_ulin_utara;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_loktabat_selatan CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_2_loktabat_selatan AS
@@ -12096,6 +12408,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_2_loktabat_selatan TO sdn_2_loktabat_selatan;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_2_loktabat_selatan FROM sdn_2_loktabat_selatan;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_2_loktabat_selatan;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_2_loktabat_selatan;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_loktabat_utara CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_2_loktabat_utara AS
@@ -12211,6 +12526,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_2_loktabat_utara TO sdn_2_loktabat_utara;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_2_loktabat_utara FROM sdn_2_loktabat_utara;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_2_loktabat_utara;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_2_loktabat_utara;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_mentaos CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_2_mentaos AS
@@ -12326,6 +12644,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_2_mentaos TO sdn_2_mentaos;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_2_mentaos FROM sdn_2_mentaos;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_2_mentaos;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_2_mentaos;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_palam CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_2_palam AS
@@ -12441,6 +12762,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_2_palam TO sdn_2_palam;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_2_palam FROM sdn_2_palam;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_2_palam;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_2_palam;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_sungai_besar CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_2_sungai_besar AS
@@ -12556,6 +12880,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_2_sungai_besar TO sdn_2_sungai_besar;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_2_sungai_besar FROM sdn_2_sungai_besar;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_2_sungai_besar;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_2_sungai_besar;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_sungai_tiung CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_2_sungai_tiung AS
@@ -12671,6 +12998,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_2_sungai_tiung TO sdn_2_sungai_tiung;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_2_sungai_tiung FROM sdn_2_sungai_tiung;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_2_sungai_tiung;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_2_sungai_tiung;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_sungai_ulin CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_2_sungai_ulin AS
@@ -12786,6 +13116,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_2_sungai_ulin TO sdn_2_sungai_ulin;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_2_sungai_ulin FROM sdn_2_sungai_ulin;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_2_sungai_ulin;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_2_sungai_ulin;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_2_syamsudin_noor CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_2_syamsudin_noor AS
@@ -12901,6 +13234,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_2_syamsudin_noor TO sdn_2_syamsudin_noor;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_2_syamsudin_noor FROM sdn_2_syamsudin_noor;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_2_syamsudin_noor;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_2_syamsudin_noor;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_3_bangkal CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_3_bangkal AS
@@ -13016,6 +13352,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_3_bangkal TO sdn_3_bangkal;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_3_bangkal FROM sdn_3_bangkal;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_3_bangkal;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_3_bangkal;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_3_cempaka CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_3_cempaka AS
@@ -13131,6 +13470,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_3_cempaka TO sdn_3_cempaka;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_3_cempaka FROM sdn_3_cempaka;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_3_cempaka;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_3_cempaka;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_3_guntung_manggis CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_3_guntung_manggis AS
@@ -13246,6 +13588,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_3_guntung_manggis TO sdn_3_guntung_manggis;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_3_guntung_manggis FROM sdn_3_guntung_manggis;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_3_guntung_manggis;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_3_guntung_manggis;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_3_guntung_payung CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_3_guntung_payung AS
@@ -13361,6 +13706,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_3_guntung_payung TO sdn_3_guntung_payung;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_3_guntung_payung FROM sdn_3_guntung_payung;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_3_guntung_payung;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_3_guntung_payung;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_3_kemuning CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_3_kemuning AS
@@ -13476,6 +13824,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_3_kemuning TO sdn_3_kemuning;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_3_kemuning FROM sdn_3_kemuning;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_3_kemuning;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_3_kemuning;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_3_komet CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_3_komet AS
@@ -13591,6 +13942,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_3_komet TO sdn_3_komet;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_3_komet FROM sdn_3_komet;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_3_komet;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_3_komet;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_3_landasan_ulin_timur CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_3_landasan_ulin_timur AS
@@ -13706,6 +14060,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_3_landasan_ulin_timur TO sdn_3_landasan_ulin_timur;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_3_landasan_ulin_timur FROM sdn_3_landasan_ulin_timur;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_3_landasan_ulin_timur;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_3_landasan_ulin_timur;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_3_loktabat_utara CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_3_loktabat_utara AS
@@ -13821,6 +14178,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_3_loktabat_utara TO sdn_3_loktabat_utara;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_3_loktabat_utara FROM sdn_3_loktabat_utara;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_3_loktabat_utara;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_3_loktabat_utara;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_3_palam CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_3_palam AS
@@ -13936,6 +14296,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_3_palam TO sdn_3_palam;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_3_palam FROM sdn_3_palam;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_3_palam;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_3_palam;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_3_sungai_besar CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_3_sungai_besar AS
@@ -14051,6 +14414,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_3_sungai_besar TO sdn_3_sungai_besar;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_3_sungai_besar FROM sdn_3_sungai_besar;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_3_sungai_besar;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_3_sungai_besar;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_3_sungai_tiung CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_3_sungai_tiung AS
@@ -14166,6 +14532,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_3_sungai_tiung TO sdn_3_sungai_tiung;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_3_sungai_tiung FROM sdn_3_sungai_tiung;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_3_sungai_tiung;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_3_sungai_tiung;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_3_sungai_ulin CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_3_sungai_ulin AS
@@ -14281,6 +14650,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_3_sungai_ulin TO sdn_3_sungai_ulin;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_3_sungai_ulin FROM sdn_3_sungai_ulin;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_3_sungai_ulin;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_3_sungai_ulin;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_3_syamsudin_noor CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_3_syamsudin_noor AS
@@ -14396,6 +14768,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_3_syamsudin_noor TO sdn_3_syamsudin_noor;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_3_syamsudin_noor FROM sdn_3_syamsudin_noor;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_3_syamsudin_noor;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_3_syamsudin_noor;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_4_cempaka CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_4_cempaka AS
@@ -14511,6 +14886,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_4_cempaka TO sdn_4_cempaka;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_4_cempaka FROM sdn_4_cempaka;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_4_cempaka;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_4_cempaka;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_4_guntung_manggis CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_4_guntung_manggis AS
@@ -14626,6 +15004,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_4_guntung_manggis TO sdn_4_guntung_manggis;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_4_guntung_manggis FROM sdn_4_guntung_manggis;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_4_guntung_manggis;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_4_guntung_manggis;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_4_komet CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_4_komet AS
@@ -14741,6 +15122,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_4_komet TO sdn_4_komet;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_4_komet FROM sdn_4_komet;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_4_komet;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_4_komet;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_4_loktabat_utara CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_4_loktabat_utara AS
@@ -14856,6 +15240,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_4_loktabat_utara TO sdn_4_loktabat_utara;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_4_loktabat_utara FROM sdn_4_loktabat_utara;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_4_loktabat_utara;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_4_loktabat_utara;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_4_sungai_besar CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_4_sungai_besar AS
@@ -14971,6 +15358,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_4_sungai_besar TO sdn_4_sungai_besar;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_4_sungai_besar FROM sdn_4_sungai_besar;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_4_sungai_besar;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_4_sungai_besar;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_4_sungai_ulin CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_4_sungai_ulin AS
@@ -15086,6 +15476,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_4_sungai_ulin TO sdn_4_sungai_ulin;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_4_sungai_ulin FROM sdn_4_sungai_ulin;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_4_sungai_ulin;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_4_sungai_ulin;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_4_syamsudin_noor CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_4_syamsudin_noor AS
@@ -15201,6 +15594,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_4_syamsudin_noor TO sdn_4_syamsudin_noor;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_4_syamsudin_noor FROM sdn_4_syamsudin_noor;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_4_syamsudin_noor;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_4_syamsudin_noor;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_5_cempaka CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_5_cempaka AS
@@ -15316,6 +15712,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_5_cempaka TO sdn_5_cempaka;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_5_cempaka FROM sdn_5_cempaka;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_5_cempaka;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_5_cempaka;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_5_guntung_manggis CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_5_guntung_manggis AS
@@ -15431,6 +15830,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_5_guntung_manggis TO sdn_5_guntung_manggis;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_5_guntung_manggis FROM sdn_5_guntung_manggis;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_5_guntung_manggis;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_5_guntung_manggis;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_5_komet CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_5_komet AS
@@ -15546,6 +15948,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_5_komet TO sdn_5_komet;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_5_komet FROM sdn_5_komet;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_5_komet;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_5_komet;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_5_loktabat_utara CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_5_loktabat_utara AS
@@ -15661,6 +16066,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_5_loktabat_utara TO sdn_5_loktabat_utara;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_5_loktabat_utara FROM sdn_5_loktabat_utara;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_5_loktabat_utara;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_5_loktabat_utara;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_5_sungai_besar CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_5_sungai_besar AS
@@ -15776,6 +16184,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_5_sungai_besar TO sdn_5_sungai_besar;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_5_sungai_besar FROM sdn_5_sungai_besar;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_5_sungai_besar;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_5_sungai_besar;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_5_sungai_ulin CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_5_sungai_ulin AS
@@ -15891,6 +16302,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_5_sungai_ulin TO sdn_5_sungai_ulin;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_5_sungai_ulin FROM sdn_5_sungai_ulin;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_5_sungai_ulin;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_5_sungai_ulin;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_5_syamsudin_noor CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_5_syamsudin_noor AS
@@ -16006,6 +16420,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_5_syamsudin_noor TO sdn_5_syamsudin_noor;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_5_syamsudin_noor FROM sdn_5_syamsudin_noor;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_5_syamsudin_noor;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_5_syamsudin_noor;
 DROP VIEW IF EXISTS view_persediaan_barang_sdn_6_cempaka CASCADE;
 
 CREATE VIEW view_persediaan_barang_sdn_6_cempaka AS
@@ -16121,6 +16538,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sdn_6_cempaka TO sdn_6_cempaka;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sdn_6_cempaka FROM sdn_6_cempaka;
+
+GRANT ALL PRIVILEGES ON gudang TO sdn_6_cempaka;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sdn_6_cempaka;
 DROP VIEW IF EXISTS view_persediaan_barang_sekretariat_daerah CASCADE;
 
 CREATE VIEW view_persediaan_barang_sekretariat_daerah AS
@@ -16236,6 +16656,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sekretariat_daerah TO sekretariat_daerah;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sekretariat_daerah FROM sekretariat_daerah;
+
+GRANT ALL PRIVILEGES ON gudang TO sekretariat_daerah;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sekretariat_daerah;
 DROP VIEW IF EXISTS view_persediaan_barang_sekretariat_dprd CASCADE;
 
 CREATE VIEW view_persediaan_barang_sekretariat_dprd AS
@@ -16351,6 +16774,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_sekretariat_dprd TO sekretariat_dprd;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_sekretariat_dprd FROM sekretariat_dprd;
+
+GRANT ALL PRIVILEGES ON gudang TO sekretariat_dprd;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM sekretariat_dprd;
 DROP VIEW IF EXISTS view_persediaan_barang_smp_negeri_1 CASCADE;
 
 CREATE VIEW view_persediaan_barang_smp_negeri_1 AS
@@ -16466,6 +16892,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_smp_negeri_1 TO smp_negeri_1;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_smp_negeri_1 FROM smp_negeri_1;
+
+GRANT ALL PRIVILEGES ON gudang TO smp_negeri_1;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM smp_negeri_1;
 DROP VIEW IF EXISTS view_persediaan_barang_smp_negeri_10 CASCADE;
 
 CREATE VIEW view_persediaan_barang_smp_negeri_10 AS
@@ -16581,6 +17010,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_smp_negeri_10 TO smp_negeri_10;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_smp_negeri_10 FROM smp_negeri_10;
+
+GRANT ALL PRIVILEGES ON gudang TO smp_negeri_10;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM smp_negeri_10;
 DROP VIEW IF EXISTS view_persediaan_barang_smp_negeri_11 CASCADE;
 
 CREATE VIEW view_persediaan_barang_smp_negeri_11 AS
@@ -16696,6 +17128,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_smp_negeri_11 TO smp_negeri_11;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_smp_negeri_11 FROM smp_negeri_11;
+
+GRANT ALL PRIVILEGES ON gudang TO smp_negeri_11;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM smp_negeri_11;
 DROP VIEW IF EXISTS view_persediaan_barang_smp_negeri_12 CASCADE;
 
 CREATE VIEW view_persediaan_barang_smp_negeri_12 AS
@@ -16811,6 +17246,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_smp_negeri_12 TO smp_negeri_12;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_smp_negeri_12 FROM smp_negeri_12;
+
+GRANT ALL PRIVILEGES ON gudang TO smp_negeri_12;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM smp_negeri_12;
 DROP VIEW IF EXISTS view_persediaan_barang_smp_negeri_13 CASCADE;
 
 CREATE VIEW view_persediaan_barang_smp_negeri_13 AS
@@ -16926,6 +17364,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_smp_negeri_13 TO smp_negeri_13;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_smp_negeri_13 FROM smp_negeri_13;
+
+GRANT ALL PRIVILEGES ON gudang TO smp_negeri_13;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM smp_negeri_13;
 DROP VIEW IF EXISTS view_persediaan_barang_smp_negeri_14 CASCADE;
 
 CREATE VIEW view_persediaan_barang_smp_negeri_14 AS
@@ -17041,6 +17482,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_smp_negeri_14 TO smp_negeri_14;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_smp_negeri_14 FROM smp_negeri_14;
+
+GRANT ALL PRIVILEGES ON gudang TO smp_negeri_14;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM smp_negeri_14;
 DROP VIEW IF EXISTS view_persediaan_barang_smp_negeri_15 CASCADE;
 
 CREATE VIEW view_persediaan_barang_smp_negeri_15 AS
@@ -17156,6 +17600,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_smp_negeri_15 TO smp_negeri_15;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_smp_negeri_15 FROM smp_negeri_15;
+
+GRANT ALL PRIVILEGES ON gudang TO smp_negeri_15;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM smp_negeri_15;
 DROP VIEW IF EXISTS view_persediaan_barang_smp_negeri_2 CASCADE;
 
 CREATE VIEW view_persediaan_barang_smp_negeri_2 AS
@@ -17271,6 +17718,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_smp_negeri_2 TO smp_negeri_2;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_smp_negeri_2 FROM smp_negeri_2;
+
+GRANT ALL PRIVILEGES ON gudang TO smp_negeri_2;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM smp_negeri_2;
 DROP VIEW IF EXISTS view_persediaan_barang_smp_negeri_3 CASCADE;
 
 CREATE VIEW view_persediaan_barang_smp_negeri_3 AS
@@ -17386,6 +17836,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_smp_negeri_3 TO smp_negeri_3;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_smp_negeri_3 FROM smp_negeri_3;
+
+GRANT ALL PRIVILEGES ON gudang TO smp_negeri_3;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM smp_negeri_3;
 DROP VIEW IF EXISTS view_persediaan_barang_smp_negeri_4 CASCADE;
 
 CREATE VIEW view_persediaan_barang_smp_negeri_4 AS
@@ -17501,6 +17954,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_smp_negeri_4 TO smp_negeri_4;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_smp_negeri_4 FROM smp_negeri_4;
+
+GRANT ALL PRIVILEGES ON gudang TO smp_negeri_4;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM smp_negeri_4;
 DROP VIEW IF EXISTS view_persediaan_barang_smp_negeri_5 CASCADE;
 
 CREATE VIEW view_persediaan_barang_smp_negeri_5 AS
@@ -17616,6 +18072,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_smp_negeri_5 TO smp_negeri_5;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_smp_negeri_5 FROM smp_negeri_5;
+
+GRANT ALL PRIVILEGES ON gudang TO smp_negeri_5;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM smp_negeri_5;
 DROP VIEW IF EXISTS view_persediaan_barang_smp_negeri_6 CASCADE;
 
 CREATE VIEW view_persediaan_barang_smp_negeri_6 AS
@@ -17731,6 +18190,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_smp_negeri_6 TO smp_negeri_6;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_smp_negeri_6 FROM smp_negeri_6;
+
+GRANT ALL PRIVILEGES ON gudang TO smp_negeri_6;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM smp_negeri_6;
 DROP VIEW IF EXISTS view_persediaan_barang_smp_negeri_8 CASCADE;
 
 CREATE VIEW view_persediaan_barang_smp_negeri_8 AS
@@ -17846,6 +18308,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_smp_negeri_8 TO smp_negeri_8;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_smp_negeri_8 FROM smp_negeri_8;
+
+GRANT ALL PRIVILEGES ON gudang TO smp_negeri_8;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM smp_negeri_8;
 DROP VIEW IF EXISTS view_persediaan_barang_smp_negeri_9 CASCADE;
 
 CREATE VIEW view_persediaan_barang_smp_negeri_9 AS
@@ -17961,6 +18426,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_smp_negeri_9 TO smp_negeri_9;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_smp_negeri_9 FROM smp_negeri_9;
+
+GRANT ALL PRIVILEGES ON gudang TO smp_negeri_9;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM smp_negeri_9;
 DROP VIEW IF EXISTS view_persediaan_barang_tk_negeri_idaman CASCADE;
 
 CREATE VIEW view_persediaan_barang_tk_negeri_idaman AS
@@ -18076,6 +18544,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_tk_negeri_idaman TO tk_negeri_idaman;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_tk_negeri_idaman FROM tk_negeri_idaman;
+
+GRANT ALL PRIVILEGES ON gudang TO tk_negeri_idaman;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM tk_negeri_idaman;
 DROP VIEW IF EXISTS view_persediaan_barang_tk_negeri_pembina_cempaka CASCADE;
 
 CREATE VIEW view_persediaan_barang_tk_negeri_pembina_cempaka AS
@@ -18191,6 +18662,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_tk_negeri_pembina_cempaka TO tk_negeri_pembina_cempaka;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_tk_negeri_pembina_cempaka FROM tk_negeri_pembina_cempaka;
+
+GRANT ALL PRIVILEGES ON gudang TO tk_negeri_pembina_cempaka;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM tk_negeri_pembina_cempaka;
 DROP VIEW IF EXISTS view_persediaan_barang_tk_negeri_pembina_kota CASCADE;
 
 CREATE VIEW view_persediaan_barang_tk_negeri_pembina_kota AS
@@ -18306,6 +18780,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_tk_negeri_pembina_kota TO tk_negeri_pembina_kota;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_tk_negeri_pembina_kota FROM tk_negeri_pembina_kota;
+
+GRANT ALL PRIVILEGES ON gudang TO tk_negeri_pembina_kota;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM tk_negeri_pembina_kota;
 DROP VIEW IF EXISTS view_persediaan_barang_tk_negeri_pembina_l_anggang CASCADE;
 
 CREATE VIEW view_persediaan_barang_tk_negeri_pembina_l_anggang AS
@@ -18421,6 +18898,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_tk_negeri_pembina_l_anggang TO tk_negeri_pembina_l_anggang;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_tk_negeri_pembina_l_anggang FROM tk_negeri_pembina_l_anggang;
+
+GRANT ALL PRIVILEGES ON gudang TO tk_negeri_pembina_l_anggang;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM tk_negeri_pembina_l_anggang;
 DROP VIEW IF EXISTS view_persediaan_barang_tk_negeri_pembina_l_ulin CASCADE;
 
 CREATE VIEW view_persediaan_barang_tk_negeri_pembina_l_ulin AS
@@ -18536,6 +19016,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_tk_negeri_pembina_l_ulin TO tk_negeri_pembina_l_ulin;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_tk_negeri_pembina_l_ulin FROM tk_negeri_pembina_l_ulin;
+
+GRANT ALL PRIVILEGES ON gudang TO tk_negeri_pembina_l_ulin;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM tk_negeri_pembina_l_ulin;
 DROP VIEW IF EXISTS view_persediaan_barang_upt_pajak_daerah_wilayah_i CASCADE;
 
 CREATE VIEW view_persediaan_barang_upt_pajak_daerah_wilayah_i AS
@@ -18651,6 +19134,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_upt_pajak_daerah_wilayah_i TO upt_pajak_daerah_wilayah_i;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_upt_pajak_daerah_wilayah_i FROM upt_pajak_daerah_wilayah_i;
+
+GRANT ALL PRIVILEGES ON gudang TO upt_pajak_daerah_wilayah_i;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM upt_pajak_daerah_wilayah_i;
 DROP VIEW IF EXISTS view_persediaan_barang_upt_pajak_daerah_wilayah_ii CASCADE;
 
 CREATE VIEW view_persediaan_barang_upt_pajak_daerah_wilayah_ii AS
@@ -18766,6 +19252,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_upt_pajak_daerah_wilayah_ii TO upt_pajak_daerah_wilayah_ii;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_upt_pajak_daerah_wilayah_ii FROM upt_pajak_daerah_wilayah_ii;
+
+GRANT ALL PRIVILEGES ON gudang TO upt_pajak_daerah_wilayah_ii;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM upt_pajak_daerah_wilayah_ii;
 DROP VIEW IF EXISTS view_persediaan_barang_upt_pemb_ternak_puskewan CASCADE;
 
 CREATE VIEW view_persediaan_barang_upt_pemb_ternak_puskewan AS
@@ -18881,6 +19370,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_upt_pemb_ternak_puskewan TO upt_pemb_ternak_puskewan;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_upt_pemb_ternak_puskewan FROM upt_pemb_ternak_puskewan;
+
+GRANT ALL PRIVILEGES ON gudang TO upt_pemb_ternak_puskewan;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM upt_pemb_ternak_puskewan;
 DROP VIEW IF EXISTS view_persediaan_barang_upt_pengujian_kend_berm CASCADE;
 
 CREATE VIEW view_persediaan_barang_upt_pengujian_kend_berm AS
@@ -18996,6 +19488,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_upt_pengujian_kend_berm TO upt_pengujian_kend_berm;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_upt_pengujian_kend_berm FROM upt_pengujian_kend_berm;
+
+GRANT ALL PRIVILEGES ON gudang TO upt_pengujian_kend_berm;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM upt_pengujian_kend_berm;
 DROP VIEW IF EXISTS view_persediaan_barang_upt_perparkiran CASCADE;
 
 CREATE VIEW view_persediaan_barang_upt_perparkiran AS
@@ -19111,6 +19606,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_upt_perparkiran TO upt_perparkiran;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_upt_perparkiran FROM upt_perparkiran;
+
+GRANT ALL PRIVILEGES ON gudang TO upt_perparkiran;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM upt_perparkiran;
 DROP VIEW IF EXISTS view_persediaan_barang_uptd_disdik_wil_i CASCADE;
 
 CREATE VIEW view_persediaan_barang_uptd_disdik_wil_i AS
@@ -19226,6 +19724,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_uptd_disdik_wil_i TO uptd_disdik_wil_i;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_uptd_disdik_wil_i FROM uptd_disdik_wil_i;
+
+GRANT ALL PRIVILEGES ON gudang TO uptd_disdik_wil_i;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM uptd_disdik_wil_i;
 DROP VIEW IF EXISTS view_persediaan_barang_uptd_disdik_wil_ii CASCADE;
 
 CREATE VIEW view_persediaan_barang_uptd_disdik_wil_ii AS
@@ -19341,6 +19842,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_uptd_disdik_wil_ii TO uptd_disdik_wil_ii;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_uptd_disdik_wil_ii FROM uptd_disdik_wil_ii;
+
+GRANT ALL PRIVILEGES ON gudang TO uptd_disdik_wil_ii;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM uptd_disdik_wil_ii;
 DROP VIEW IF EXISTS view_persediaan_barang_uptd_gudang_obat CASCADE;
 
 CREATE VIEW view_persediaan_barang_uptd_gudang_obat AS
@@ -19456,6 +19960,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_uptd_gudang_obat TO uptd_gudang_obat;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_uptd_gudang_obat FROM uptd_gudang_obat;
+
+GRANT ALL PRIVILEGES ON gudang TO uptd_gudang_obat;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM uptd_gudang_obat;
 DROP VIEW IF EXISTS view_persediaan_barang_uptd_gudang_transito CASCADE;
 
 CREATE VIEW view_persediaan_barang_uptd_gudang_transito AS
@@ -19571,6 +20078,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_uptd_gudang_transito TO uptd_gudang_transito;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_uptd_gudang_transito FROM uptd_gudang_transito;
+
+GRANT ALL PRIVILEGES ON gudang TO uptd_gudang_transito;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM uptd_gudang_transito;
 DROP VIEW IF EXISTS view_persediaan_barang_uptd_laboratorium_l_h CASCADE;
 
 CREATE VIEW view_persediaan_barang_uptd_laboratorium_l_h AS
@@ -19686,6 +20196,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_uptd_laboratorium_l_h TO uptd_laboratorium_l_h;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_uptd_laboratorium_l_h FROM uptd_laboratorium_l_h;
+
+GRANT ALL PRIVILEGES ON gudang TO uptd_laboratorium_l_h;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM uptd_laboratorium_l_h;
 DROP VIEW IF EXISTS view_persediaan_barang_uptd_metrologi CASCADE;
 
 CREATE VIEW view_persediaan_barang_uptd_metrologi AS
@@ -19801,6 +20314,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_uptd_metrologi TO uptd_metrologi;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_uptd_metrologi FROM uptd_metrologi;
+
+GRANT ALL PRIVILEGES ON gudang TO uptd_metrologi;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM uptd_metrologi;
 DROP VIEW IF EXISTS view_persediaan_barang_uptd_pasar_bauntung CASCADE;
 
 CREATE VIEW view_persediaan_barang_uptd_pasar_bauntung AS
@@ -19916,6 +20432,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_uptd_pasar_bauntung TO uptd_pasar_bauntung;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_uptd_pasar_bauntung FROM uptd_pasar_bauntung;
+
+GRANT ALL PRIVILEGES ON gudang TO uptd_pasar_bauntung;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM uptd_pasar_bauntung;
 DROP VIEW IF EXISTS view_persediaan_barang_uptd_pasar_ulin_raya CASCADE;
 
 CREATE VIEW view_persediaan_barang_uptd_pasar_ulin_raya AS
@@ -20031,6 +20550,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_uptd_pasar_ulin_raya TO uptd_pasar_ulin_raya;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_uptd_pasar_ulin_raya FROM uptd_pasar_ulin_raya;
+
+GRANT ALL PRIVILEGES ON gudang TO uptd_pasar_ulin_raya;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM uptd_pasar_ulin_raya;
 DROP VIEW IF EXISTS view_persediaan_barang_uptd_sgr_keg_belajar CASCADE;
 
 CREATE VIEW view_persediaan_barang_uptd_sgr_keg_belajar AS
@@ -20146,6 +20668,9 @@ ORDER BY kode_barang, serial, tanggal;
 
 GRANT ALL PRIVILEGES ON view_persediaan_barang_uptd_sgr_keg_belajar TO uptd_sgr_keg_belajar;
 REVOKE INSERT, UPDATE, DELETE ON view_persediaan_barang_uptd_sgr_keg_belajar FROM uptd_sgr_keg_belajar;
+
+GRANT ALL PRIVILEGES ON gudang TO uptd_sgr_keg_belajar;
+REVOKE INSERT, UPDATE, DELETE ON gudang FROM uptd_sgr_keg_belajar;
 DROP VIEW IF EXISTS view_persediaan_barang2_badan_kesbangpol;
 
 CREATE VIEW view_persediaan_barang2_badan_kesbangpol AS
