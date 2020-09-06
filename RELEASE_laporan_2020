@@ -4,10 +4,30 @@ rel-2.0:
 	- test framework -OK-
 
 rel-2-1:
-	- sql view pindah ke git
+	- sql view pindah ke git -OK-
 	    cek sql view 2020
 	    pindah ke git
 	    push di git
+	- daftar pengadaan dengan gudang -OK-
+	- buku penerimaaan dengan gudang -OK-
+	- buku pengeluaran dengan gudang -OK-
+	- daftar penerimaan dengan gudang -OK-
+	- daftar pengeluaran dengan gudang -OK-
+	- persediaan_barang_masuk -OK-
+	- persediaan_barang_keluar -OK-
+	- persediaan_sql, persediaan_sql2, persediaan_sql5
+	    group by pada sql5:
+		-OK-
+	    testing:
+	    - partition by id_gudang -OK-
+	- beban_sql3, beban_sql4, beban_sql5 -OK-
+	- kartu_sql1, kartu_sql2, kartu_sql3 -OK-
 	- refactoring semua script per skpd
-	- daftar pengadaan dengan gudang
+	- laporan:
+	    daftar penerimaan disdik -OK-
+	    buku persediaan disdik -OK-
+
+
 	- cvs tag rel-2-1
+
+
