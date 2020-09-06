@@ -1,0 +1,191 @@
+#!/bin/bash
+#copyright @ Muhammad Muntaza
+#muhammad@muntaza.id
+#BSD Lisence
+
+#generate view
+
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/uptd_sgr_keg_belajar/g | sed -e s/"id_skpd = 1"/"id_skpd = 2"/g > beban_barang5_uptd_sgr_keg_belajar.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/uptd_disdik_wil_i/g | sed -e s/"id_skpd = 1"/"id_skpd = 3"/g > beban_barang5_uptd_disdik_wil_i.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/uptd_disdik_wil_ii/g | sed -e s/"id_skpd = 1"/"id_skpd = 4"/g > beban_barang5_uptd_disdik_wil_ii.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/dinas_kesehatan/g | sed -e s/"id_skpd = 1"/"id_skpd = 5"/g > beban_barang5_dinas_kesehatan.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/pkm_banjarbaru_utara/g | sed -e s/"id_skpd = 1"/"id_skpd = 6"/g > beban_barang5_pkm_banjarbaru_utara.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/pkm_banjarbaru_selatan/g | sed -e s/"id_skpd = 1"/"id_skpd = 7"/g > beban_barang5_pkm_banjarbaru_selatan.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/pkm_sungai_besar/g | sed -e s/"id_skpd = 1"/"id_skpd = 8"/g > beban_barang5_pkm_sungai_besar.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/pkm_rawat_inap_cempaka/g | sed -e s/"id_skpd = 1"/"id_skpd = 9"/g > beban_barang5_pkm_rawat_inap_cempaka.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/pkm_guntung_payung/g | sed -e s/"id_skpd = 1"/"id_skpd = 10"/g > beban_barang5_pkm_guntung_payung.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/pkm_landasan_ulin/g | sed -e s/"id_skpd = 1"/"id_skpd = 11"/g > beban_barang5_pkm_landasan_ulin.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/pkm_liang_anggang/g | sed -e s/"id_skpd = 1"/"id_skpd = 12"/g > beban_barang5_pkm_liang_anggang.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/pkm_sungai_ulin/g | sed -e s/"id_skpd = 1"/"id_skpd = 13"/g > beban_barang5_pkm_sungai_ulin.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/uptd_gudang_obat/g | sed -e s/"id_skpd = 1"/"id_skpd = 14"/g > beban_barang5_uptd_gudang_obat.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/pkm_guntung_manggis/g | sed -e s/"id_skpd = 1"/"id_skpd = 15"/g > beban_barang5_pkm_guntung_manggis.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/rsd_idaman_skpd/g | sed -e s/"id_skpd = 1"/"id_skpd = 16"/g > beban_barang5_rsd_idaman_skpd.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/rsd_idaman_blud/g | sed -e s/"id_skpd = 1"/"id_skpd = 17"/g > beban_barang5_rsd_idaman_blud.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/dpupr/g | sed -e s/"id_skpd = 1"/"id_skpd = 18"/g > beban_barang5_dpupr.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/dinas_perkim/g | sed -e s/"id_skpd = 1"/"id_skpd = 19"/g > beban_barang5_dinas_perkim.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/satpolpp/g | sed -e s/"id_skpd = 1"/"id_skpd = 20"/g > beban_barang5_satpolpp.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/badan_kesbangpol/g | sed -e s/"id_skpd = 1"/"id_skpd = 21"/g > beban_barang5_badan_kesbangpol.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/dinas_sosial/g | sed -e s/"id_skpd = 1"/"id_skpd = 22"/g > beban_barang5_dinas_sosial.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/bpbd/g | sed -e s/"id_skpd = 1"/"id_skpd = 23"/g > beban_barang5_bpbd.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/dinas_kppp/g | sed -e s/"id_skpd = 1"/"id_skpd = 24"/g > beban_barang5_dinas_kppp.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/dinas_lingkungan_hidup/g | sed -e s/"id_skpd = 1"/"id_skpd = 26"/g > beban_barang5_dinas_lingkungan_hidup.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/uptd_laboratorium_l_h/g | sed -e s/"id_skpd = 1"/"id_skpd = 27"/g > beban_barang5_uptd_laboratorium_l_h.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/dinas_dukcatpil/g | sed -e s/"id_skpd = 1"/"id_skpd = 28"/g > beban_barang5_dinas_dukcatpil.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/dppkbpmppa/g | sed -e s/"id_skpd = 1"/"id_skpd = 29"/g > beban_barang5_dppkbpmppa.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/dinas_perhubungan/g | sed -e s/"id_skpd = 1"/"id_skpd = 30"/g > beban_barang5_dinas_perhubungan.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/upt_pengujian_kend_berm/g | sed -e s/"id_skpd = 1"/"id_skpd = 31"/g > beban_barang5_upt_pengujian_kend_berm.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/upt_perparkiran/g | sed -e s/"id_skpd = 1"/"id_skpd = 32"/g > beban_barang5_upt_perparkiran.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/dinas_kominfo/g | sed -e s/"id_skpd = 1"/"id_skpd = 33"/g > beban_barang5_dinas_kominfo.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/dinas_kukmtk/g | sed -e s/"id_skpd = 1"/"id_skpd = 34"/g > beban_barang5_dinas_kukmtk.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/dpmptsp/g | sed -e s/"id_skpd = 1"/"id_skpd = 35"/g > beban_barang5_dpmptsp.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/dinas_pokp/g | sed -e s/"id_skpd = 1"/"id_skpd = 36"/g > beban_barang5_dinas_pokp.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/dinas_arsip_dan_perpust/g | sed -e s/"id_skpd = 1"/"id_skpd = 37"/g > beban_barang5_dinas_arsip_dan_perpust.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/dinas_perdagangan/g | sed -e s/"id_skpd = 1"/"id_skpd = 38"/g > beban_barang5_dinas_perdagangan.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/uptd_pasar_bauntung/g | sed -e s/"id_skpd = 1"/"id_skpd = 39"/g > beban_barang5_uptd_pasar_bauntung.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/uptd_pasar_ulin_raya/g | sed -e s/"id_skpd = 1"/"id_skpd = 40"/g > beban_barang5_uptd_pasar_ulin_raya.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/uptd_gudang_transito/g | sed -e s/"id_skpd = 1"/"id_skpd = 41"/g > beban_barang5_uptd_gudang_transito.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/uptd_metrologi/g | sed -e s/"id_skpd = 1"/"id_skpd = 42"/g > beban_barang5_uptd_metrologi.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/dprd/g | sed -e s/"id_skpd = 1"/"id_skpd = 43"/g > beban_barang5_dprd.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kepala_daerah_dan_wakil/g | sed -e s/"id_skpd = 1"/"id_skpd = 44"/g > beban_barang5_kepala_daerah_dan_wakil.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sekretariat_daerah/g | sed -e s/"id_skpd = 1"/"id_skpd = 45"/g > beban_barang5_sekretariat_daerah.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sekretariat_dprd/g | sed -e s/"id_skpd = 1"/"id_skpd = 46"/g > beban_barang5_sekretariat_dprd.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kec_banjarbaru_selatan/g | sed -e s/"id_skpd = 1"/"id_skpd = 47"/g > beban_barang5_kec_banjarbaru_selatan.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_loktabat_selatan/g | sed -e s/"id_skpd = 1"/"id_skpd = 48"/g > beban_barang5_kel_loktabat_selatan.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_kemuning/g | sed -e s/"id_skpd = 1"/"id_skpd = 49"/g > beban_barang5_kel_kemuning.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_guntung_paikat/g | sed -e s/"id_skpd = 1"/"id_skpd = 50"/g > beban_barang5_kel_guntung_paikat.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_sungai_besar/g | sed -e s/"id_skpd = 1"/"id_skpd = 51"/g > beban_barang5_kel_sungai_besar.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kec_banjarbaru_utara/g | sed -e s/"id_skpd = 1"/"id_skpd = 52"/g > beban_barang5_kec_banjarbaru_utara.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_loktabat_utara/g | sed -e s/"id_skpd = 1"/"id_skpd = 53"/g > beban_barang5_kel_loktabat_utara.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_komet/g | sed -e s/"id_skpd = 1"/"id_skpd = 54"/g > beban_barang5_kel_komet.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_mentaos/g | sed -e s/"id_skpd = 1"/"id_skpd = 55"/g > beban_barang5_kel_mentaos.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_sungai_ulin/g | sed -e s/"id_skpd = 1"/"id_skpd = 56"/g > beban_barang5_kel_sungai_ulin.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kec_cempaka/g | sed -e s/"id_skpd = 1"/"id_skpd = 57"/g > beban_barang5_kec_cempaka.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_cempaka/g | sed -e s/"id_skpd = 1"/"id_skpd = 58"/g > beban_barang5_kel_cempaka.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_palam/g | sed -e s/"id_skpd = 1"/"id_skpd = 59"/g > beban_barang5_kel_palam.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_bangkal/g | sed -e s/"id_skpd = 1"/"id_skpd = 60"/g > beban_barang5_kel_bangkal.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_sungai_tiung/g | sed -e s/"id_skpd = 1"/"id_skpd = 61"/g > beban_barang5_kel_sungai_tiung.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kec_landasan_ulin/g | sed -e s/"id_skpd = 1"/"id_skpd = 62"/g > beban_barang5_kec_landasan_ulin.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_landasan_ulin_timur/g | sed -e s/"id_skpd = 1"/"id_skpd = 63"/g > beban_barang5_kel_landasan_ulin_timur.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_guntung_payung/g | sed -e s/"id_skpd = 1"/"id_skpd = 64"/g > beban_barang5_kel_guntung_payung.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_syamsudin_noor/g | sed -e s/"id_skpd = 1"/"id_skpd = 65"/g > beban_barang5_kel_syamsudin_noor.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_guntung_manggis/g | sed -e s/"id_skpd = 1"/"id_skpd = 66"/g > beban_barang5_kel_guntung_manggis.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kec_liang_anggang/g | sed -e s/"id_skpd = 1"/"id_skpd = 67"/g > beban_barang5_kec_liang_anggang.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_landasan_ulin_tengah/g | sed -e s/"id_skpd = 1"/"id_skpd = 68"/g > beban_barang5_kel_landasan_ulin_tengah.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_landasan_ulin_utara/g | sed -e s/"id_skpd = 1"/"id_skpd = 69"/g > beban_barang5_kel_landasan_ulin_utara.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_landasan_ulin_barat/g | sed -e s/"id_skpd = 1"/"id_skpd = 70"/g > beban_barang5_kel_landasan_ulin_barat.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_landasan_ulin_selatan/g | sed -e s/"id_skpd = 1"/"id_skpd = 71"/g > beban_barang5_kel_landasan_ulin_selatan.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/upt_pemb_ternak_puskewan/g | sed -e s/"id_skpd = 1"/"id_skpd = 72"/g > beban_barang5_upt_pemb_ternak_puskewan.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/inspektorat/g | sed -e s/"id_skpd = 1"/"id_skpd = 73"/g > beban_barang5_inspektorat.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/badan_pp_litbang_da/g | sed -e s/"id_skpd = 1"/"id_skpd = 74"/g > beban_barang5_badan_pp_litbang_da.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/bpkad_skpd/g | sed -e s/"id_skpd = 1"/"id_skpd = 75"/g > beban_barang5_bpkad_skpd.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/bpkad_ppkd/g | sed -e s/"id_skpd = 1"/"id_skpd = 76"/g > beban_barang5_bpkad_ppkd.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/badan_p_pajak_retribusi/g | sed -e s/"id_skpd = 1"/"id_skpd = 77"/g > beban_barang5_badan_p_pajak_retribusi.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/upt_pajak_daerah_wilayah_i/g | sed -e s/"id_skpd = 1"/"id_skpd = 78"/g > beban_barang5_upt_pajak_daerah_wilayah_i.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/upt_pajak_daerah_wilayah_ii/g | sed -e s/"id_skpd = 1"/"id_skpd = 79"/g > beban_barang5_upt_pajak_daerah_wilayah_ii.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/bkppd/g | sed -e s/"id_skpd = 1"/"id_skpd = 80"/g > beban_barang5_bkppd.sql
+
+
+
+
+
+
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_bangkal/g | sed -e s/"id_skpd = 1"/"id_skpd = 81"/g > beban_barang5_sdn_1_bangkal.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_cempaka/g | sed -e s/"id_skpd = 1"/"id_skpd = 82"/g > beban_barang5_sdn_1_cempaka.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_guntung_manggis/g | sed -e s/"id_skpd = 1"/"id_skpd = 83"/g > beban_barang5_sdn_1_guntung_manggis.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_guntung_paikat/g | sed -e s/"id_skpd = 1"/"id_skpd = 84"/g > beban_barang5_sdn_1_guntung_paikat.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_guntung_payung/g | sed -e s/"id_skpd = 1"/"id_skpd = 85"/g > beban_barang5_sdn_1_guntung_payung.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_kemuning/g | sed -e s/"id_skpd = 1"/"id_skpd = 86"/g > beban_barang5_sdn_1_kemuning.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_komet/g | sed -e s/"id_skpd = 1"/"id_skpd = 87"/g > beban_barang5_sdn_1_komet.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_landasan_ulin_barat/g | sed -e s/"id_skpd = 1"/"id_skpd = 88"/g > beban_barang5_sdn_1_landasan_ulin_barat.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_landasan_ulin_selatan/g | sed -e s/"id_skpd = 1"/"id_skpd = 89"/g > beban_barang5_sdn_1_landasan_ulin_selatan.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_landasan_ulin_tengah/g | sed -e s/"id_skpd = 1"/"id_skpd = 90"/g > beban_barang5_sdn_1_landasan_ulin_tengah.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_landasan_ulin_timur/g | sed -e s/"id_skpd = 1"/"id_skpd = 91"/g > beban_barang5_sdn_1_landasan_ulin_timur.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_landasan_ulin_utara/g | sed -e s/"id_skpd = 1"/"id_skpd = 92"/g > beban_barang5_sdn_1_landasan_ulin_utara.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_loktabat_selatan/g | sed -e s/"id_skpd = 1"/"id_skpd = 93"/g > beban_barang5_sdn_1_loktabat_selatan.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_loktabat_utara/g | sed -e s/"id_skpd = 1"/"id_skpd = 94"/g > beban_barang5_sdn_1_loktabat_utara.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_mentaos/g | sed -e s/"id_skpd = 1"/"id_skpd = 95"/g > beban_barang5_sdn_1_mentaos.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_palam/g | sed -e s/"id_skpd = 1"/"id_skpd = 96"/g > beban_barang5_sdn_1_palam.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_sungai_besar/g | sed -e s/"id_skpd = 1"/"id_skpd = 97"/g > beban_barang5_sdn_1_sungai_besar.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_sungai_tiung/g | sed -e s/"id_skpd = 1"/"id_skpd = 98"/g > beban_barang5_sdn_1_sungai_tiung.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_sungai_ulin/g | sed -e s/"id_skpd = 1"/"id_skpd = 99"/g > beban_barang5_sdn_1_sungai_ulin.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_syamsudin_noor/g | sed -e s/"id_skpd = 1"/"id_skpd = 100"/g > beban_barang5_sdn_1_syamsudin_noor.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_bangkal/g | sed -e s/"id_skpd = 1"/"id_skpd = 101"/g > beban_barang5_sdn_2_bangkal.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_cempaka/g | sed -e s/"id_skpd = 1"/"id_skpd = 102"/g > beban_barang5_sdn_2_cempaka.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_guntung_manggis/g | sed -e s/"id_skpd = 1"/"id_skpd = 103"/g > beban_barang5_sdn_2_guntung_manggis.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_guntung_paikat/g | sed -e s/"id_skpd = 1"/"id_skpd = 104"/g > beban_barang5_sdn_2_guntung_paikat.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_guntung_payung/g | sed -e s/"id_skpd = 1"/"id_skpd = 105"/g > beban_barang5_sdn_2_guntung_payung.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_kemuning/g | sed -e s/"id_skpd = 1"/"id_skpd = 106"/g > beban_barang5_sdn_2_kemuning.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_komet/g | sed -e s/"id_skpd = 1"/"id_skpd = 107"/g > beban_barang5_sdn_2_komet.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_landasan_ulin_barat/g | sed -e s/"id_skpd = 1"/"id_skpd = 108"/g > beban_barang5_sdn_2_landasan_ulin_barat.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_landasan_ulin_timur/g | sed -e s/"id_skpd = 1"/"id_skpd = 109"/g > beban_barang5_sdn_2_landasan_ulin_timur.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_landasan_ulin_utara/g | sed -e s/"id_skpd = 1"/"id_skpd = 110"/g > beban_barang5_sdn_2_landasan_ulin_utara.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_loktabat_selatan/g | sed -e s/"id_skpd = 1"/"id_skpd = 111"/g > beban_barang5_sdn_2_loktabat_selatan.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_loktabat_utara/g | sed -e s/"id_skpd = 1"/"id_skpd = 112"/g > beban_barang5_sdn_2_loktabat_utara.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_mentaos/g | sed -e s/"id_skpd = 1"/"id_skpd = 113"/g > beban_barang5_sdn_2_mentaos.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_palam/g | sed -e s/"id_skpd = 1"/"id_skpd = 114"/g > beban_barang5_sdn_2_palam.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_sungai_besar/g | sed -e s/"id_skpd = 1"/"id_skpd = 115"/g > beban_barang5_sdn_2_sungai_besar.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_sungai_tiung/g | sed -e s/"id_skpd = 1"/"id_skpd = 116"/g > beban_barang5_sdn_2_sungai_tiung.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_sungai_ulin/g | sed -e s/"id_skpd = 1"/"id_skpd = 117"/g > beban_barang5_sdn_2_sungai_ulin.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_syamsudin_noor/g | sed -e s/"id_skpd = 1"/"id_skpd = 118"/g > beban_barang5_sdn_2_syamsudin_noor.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_bangkal/g | sed -e s/"id_skpd = 1"/"id_skpd = 119"/g > beban_barang5_sdn_3_bangkal.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_cempaka/g | sed -e s/"id_skpd = 1"/"id_skpd = 120"/g > beban_barang5_sdn_3_cempaka.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_guntung_manggis/g | sed -e s/"id_skpd = 1"/"id_skpd = 121"/g > beban_barang5_sdn_3_guntung_manggis.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_guntung_payung/g | sed -e s/"id_skpd = 1"/"id_skpd = 122"/g > beban_barang5_sdn_3_guntung_payung.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_kemuning/g | sed -e s/"id_skpd = 1"/"id_skpd = 123"/g > beban_barang5_sdn_3_kemuning.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_komet/g | sed -e s/"id_skpd = 1"/"id_skpd = 124"/g > beban_barang5_sdn_3_komet.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_landasan_ulin_timur/g | sed -e s/"id_skpd = 1"/"id_skpd = 125"/g > beban_barang5_sdn_3_landasan_ulin_timur.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_loktabat_utara/g | sed -e s/"id_skpd = 1"/"id_skpd = 126"/g > beban_barang5_sdn_3_loktabat_utara.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_palam/g | sed -e s/"id_skpd = 1"/"id_skpd = 127"/g > beban_barang5_sdn_3_palam.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_sungai_besar/g | sed -e s/"id_skpd = 1"/"id_skpd = 128"/g > beban_barang5_sdn_3_sungai_besar.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_sungai_tiung/g | sed -e s/"id_skpd = 1"/"id_skpd = 129"/g > beban_barang5_sdn_3_sungai_tiung.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_sungai_ulin/g | sed -e s/"id_skpd = 1"/"id_skpd = 130"/g > beban_barang5_sdn_3_sungai_ulin.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_syamsudin_noor/g | sed -e s/"id_skpd = 1"/"id_skpd = 131"/g > beban_barang5_sdn_3_syamsudin_noor.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_4_cempaka/g | sed -e s/"id_skpd = 1"/"id_skpd = 132"/g > beban_barang5_sdn_4_cempaka.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_4_guntung_manggis/g | sed -e s/"id_skpd = 1"/"id_skpd = 133"/g > beban_barang5_sdn_4_guntung_manggis.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_4_komet/g | sed -e s/"id_skpd = 1"/"id_skpd = 134"/g > beban_barang5_sdn_4_komet.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_4_loktabat_utara/g | sed -e s/"id_skpd = 1"/"id_skpd = 135"/g > beban_barang5_sdn_4_loktabat_utara.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_4_sungai_besar/g | sed -e s/"id_skpd = 1"/"id_skpd = 136"/g > beban_barang5_sdn_4_sungai_besar.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_4_sungai_ulin/g | sed -e s/"id_skpd = 1"/"id_skpd = 137"/g > beban_barang5_sdn_4_sungai_ulin.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_4_syamsudin_noor/g | sed -e s/"id_skpd = 1"/"id_skpd = 138"/g > beban_barang5_sdn_4_syamsudin_noor.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_5_cempaka/g | sed -e s/"id_skpd = 1"/"id_skpd = 139"/g > beban_barang5_sdn_5_cempaka.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_5_guntung_manggis/g | sed -e s/"id_skpd = 1"/"id_skpd = 140"/g > beban_barang5_sdn_5_guntung_manggis.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_5_komet/g | sed -e s/"id_skpd = 1"/"id_skpd = 141"/g > beban_barang5_sdn_5_komet.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_5_loktabat_utara/g | sed -e s/"id_skpd = 1"/"id_skpd = 142"/g > beban_barang5_sdn_5_loktabat_utara.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_5_sungai_besar/g | sed -e s/"id_skpd = 1"/"id_skpd = 143"/g > beban_barang5_sdn_5_sungai_besar.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_5_sungai_ulin/g | sed -e s/"id_skpd = 1"/"id_skpd = 144"/g > beban_barang5_sdn_5_sungai_ulin.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_5_syamsudin_noor/g | sed -e s/"id_skpd = 1"/"id_skpd = 145"/g > beban_barang5_sdn_5_syamsudin_noor.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_6_cempaka/g | sed -e s/"id_skpd = 1"/"id_skpd = 146"/g > beban_barang5_sdn_6_cempaka.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/smp_negeri_1/g | sed -e s/"id_skpd = 1"/"id_skpd = 147"/g > beban_barang5_smp_negeri_1.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/smp_negeri_2/g | sed -e s/"id_skpd = 1"/"id_skpd = 148"/g > beban_barang5_smp_negeri_2.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/smp_negeri_3/g | sed -e s/"id_skpd = 1"/"id_skpd = 149"/g > beban_barang5_smp_negeri_3.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/smp_negeri_4/g | sed -e s/"id_skpd = 1"/"id_skpd = 150"/g > beban_barang5_smp_negeri_4.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/smp_negeri_5/g | sed -e s/"id_skpd = 1"/"id_skpd = 151"/g > beban_barang5_smp_negeri_5.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/smp_negeri_6/g | sed -e s/"id_skpd = 1"/"id_skpd = 152"/g > beban_barang5_smp_negeri_6.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/smp_negeri_8/g | sed -e s/"id_skpd = 1"/"id_skpd = 153"/g > beban_barang5_smp_negeri_8.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/smp_negeri_9/g | sed -e s/"id_skpd = 1"/"id_skpd = 154"/g > beban_barang5_smp_negeri_9.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/smp_negeri_10/g | sed -e s/"id_skpd = 1"/"id_skpd = 155"/g > beban_barang5_smp_negeri_10.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/smp_negeri_11/g | sed -e s/"id_skpd = 1"/"id_skpd = 156"/g > beban_barang5_smp_negeri_11.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/smp_negeri_12/g | sed -e s/"id_skpd = 1"/"id_skpd = 157"/g > beban_barang5_smp_negeri_12.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/smp_negeri_13/g | sed -e s/"id_skpd = 1"/"id_skpd = 158"/g > beban_barang5_smp_negeri_13.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/smp_negeri_14/g | sed -e s/"id_skpd = 1"/"id_skpd = 159"/g > beban_barang5_smp_negeri_14.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/smp_negeri_15/g | sed -e s/"id_skpd = 1"/"id_skpd = 160"/g > beban_barang5_smp_negeri_15.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/tk_negeri_idaman/g | sed -e s/"id_skpd = 1"/"id_skpd = 161"/g > beban_barang5_tk_negeri_idaman.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/tk_negeri_pembina_cempaka/g | sed -e s/"id_skpd = 1"/"id_skpd = 162"/g > beban_barang5_tk_negeri_pembina_cempaka.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/tk_negeri_pembina_kota/g | sed -e s/"id_skpd = 1"/"id_skpd = 163"/g > beban_barang5_tk_negeri_pembina_kota.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/tk_negeri_pembina_l_ulin/g | sed -e s/"id_skpd = 1"/"id_skpd = 164"/g > beban_barang5_tk_negeri_pembina_l_ulin.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/tk_negeri_pembina_l_anggang/g | sed -e s/"id_skpd = 1"/"id_skpd = 165"/g > beban_barang5_tk_negeri_pembina_l_anggang.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/bag_pemerintahan/g | sed -e s/"id_skpd = 1"/"id_skpd = 166"/g > beban_barang5_bag_pemerintahan.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/bag_kerjasama_dan_agraria/g | sed -e s/"id_skpd = 1"/"id_skpd = 167"/g > beban_barang5_bag_kerjasama_dan_agraria.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/bag_hukum/g | sed -e s/"id_skpd = 1"/"id_skpd = 168"/g > beban_barang5_bag_hukum.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/bag_ekobang/g | sed -e s/"id_skpd = 1"/"id_skpd = 169"/g > beban_barang5_bag_ekobang.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/bag_pbj/g | sed -e s/"id_skpd = 1"/"id_skpd = 170"/g > beban_barang5_bag_pbj.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/bag_kesra/g | sed -e s/"id_skpd = 1"/"id_skpd = 171"/g > beban_barang5_bag_kesra.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/bag_umum/g | sed -e s/"id_skpd = 1"/"id_skpd = 172"/g > beban_barang5_bag_umum.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/bag_humas_dan_protokol/g | sed -e s/"id_skpd = 1"/"id_skpd = 173"/g > beban_barang5_bag_humas_dan_protokol.sql
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/bag_organisasi/g | sed -e s/"id_skpd = 1"/"id_skpd = 174"/g > beban_barang5_bag_organisasi.sql
+
+
+cat beban_barang5_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/pkm_landasan_ulin_timur/g | sed -e s/"id_skpd = 1"/"id_skpd = 175"/g > beban_barang5_pkm_landasan_ulin_timur.sql
+
+
+cat beban_barang5_*.sql > ../gabungan_beban_barang5.sql

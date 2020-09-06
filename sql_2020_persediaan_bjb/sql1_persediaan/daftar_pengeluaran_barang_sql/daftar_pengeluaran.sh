@@ -1,0 +1,191 @@
+#!/bin/bash
+#copyright @ Muhammad Muntaza
+#muhammad@muntaza.id
+#BSD Lisence
+
+#generate view
+
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/uptd_sgr_keg_belajar/g | sed -e s/"id_skpd = 1"/"id_skpd = 2"/g > daftar_pengeluaran_uptd_sgr_keg_belajar.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/uptd_disdik_wil_i/g | sed -e s/"id_skpd = 1"/"id_skpd = 3"/g > daftar_pengeluaran_uptd_disdik_wil_i.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/uptd_disdik_wil_ii/g | sed -e s/"id_skpd = 1"/"id_skpd = 4"/g > daftar_pengeluaran_uptd_disdik_wil_ii.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/dinas_kesehatan/g | sed -e s/"id_skpd = 1"/"id_skpd = 5"/g > daftar_pengeluaran_dinas_kesehatan.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/pkm_banjarbaru_utara/g | sed -e s/"id_skpd = 1"/"id_skpd = 6"/g > daftar_pengeluaran_pkm_banjarbaru_utara.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/pkm_banjarbaru_selatan/g | sed -e s/"id_skpd = 1"/"id_skpd = 7"/g > daftar_pengeluaran_pkm_banjarbaru_selatan.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/pkm_sungai_besar/g | sed -e s/"id_skpd = 1"/"id_skpd = 8"/g > daftar_pengeluaran_pkm_sungai_besar.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/pkm_rawat_inap_cempaka/g | sed -e s/"id_skpd = 1"/"id_skpd = 9"/g > daftar_pengeluaran_pkm_rawat_inap_cempaka.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/pkm_guntung_payung/g | sed -e s/"id_skpd = 1"/"id_skpd = 10"/g > daftar_pengeluaran_pkm_guntung_payung.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/pkm_landasan_ulin/g | sed -e s/"id_skpd = 1"/"id_skpd = 11"/g > daftar_pengeluaran_pkm_landasan_ulin.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/pkm_liang_anggang/g | sed -e s/"id_skpd = 1"/"id_skpd = 12"/g > daftar_pengeluaran_pkm_liang_anggang.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/pkm_sungai_ulin/g | sed -e s/"id_skpd = 1"/"id_skpd = 13"/g > daftar_pengeluaran_pkm_sungai_ulin.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/uptd_gudang_obat/g | sed -e s/"id_skpd = 1"/"id_skpd = 14"/g > daftar_pengeluaran_uptd_gudang_obat.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/pkm_guntung_manggis/g | sed -e s/"id_skpd = 1"/"id_skpd = 15"/g > daftar_pengeluaran_pkm_guntung_manggis.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/rsd_idaman_skpd/g | sed -e s/"id_skpd = 1"/"id_skpd = 16"/g > daftar_pengeluaran_rsd_idaman_skpd.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/rsd_idaman_blud/g | sed -e s/"id_skpd = 1"/"id_skpd = 17"/g > daftar_pengeluaran_rsd_idaman_blud.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/dpupr/g | sed -e s/"id_skpd = 1"/"id_skpd = 18"/g > daftar_pengeluaran_dpupr.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/dinas_perkim/g | sed -e s/"id_skpd = 1"/"id_skpd = 19"/g > daftar_pengeluaran_dinas_perkim.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/satpolpp/g | sed -e s/"id_skpd = 1"/"id_skpd = 20"/g > daftar_pengeluaran_satpolpp.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/badan_kesbangpol/g | sed -e s/"id_skpd = 1"/"id_skpd = 21"/g > daftar_pengeluaran_badan_kesbangpol.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/dinas_sosial/g | sed -e s/"id_skpd = 1"/"id_skpd = 22"/g > daftar_pengeluaran_dinas_sosial.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/bpbd/g | sed -e s/"id_skpd = 1"/"id_skpd = 23"/g > daftar_pengeluaran_bpbd.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/dinas_kppp/g | sed -e s/"id_skpd = 1"/"id_skpd = 24"/g > daftar_pengeluaran_dinas_kppp.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/dinas_lingkungan_hidup/g | sed -e s/"id_skpd = 1"/"id_skpd = 26"/g > daftar_pengeluaran_dinas_lingkungan_hidup.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/uptd_laboratorium_l_h/g | sed -e s/"id_skpd = 1"/"id_skpd = 27"/g > daftar_pengeluaran_uptd_laboratorium_l_h.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/dinas_dukcatpil/g | sed -e s/"id_skpd = 1"/"id_skpd = 28"/g > daftar_pengeluaran_dinas_dukcatpil.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/dppkbpmppa/g | sed -e s/"id_skpd = 1"/"id_skpd = 29"/g > daftar_pengeluaran_dppkbpmppa.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/dinas_perhubungan/g | sed -e s/"id_skpd = 1"/"id_skpd = 30"/g > daftar_pengeluaran_dinas_perhubungan.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/upt_pengujian_kend_berm/g | sed -e s/"id_skpd = 1"/"id_skpd = 31"/g > daftar_pengeluaran_upt_pengujian_kend_berm.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/upt_perparkiran/g | sed -e s/"id_skpd = 1"/"id_skpd = 32"/g > daftar_pengeluaran_upt_perparkiran.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/dinas_kominfo/g | sed -e s/"id_skpd = 1"/"id_skpd = 33"/g > daftar_pengeluaran_dinas_kominfo.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/dinas_kukmtk/g | sed -e s/"id_skpd = 1"/"id_skpd = 34"/g > daftar_pengeluaran_dinas_kukmtk.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/dpmptsp/g | sed -e s/"id_skpd = 1"/"id_skpd = 35"/g > daftar_pengeluaran_dpmptsp.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/dinas_pokp/g | sed -e s/"id_skpd = 1"/"id_skpd = 36"/g > daftar_pengeluaran_dinas_pokp.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/dinas_arsip_dan_perpust/g | sed -e s/"id_skpd = 1"/"id_skpd = 37"/g > daftar_pengeluaran_dinas_arsip_dan_perpust.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/dinas_perdagangan/g | sed -e s/"id_skpd = 1"/"id_skpd = 38"/g > daftar_pengeluaran_dinas_perdagangan.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/uptd_pasar_bauntung/g | sed -e s/"id_skpd = 1"/"id_skpd = 39"/g > daftar_pengeluaran_uptd_pasar_bauntung.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/uptd_pasar_ulin_raya/g | sed -e s/"id_skpd = 1"/"id_skpd = 40"/g > daftar_pengeluaran_uptd_pasar_ulin_raya.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/uptd_gudang_transito/g | sed -e s/"id_skpd = 1"/"id_skpd = 41"/g > daftar_pengeluaran_uptd_gudang_transito.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/uptd_metrologi/g | sed -e s/"id_skpd = 1"/"id_skpd = 42"/g > daftar_pengeluaran_uptd_metrologi.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/dprd/g | sed -e s/"id_skpd = 1"/"id_skpd = 43"/g > daftar_pengeluaran_dprd.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kepala_daerah_dan_wakil/g | sed -e s/"id_skpd = 1"/"id_skpd = 44"/g > daftar_pengeluaran_kepala_daerah_dan_wakil.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sekretariat_daerah/g | sed -e s/"id_skpd = 1"/"id_skpd = 45"/g > daftar_pengeluaran_sekretariat_daerah.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sekretariat_dprd/g | sed -e s/"id_skpd = 1"/"id_skpd = 46"/g > daftar_pengeluaran_sekretariat_dprd.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kec_banjarbaru_selatan/g | sed -e s/"id_skpd = 1"/"id_skpd = 47"/g > daftar_pengeluaran_kec_banjarbaru_selatan.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_loktabat_selatan/g | sed -e s/"id_skpd = 1"/"id_skpd = 48"/g > daftar_pengeluaran_kel_loktabat_selatan.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_kemuning/g | sed -e s/"id_skpd = 1"/"id_skpd = 49"/g > daftar_pengeluaran_kel_kemuning.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_guntung_paikat/g | sed -e s/"id_skpd = 1"/"id_skpd = 50"/g > daftar_pengeluaran_kel_guntung_paikat.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_sungai_besar/g | sed -e s/"id_skpd = 1"/"id_skpd = 51"/g > daftar_pengeluaran_kel_sungai_besar.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kec_banjarbaru_utara/g | sed -e s/"id_skpd = 1"/"id_skpd = 52"/g > daftar_pengeluaran_kec_banjarbaru_utara.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_loktabat_utara/g | sed -e s/"id_skpd = 1"/"id_skpd = 53"/g > daftar_pengeluaran_kel_loktabat_utara.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_komet/g | sed -e s/"id_skpd = 1"/"id_skpd = 54"/g > daftar_pengeluaran_kel_komet.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_mentaos/g | sed -e s/"id_skpd = 1"/"id_skpd = 55"/g > daftar_pengeluaran_kel_mentaos.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_sungai_ulin/g | sed -e s/"id_skpd = 1"/"id_skpd = 56"/g > daftar_pengeluaran_kel_sungai_ulin.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kec_cempaka/g | sed -e s/"id_skpd = 1"/"id_skpd = 57"/g > daftar_pengeluaran_kec_cempaka.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_cempaka/g | sed -e s/"id_skpd = 1"/"id_skpd = 58"/g > daftar_pengeluaran_kel_cempaka.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_palam/g | sed -e s/"id_skpd = 1"/"id_skpd = 59"/g > daftar_pengeluaran_kel_palam.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_bangkal/g | sed -e s/"id_skpd = 1"/"id_skpd = 60"/g > daftar_pengeluaran_kel_bangkal.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_sungai_tiung/g | sed -e s/"id_skpd = 1"/"id_skpd = 61"/g > daftar_pengeluaran_kel_sungai_tiung.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kec_landasan_ulin/g | sed -e s/"id_skpd = 1"/"id_skpd = 62"/g > daftar_pengeluaran_kec_landasan_ulin.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_landasan_ulin_timur/g | sed -e s/"id_skpd = 1"/"id_skpd = 63"/g > daftar_pengeluaran_kel_landasan_ulin_timur.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_guntung_payung/g | sed -e s/"id_skpd = 1"/"id_skpd = 64"/g > daftar_pengeluaran_kel_guntung_payung.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_syamsudin_noor/g | sed -e s/"id_skpd = 1"/"id_skpd = 65"/g > daftar_pengeluaran_kel_syamsudin_noor.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_guntung_manggis/g | sed -e s/"id_skpd = 1"/"id_skpd = 66"/g > daftar_pengeluaran_kel_guntung_manggis.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kec_liang_anggang/g | sed -e s/"id_skpd = 1"/"id_skpd = 67"/g > daftar_pengeluaran_kec_liang_anggang.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_landasan_ulin_tengah/g | sed -e s/"id_skpd = 1"/"id_skpd = 68"/g > daftar_pengeluaran_kel_landasan_ulin_tengah.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_landasan_ulin_utara/g | sed -e s/"id_skpd = 1"/"id_skpd = 69"/g > daftar_pengeluaran_kel_landasan_ulin_utara.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_landasan_ulin_barat/g | sed -e s/"id_skpd = 1"/"id_skpd = 70"/g > daftar_pengeluaran_kel_landasan_ulin_barat.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/kel_landasan_ulin_selatan/g | sed -e s/"id_skpd = 1"/"id_skpd = 71"/g > daftar_pengeluaran_kel_landasan_ulin_selatan.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/upt_pemb_ternak_puskewan/g | sed -e s/"id_skpd = 1"/"id_skpd = 72"/g > daftar_pengeluaran_upt_pemb_ternak_puskewan.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/inspektorat/g | sed -e s/"id_skpd = 1"/"id_skpd = 73"/g > daftar_pengeluaran_inspektorat.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/badan_pp_litbang_da/g | sed -e s/"id_skpd = 1"/"id_skpd = 74"/g > daftar_pengeluaran_badan_pp_litbang_da.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/bpkad_skpd/g | sed -e s/"id_skpd = 1"/"id_skpd = 75"/g > daftar_pengeluaran_bpkad_skpd.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/bpkad_ppkd/g | sed -e s/"id_skpd = 1"/"id_skpd = 76"/g > daftar_pengeluaran_bpkad_ppkd.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/badan_p_pajak_retribusi/g | sed -e s/"id_skpd = 1"/"id_skpd = 77"/g > daftar_pengeluaran_badan_p_pajak_retribusi.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/upt_pajak_daerah_wilayah_i/g | sed -e s/"id_skpd = 1"/"id_skpd = 78"/g > daftar_pengeluaran_upt_pajak_daerah_wilayah_i.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/upt_pajak_daerah_wilayah_ii/g | sed -e s/"id_skpd = 1"/"id_skpd = 79"/g > daftar_pengeluaran_upt_pajak_daerah_wilayah_ii.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/bkppd/g | sed -e s/"id_skpd = 1"/"id_skpd = 80"/g > daftar_pengeluaran_bkppd.sql
+
+
+
+
+
+
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_bangkal/g | sed -e s/"id_skpd = 1"/"id_skpd = 81"/g > daftar_pengeluaran_sdn_1_bangkal.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_cempaka/g | sed -e s/"id_skpd = 1"/"id_skpd = 82"/g > daftar_pengeluaran_sdn_1_cempaka.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_guntung_manggis/g | sed -e s/"id_skpd = 1"/"id_skpd = 83"/g > daftar_pengeluaran_sdn_1_guntung_manggis.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_guntung_paikat/g | sed -e s/"id_skpd = 1"/"id_skpd = 84"/g > daftar_pengeluaran_sdn_1_guntung_paikat.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_guntung_payung/g | sed -e s/"id_skpd = 1"/"id_skpd = 85"/g > daftar_pengeluaran_sdn_1_guntung_payung.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_kemuning/g | sed -e s/"id_skpd = 1"/"id_skpd = 86"/g > daftar_pengeluaran_sdn_1_kemuning.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_komet/g | sed -e s/"id_skpd = 1"/"id_skpd = 87"/g > daftar_pengeluaran_sdn_1_komet.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_landasan_ulin_barat/g | sed -e s/"id_skpd = 1"/"id_skpd = 88"/g > daftar_pengeluaran_sdn_1_landasan_ulin_barat.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_landasan_ulin_selatan/g | sed -e s/"id_skpd = 1"/"id_skpd = 89"/g > daftar_pengeluaran_sdn_1_landasan_ulin_selatan.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_landasan_ulin_tengah/g | sed -e s/"id_skpd = 1"/"id_skpd = 90"/g > daftar_pengeluaran_sdn_1_landasan_ulin_tengah.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_landasan_ulin_timur/g | sed -e s/"id_skpd = 1"/"id_skpd = 91"/g > daftar_pengeluaran_sdn_1_landasan_ulin_timur.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_landasan_ulin_utara/g | sed -e s/"id_skpd = 1"/"id_skpd = 92"/g > daftar_pengeluaran_sdn_1_landasan_ulin_utara.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_loktabat_selatan/g | sed -e s/"id_skpd = 1"/"id_skpd = 93"/g > daftar_pengeluaran_sdn_1_loktabat_selatan.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_loktabat_utara/g | sed -e s/"id_skpd = 1"/"id_skpd = 94"/g > daftar_pengeluaran_sdn_1_loktabat_utara.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_mentaos/g | sed -e s/"id_skpd = 1"/"id_skpd = 95"/g > daftar_pengeluaran_sdn_1_mentaos.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_palam/g | sed -e s/"id_skpd = 1"/"id_skpd = 96"/g > daftar_pengeluaran_sdn_1_palam.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_sungai_besar/g | sed -e s/"id_skpd = 1"/"id_skpd = 97"/g > daftar_pengeluaran_sdn_1_sungai_besar.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_sungai_tiung/g | sed -e s/"id_skpd = 1"/"id_skpd = 98"/g > daftar_pengeluaran_sdn_1_sungai_tiung.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_sungai_ulin/g | sed -e s/"id_skpd = 1"/"id_skpd = 99"/g > daftar_pengeluaran_sdn_1_sungai_ulin.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_1_syamsudin_noor/g | sed -e s/"id_skpd = 1"/"id_skpd = 100"/g > daftar_pengeluaran_sdn_1_syamsudin_noor.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_bangkal/g | sed -e s/"id_skpd = 1"/"id_skpd = 101"/g > daftar_pengeluaran_sdn_2_bangkal.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_cempaka/g | sed -e s/"id_skpd = 1"/"id_skpd = 102"/g > daftar_pengeluaran_sdn_2_cempaka.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_guntung_manggis/g | sed -e s/"id_skpd = 1"/"id_skpd = 103"/g > daftar_pengeluaran_sdn_2_guntung_manggis.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_guntung_paikat/g | sed -e s/"id_skpd = 1"/"id_skpd = 104"/g > daftar_pengeluaran_sdn_2_guntung_paikat.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_guntung_payung/g | sed -e s/"id_skpd = 1"/"id_skpd = 105"/g > daftar_pengeluaran_sdn_2_guntung_payung.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_kemuning/g | sed -e s/"id_skpd = 1"/"id_skpd = 106"/g > daftar_pengeluaran_sdn_2_kemuning.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_komet/g | sed -e s/"id_skpd = 1"/"id_skpd = 107"/g > daftar_pengeluaran_sdn_2_komet.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_landasan_ulin_barat/g | sed -e s/"id_skpd = 1"/"id_skpd = 108"/g > daftar_pengeluaran_sdn_2_landasan_ulin_barat.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_landasan_ulin_timur/g | sed -e s/"id_skpd = 1"/"id_skpd = 109"/g > daftar_pengeluaran_sdn_2_landasan_ulin_timur.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_landasan_ulin_utara/g | sed -e s/"id_skpd = 1"/"id_skpd = 110"/g > daftar_pengeluaran_sdn_2_landasan_ulin_utara.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_loktabat_selatan/g | sed -e s/"id_skpd = 1"/"id_skpd = 111"/g > daftar_pengeluaran_sdn_2_loktabat_selatan.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_loktabat_utara/g | sed -e s/"id_skpd = 1"/"id_skpd = 112"/g > daftar_pengeluaran_sdn_2_loktabat_utara.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_mentaos/g | sed -e s/"id_skpd = 1"/"id_skpd = 113"/g > daftar_pengeluaran_sdn_2_mentaos.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_palam/g | sed -e s/"id_skpd = 1"/"id_skpd = 114"/g > daftar_pengeluaran_sdn_2_palam.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_sungai_besar/g | sed -e s/"id_skpd = 1"/"id_skpd = 115"/g > daftar_pengeluaran_sdn_2_sungai_besar.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_sungai_tiung/g | sed -e s/"id_skpd = 1"/"id_skpd = 116"/g > daftar_pengeluaran_sdn_2_sungai_tiung.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_sungai_ulin/g | sed -e s/"id_skpd = 1"/"id_skpd = 117"/g > daftar_pengeluaran_sdn_2_sungai_ulin.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_2_syamsudin_noor/g | sed -e s/"id_skpd = 1"/"id_skpd = 118"/g > daftar_pengeluaran_sdn_2_syamsudin_noor.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_bangkal/g | sed -e s/"id_skpd = 1"/"id_skpd = 119"/g > daftar_pengeluaran_sdn_3_bangkal.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_cempaka/g | sed -e s/"id_skpd = 1"/"id_skpd = 120"/g > daftar_pengeluaran_sdn_3_cempaka.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_guntung_manggis/g | sed -e s/"id_skpd = 1"/"id_skpd = 121"/g > daftar_pengeluaran_sdn_3_guntung_manggis.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_guntung_payung/g | sed -e s/"id_skpd = 1"/"id_skpd = 122"/g > daftar_pengeluaran_sdn_3_guntung_payung.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_kemuning/g | sed -e s/"id_skpd = 1"/"id_skpd = 123"/g > daftar_pengeluaran_sdn_3_kemuning.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_komet/g | sed -e s/"id_skpd = 1"/"id_skpd = 124"/g > daftar_pengeluaran_sdn_3_komet.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_landasan_ulin_timur/g | sed -e s/"id_skpd = 1"/"id_skpd = 125"/g > daftar_pengeluaran_sdn_3_landasan_ulin_timur.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_loktabat_utara/g | sed -e s/"id_skpd = 1"/"id_skpd = 126"/g > daftar_pengeluaran_sdn_3_loktabat_utara.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_palam/g | sed -e s/"id_skpd = 1"/"id_skpd = 127"/g > daftar_pengeluaran_sdn_3_palam.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_sungai_besar/g | sed -e s/"id_skpd = 1"/"id_skpd = 128"/g > daftar_pengeluaran_sdn_3_sungai_besar.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_sungai_tiung/g | sed -e s/"id_skpd = 1"/"id_skpd = 129"/g > daftar_pengeluaran_sdn_3_sungai_tiung.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_sungai_ulin/g | sed -e s/"id_skpd = 1"/"id_skpd = 130"/g > daftar_pengeluaran_sdn_3_sungai_ulin.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_syamsudin_noor/g | sed -e s/"id_skpd = 1"/"id_skpd = 131"/g > daftar_pengeluaran_sdn_3_syamsudin_noor.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_4_cempaka/g | sed -e s/"id_skpd = 1"/"id_skpd = 132"/g > daftar_pengeluaran_sdn_4_cempaka.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_4_guntung_manggis/g | sed -e s/"id_skpd = 1"/"id_skpd = 133"/g > daftar_pengeluaran_sdn_4_guntung_manggis.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_4_komet/g | sed -e s/"id_skpd = 1"/"id_skpd = 134"/g > daftar_pengeluaran_sdn_4_komet.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_4_loktabat_utara/g | sed -e s/"id_skpd = 1"/"id_skpd = 135"/g > daftar_pengeluaran_sdn_4_loktabat_utara.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_4_sungai_besar/g | sed -e s/"id_skpd = 1"/"id_skpd = 136"/g > daftar_pengeluaran_sdn_4_sungai_besar.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_4_sungai_ulin/g | sed -e s/"id_skpd = 1"/"id_skpd = 137"/g > daftar_pengeluaran_sdn_4_sungai_ulin.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_4_syamsudin_noor/g | sed -e s/"id_skpd = 1"/"id_skpd = 138"/g > daftar_pengeluaran_sdn_4_syamsudin_noor.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_5_cempaka/g | sed -e s/"id_skpd = 1"/"id_skpd = 139"/g > daftar_pengeluaran_sdn_5_cempaka.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_5_guntung_manggis/g | sed -e s/"id_skpd = 1"/"id_skpd = 140"/g > daftar_pengeluaran_sdn_5_guntung_manggis.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_5_komet/g | sed -e s/"id_skpd = 1"/"id_skpd = 141"/g > daftar_pengeluaran_sdn_5_komet.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_5_loktabat_utara/g | sed -e s/"id_skpd = 1"/"id_skpd = 142"/g > daftar_pengeluaran_sdn_5_loktabat_utara.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_5_sungai_besar/g | sed -e s/"id_skpd = 1"/"id_skpd = 143"/g > daftar_pengeluaran_sdn_5_sungai_besar.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_5_sungai_ulin/g | sed -e s/"id_skpd = 1"/"id_skpd = 144"/g > daftar_pengeluaran_sdn_5_sungai_ulin.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_5_syamsudin_noor/g | sed -e s/"id_skpd = 1"/"id_skpd = 145"/g > daftar_pengeluaran_sdn_5_syamsudin_noor.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_6_cempaka/g | sed -e s/"id_skpd = 1"/"id_skpd = 146"/g > daftar_pengeluaran_sdn_6_cempaka.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/smp_negeri_1/g | sed -e s/"id_skpd = 1"/"id_skpd = 147"/g > daftar_pengeluaran_smp_negeri_1.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/smp_negeri_2/g | sed -e s/"id_skpd = 1"/"id_skpd = 148"/g > daftar_pengeluaran_smp_negeri_2.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/smp_negeri_3/g | sed -e s/"id_skpd = 1"/"id_skpd = 149"/g > daftar_pengeluaran_smp_negeri_3.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/smp_negeri_4/g | sed -e s/"id_skpd = 1"/"id_skpd = 150"/g > daftar_pengeluaran_smp_negeri_4.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/smp_negeri_5/g | sed -e s/"id_skpd = 1"/"id_skpd = 151"/g > daftar_pengeluaran_smp_negeri_5.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/smp_negeri_6/g | sed -e s/"id_skpd = 1"/"id_skpd = 152"/g > daftar_pengeluaran_smp_negeri_6.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/smp_negeri_8/g | sed -e s/"id_skpd = 1"/"id_skpd = 153"/g > daftar_pengeluaran_smp_negeri_8.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/smp_negeri_9/g | sed -e s/"id_skpd = 1"/"id_skpd = 154"/g > daftar_pengeluaran_smp_negeri_9.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/smp_negeri_10/g | sed -e s/"id_skpd = 1"/"id_skpd = 155"/g > daftar_pengeluaran_smp_negeri_10.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/smp_negeri_11/g | sed -e s/"id_skpd = 1"/"id_skpd = 156"/g > daftar_pengeluaran_smp_negeri_11.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/smp_negeri_12/g | sed -e s/"id_skpd = 1"/"id_skpd = 157"/g > daftar_pengeluaran_smp_negeri_12.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/smp_negeri_13/g | sed -e s/"id_skpd = 1"/"id_skpd = 158"/g > daftar_pengeluaran_smp_negeri_13.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/smp_negeri_14/g | sed -e s/"id_skpd = 1"/"id_skpd = 159"/g > daftar_pengeluaran_smp_negeri_14.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/smp_negeri_15/g | sed -e s/"id_skpd = 1"/"id_skpd = 160"/g > daftar_pengeluaran_smp_negeri_15.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/tk_negeri_idaman/g | sed -e s/"id_skpd = 1"/"id_skpd = 161"/g > daftar_pengeluaran_tk_negeri_idaman.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/tk_negeri_pembina_cempaka/g | sed -e s/"id_skpd = 1"/"id_skpd = 162"/g > daftar_pengeluaran_tk_negeri_pembina_cempaka.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/tk_negeri_pembina_kota/g | sed -e s/"id_skpd = 1"/"id_skpd = 163"/g > daftar_pengeluaran_tk_negeri_pembina_kota.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/tk_negeri_pembina_l_ulin/g | sed -e s/"id_skpd = 1"/"id_skpd = 164"/g > daftar_pengeluaran_tk_negeri_pembina_l_ulin.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/tk_negeri_pembina_l_anggang/g | sed -e s/"id_skpd = 1"/"id_skpd = 165"/g > daftar_pengeluaran_tk_negeri_pembina_l_anggang.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/bag_pemerintahan/g | sed -e s/"id_skpd = 1"/"id_skpd = 166"/g > daftar_pengeluaran_bag_pemerintahan.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/bag_kerjasama_dan_agraria/g | sed -e s/"id_skpd = 1"/"id_skpd = 167"/g > daftar_pengeluaran_bag_kerjasama_dan_agraria.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/bag_hukum/g | sed -e s/"id_skpd = 1"/"id_skpd = 168"/g > daftar_pengeluaran_bag_hukum.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/bag_ekobang/g | sed -e s/"id_skpd = 1"/"id_skpd = 169"/g > daftar_pengeluaran_bag_ekobang.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/bag_pbj/g | sed -e s/"id_skpd = 1"/"id_skpd = 170"/g > daftar_pengeluaran_bag_pbj.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/bag_kesra/g | sed -e s/"id_skpd = 1"/"id_skpd = 171"/g > daftar_pengeluaran_bag_kesra.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/bag_umum/g | sed -e s/"id_skpd = 1"/"id_skpd = 172"/g > daftar_pengeluaran_bag_umum.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/bag_humas_dan_protokol/g | sed -e s/"id_skpd = 1"/"id_skpd = 173"/g > daftar_pengeluaran_bag_humas_dan_protokol.sql
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/bag_organisasi/g | sed -e s/"id_skpd = 1"/"id_skpd = 174"/g > daftar_pengeluaran_bag_organisasi.sql
+
+
+cat daftar_pengeluaran_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/pkm_landasan_ulin_timur/g | sed -e s/"id_skpd = 1"/"id_skpd = 175"/g > daftar_pengeluaran_pkm_landasan_ulin_timur.sql
+
+
+cat daftar_pengeluaran_*.sql > ../gabungan_daftar_pengeluaran.sql
