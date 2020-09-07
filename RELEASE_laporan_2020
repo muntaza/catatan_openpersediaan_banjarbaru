@@ -26,6 +26,13 @@ rel-2-1:
 	- laporan:
 	    daftar penerimaan disdik -OK-
 	    buku persediaan disdik -OK-
+	- perbaiki file cp_satker: -OK-
+	- buku_beban -OK-
+	    - tambah field gudang dan id_gudang.
+	    - hidden kan field gudang dan id_gudang.
+	    - header gudang
+	    - susunan: skpd(satker), lokasi_bidang(skpd), gudang, jenis_barang
+	- perbaiki default gudang disdik dan gudang uptd sanggar belajar
 
 
 	- cvs tag rel-2-1
