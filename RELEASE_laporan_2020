@@ -32,6 +32,11 @@ rel-2-1:
 	    - hidden kan field gudang dan id_gudang.
 	    - header gudang
 	    - susunan: skpd(satker), lokasi_bidang(skpd), gudang, jenis_barang
+	- buku_penerimaan -OK-
+	    - tambah field gudang dan id_gudang.
+	    - hidden kan field gudang dan id_gudang.
+	    - header gudang
+	    - susunan: skpd(satker), lokasi_bidang(skpd), gudang, jenis_barang
 	- perbaiki default gudang disdik dan gudang uptd sanggar belajar
 
 
