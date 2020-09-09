@@ -37,6 +37,51 @@ rel-2-1:
 	    - hidden kan field gudang dan id_gudang.
 	    - header gudang
 	    - susunan: skpd(satker), lokasi_bidang(skpd), gudang, jenis_barang
+	- buku_pengeluaran: -OK-
+	    - tambah field gudang dan id_gudang.
+	    - hidden kan field gudang dan id_gudang.
+	    - header gudang
+	    - susunan: skpd(satker), lokasi_bidang(skpd), gudang, jenis_barang
+	- buku_persediaan: -OK-
+	    - tambah field gudang dan id_gudang.
+	    - hidden kan field gudang dan id_gudang.
+	    - header gudang
+	    - susunan: skpd(satker), lokasi_bidang(skpd), gudang, jenis_barang
+	- daftar_beban: -OK-
+	    - tambah field gudang dan id_gudang.
+	    - hidden kan field gudang dan id_gudang.
+	    - header gudang
+	    - susunan: skpd(satker), lokasi_bidang(skpd), gudang, jenis_barang
+	- daftar_penerimaan: -OK-
+	    - tambah field gudang dan id_gudang.
+	    - hidden kan field gudang dan id_gudang.
+	    - header gudang
+	    - susunan: skpd(satker), lokasi_bidang(skpd), gudang, jenis_barang
+	- daftar_pengadaan: -OK-
+	    - tambah field gudang dan id_gudang.
+	    - hidden kan field gudang dan id_gudang.
+	    - header gudang
+	    - susunan: skpd(satker), lokasi_bidang(skpd), gudang, jenis_barang
+	- daftar_pengeluaran: -OK-
+	    - tambah field gudang dan id_gudang.
+	    - hidden kan field gudang dan id_gudang.
+	    - header gudang
+	    - susunan: skpd(satker), lokasi_bidang(skpd), gudang, jenis_barang
+	- daftar_persediaan:
+	    - tambah field gudang dan id_gudang.
+	    - hidden kan field gudang dan id_gudang.
+	    - header gudang
+	    - susunan: skpd(satker), lokasi_bidang(skpd), gudang, jenis_barang
+	- kartu_barang:
+	    - tambah field gudang dan id_gudang.
+	    - hidden kan field gudang dan id_gudang.
+	    - header gudang
+	    - susunan: skpd(satker), lokasi_bidang(skpd), gudang, jenis_barang
+	- rekap_kartu_barang:
+	    - tambah field gudang dan id_gudang.
+	    - hidden kan field gudang dan id_gudang.
+	    - header gudang
+	    - susunan: skpd(satker), lokasi_bidang(skpd), gudang, jenis_barang
 	- perbaiki default gudang disdik dan gudang uptd sanggar belajar
 
 
