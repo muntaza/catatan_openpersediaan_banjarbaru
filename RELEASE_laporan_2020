@@ -67,24 +67,28 @@ rel-2-1:
 	    - hidden kan field gudang dan id_gudang.
 	    - header gudang
 	    - susunan: skpd(satker), lokasi_bidang(skpd), gudang, jenis_barang
-	- daftar_persediaan:
+	- daftar_persediaan: -OK-
 	    - tambah field gudang dan id_gudang.
 	    - hidden kan field gudang dan id_gudang.
 	    - header gudang
 	    - susunan: skpd(satker), lokasi_bidang(skpd), gudang, jenis_barang
-	- kartu_barang:
+	- kartu_barang: -OK-
 	    - tambah field gudang dan id_gudang.
 	    - hidden kan field gudang dan id_gudang.
 	    - header gudang
 	    - susunan: skpd(satker), lokasi_bidang(skpd), gudang, jenis_barang
-	- rekap_kartu_barang:
+	- rekap_kartu_barang: -OK-
 	    - tambah field gudang dan id_gudang.
 	    - hidden kan field gudang dan id_gudang.
 	    - header gudang
 	    - susunan: skpd(satker), lokasi_bidang(skpd), gudang, jenis_barang
-	- perbaiki default gudang disdik dan gudang uptd sanggar belajar
+	- perbaiki default gudang:
+	    - disdik -OK-
+	    - uptd sanggar belajar -OK-
+	- perubahan selanjutnya, agar default gudang di disdik di rubah menjadi -> 3 -OK-
+	- cvs tag rel-2-1 -OK-
 
+Laporan RELEASE 2-2
 
-	- cvs tag rel-2-1
-
+	- cvs tag rel-2-2
 
