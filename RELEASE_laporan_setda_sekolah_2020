@@ -1,3 +1,5 @@
-RELEASE 2-0:
-    - cvs tag rel-2-0
+RELEASE laporan 2-0:
+    - cvs tag rel-2-0 -OK-
 
+RELEASE laoran 2-1:
+    - cvs tag rel-2-1 -OK-

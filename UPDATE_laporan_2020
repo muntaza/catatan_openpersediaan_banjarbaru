@@ -2,3 +2,6 @@ rel-1-2:
     - psql -h localhost -U persediaan_banjarbaru_2020 persediaan_banjarbaru_2020 < persediaan_gabung.sql
     - psql -h localhost -U persediaan_banjarbaru_2020 persediaan_banjarbaru_2020 < beban_gabung.sql
     - psql -h localhost -U persediaan_banjarbaru_2020 persediaan_banjarbaru_2020 < kartu_gabung.sql
+
+RELEASE laporan rel-2-1:
+    - cvs up -OK-
