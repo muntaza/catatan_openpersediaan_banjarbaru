@@ -5,3 +5,6 @@ rel-1-2:
 
 RELEASE laporan rel-2-1:
     - cvs up -OK-
+
+RELEASE laporan rel-2-2:
+    - cvs up -OK-

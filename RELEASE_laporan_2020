@@ -88,7 +88,11 @@ rel-2-1:
 	- perubahan selanjutnya, agar default gudang di disdik di rubah menjadi -> 3 -OK-
 	- cvs tag rel-2-1 -OK-
 
-Laporan RELEASE 2-2
+Laporan RELEASE 2.2:
 
-	- cvs tag rel-2-2
+	- perubahan gudang dinas_pendidikan dan uptd_sgr_keg_belajar menjadi "umum" -OK-
+	- cvs tag rel-2-2 -OK-
+	- test -OK-
+
+Laporan RELEASE 2.3:
 
