@@ -58,6 +58,8 @@ cat 081_sdn_1_bangkal/buku_beban_skpd.xml | sed -e s/sdn_1_bangkal/sdn_3_sungai_
 cat 081_sdn_1_bangkal/buku_beban_skpd.xml | sed -e s/sdn_1_bangkal/sdn_3_sungai_tiung/g | sed -e s/\<CriteriaDefaults\>81/\<CriteriaDefaults\>129/g > 129_sdn_3_sungai_tiung/buku_beban_skpd.xml
 cat 081_sdn_1_bangkal/buku_beban_skpd.xml | sed -e s/sdn_1_bangkal/sdn_3_sungai_ulin/g | sed -e s/\<CriteriaDefaults\>81/\<CriteriaDefaults\>130/g > 130_sdn_3_sungai_ulin/buku_beban_skpd.xml
 cat 081_sdn_1_bangkal/buku_beban_skpd.xml | sed -e s/sdn_1_bangkal/sdn_3_syamsudin_noor/g | sed -e s/\<CriteriaDefaults\>81/\<CriteriaDefaults\>131/g > 131_sdn_3_syamsudin_noor/buku_beban_skpd.xml
+cat 081_sdn_1_bangkal/buku_beban_skpd.xml | sed -e s/sdn_1_bangkal/sdn_3_landasan_ulin_barat/g | sed -e s/\<CriteriaDefaults\>81/\<CriteriaDefaults\>242/g > 242_sdn_3_landasan_ulin_barat/buku_beban_skpd.xml
+cat 081_sdn_1_bangkal/buku_beban_skpd.xml | sed -e s/sdn_1_bangkal/sdn_3_landasan_ulin_utara/g | sed -e s/\<CriteriaDefaults\>81/\<CriteriaDefaults\>243/g > 243_sdn_3_landasan_ulin_utara/buku_beban_skpd.xml
 cat 081_sdn_1_bangkal/buku_beban_skpd.xml | sed -e s/sdn_1_bangkal/sdn_4_cempaka/g | sed -e s/\<CriteriaDefaults\>81/\<CriteriaDefaults\>132/g > 132_sdn_4_cempaka/buku_beban_skpd.xml
 cat 081_sdn_1_bangkal/buku_beban_skpd.xml | sed -e s/sdn_1_bangkal/sdn_4_guntung_manggis/g | sed -e s/\<CriteriaDefaults\>81/\<CriteriaDefaults\>133/g > 133_sdn_4_guntung_manggis/buku_beban_skpd.xml
 cat 081_sdn_1_bangkal/buku_beban_skpd.xml | sed -e s/sdn_1_bangkal/sdn_4_komet/g | sed -e s/\<CriteriaDefaults\>81/\<CriteriaDefaults\>134/g > 134_sdn_4_komet/buku_beban_skpd.xml
