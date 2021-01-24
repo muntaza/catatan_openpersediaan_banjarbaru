@@ -8,6 +8,8 @@
 
 echo "# Admin Satker" > admin_gabungan_satker
 
+#SD Negeri
+
 cat admin_tt_satker.py | sed -e s/TebingTinggi/SDN_1_BANGKAL/g | sed -e s/38/81/g >> admin_gabungan_satker
 cat admin_tt_satker.py | sed -e s/TebingTinggi/SDN_1_CEMPAKA/g | sed -e s/38/82/g >> admin_gabungan_satker
 cat admin_tt_satker.py | sed -e s/TebingTinggi/SDN_1_GUNTUNG_MANGGIS/g | sed -e s/38/83/g >> admin_gabungan_satker
@@ -59,6 +61,8 @@ cat admin_tt_satker.py | sed -e s/TebingTinggi/SDN_3_SUNGAI_BESAR/g | sed -e s/3
 cat admin_tt_satker.py | sed -e s/TebingTinggi/SDN_3_SUNGAI_TIUNG/g | sed -e s/38/129/g >> admin_gabungan_satker
 cat admin_tt_satker.py | sed -e s/TebingTinggi/SDN_3_SUNGAI_ULIN/g | sed -e s/38/130/g >> admin_gabungan_satker
 cat admin_tt_satker.py | sed -e s/TebingTinggi/SDN_3_SYAMSUDIN_NOOR/g | sed -e s/38/131/g >> admin_gabungan_satker
+cat admin_tt_satker.py | sed -e s/TebingTinggi/SDN_3_LANDASAN_ULIN_BARAT/g | sed -e s/38/242/g >> admin_gabungan_satker
+cat admin_tt_satker.py | sed -e s/TebingTinggi/SDN_3_LANDASAN_ULIN_UTARA/g | sed -e s/38/243/g >> admin_gabungan_satker
 cat admin_tt_satker.py | sed -e s/TebingTinggi/SDN_4_CEMPAKA/g | sed -e s/38/132/g >> admin_gabungan_satker
 cat admin_tt_satker.py | sed -e s/TebingTinggi/SDN_4_GUNTUNG_MANGGIS/g | sed -e s/38/133/g >> admin_gabungan_satker
 cat admin_tt_satker.py | sed -e s/TebingTinggi/SDN_4_KOMET/g | sed -e s/38/134/g >> admin_gabungan_satker
@@ -74,6 +78,9 @@ cat admin_tt_satker.py | sed -e s/TebingTinggi/SDN_5_SUNGAI_BESAR/g | sed -e s/3
 cat admin_tt_satker.py | sed -e s/TebingTinggi/SDN_5_SUNGAI_ULIN/g | sed -e s/38/144/g >> admin_gabungan_satker
 cat admin_tt_satker.py | sed -e s/TebingTinggi/SDN_5_SYAMSUDIN_NOOR/g | sed -e s/38/145/g >> admin_gabungan_satker
 cat admin_tt_satker.py | sed -e s/TebingTinggi/SDN_6_CEMPAKA/g | sed -e s/38/146/g >> admin_gabungan_satker
+
+#SMP Negeri
+
 cat admin_tt_satker.py | sed -e s/TebingTinggi/SMP_NEGERI_1/g | sed -e s/38/147/g >> admin_gabungan_satker
 cat admin_tt_satker.py | sed -e s/TebingTinggi/SMP_NEGERI_2/g | sed -e s/38/148/g >> admin_gabungan_satker
 cat admin_tt_satker.py | sed -e s/TebingTinggi/SMP_NEGERI_3/g | sed -e s/38/149/g >> admin_gabungan_satker
@@ -88,11 +95,17 @@ cat admin_tt_satker.py | sed -e s/TebingTinggi/SMP_NEGERI_12/g | sed -e s/38/157
 cat admin_tt_satker.py | sed -e s/TebingTinggi/SMP_NEGERI_13/g | sed -e s/38/158/g >> admin_gabungan_satker
 cat admin_tt_satker.py | sed -e s/TebingTinggi/SMP_NEGERI_14/g | sed -e s/38/159/g >> admin_gabungan_satker
 cat admin_tt_satker.py | sed -e s/TebingTinggi/SMP_NEGERI_15/g | sed -e s/38/160/g >> admin_gabungan_satker
+
+#TK Negeri
+
 cat admin_tt_satker.py | sed -e s/TebingTinggi/TK_NEGERI_IDAMAN/g | sed -e s/38/161/g >> admin_gabungan_satker
 cat admin_tt_satker.py | sed -e s/TebingTinggi/TK_NEGERI_PEMBINA_CEMPAKA/g | sed -e s/38/162/g >> admin_gabungan_satker
 cat admin_tt_satker.py | sed -e s/TebingTinggi/TK_NEGERI_PEMBINA_KOTA/g | sed -e s/38/163/g >> admin_gabungan_satker
 cat admin_tt_satker.py | sed -e s/TebingTinggi/TK_NEGERI_PEMBINA_L_ULIN/g | sed -e s/38/164/g >> admin_gabungan_satker
 cat admin_tt_satker.py | sed -e s/TebingTinggi/TK_NEGERI_PEMBINA_L_ANGGANG/g | sed -e s/38/165/g >> admin_gabungan_satker
+
+#Setda
+
 cat admin_tt_satker.py | sed -e s/TebingTinggi/BAG_PEMERINTAHAN/g | sed -e s/38/166/g >> admin_gabungan_satker
 cat admin_tt_satker.py | sed -e s/TebingTinggi/BAG_KERJASAMA_DAN_AGRARIA/g | sed -e s/38/167/g >> admin_gabungan_satker
 cat admin_tt_satker.py | sed -e s/TebingTinggi/BAG_HUKUM/g | sed -e s/38/168/g >> admin_gabungan_satker
