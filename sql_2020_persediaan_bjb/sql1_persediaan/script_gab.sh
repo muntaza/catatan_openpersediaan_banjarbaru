@@ -1,5 +1,8 @@
 #!/bin/sh
 
+#tahun
+cat tahun.sql >> persediaan_gabung.sql
+
 # persediaan
 cat persediaan_barang_masuk.sql > persediaan_gabung.sql
 cat persediaan_barang_keluar.sql  >> persediaan_gabung.sql
@@ -23,6 +26,3 @@ cat gabungan_buku_pengeluaran.sql >> persediaan_gabung.sql
 cat gabungan_daftar_penerimaan.sql >> persediaan_gabung.sql
 cat gabungan_daftar_pengadaan.sql >> persediaan_gabung.sql
 cat gabungan_daftar_pengeluaran.sql >> persediaan_gabung.sql
-
-#tahun
-cat tahun.sql >> persediaan_gabung.sql
