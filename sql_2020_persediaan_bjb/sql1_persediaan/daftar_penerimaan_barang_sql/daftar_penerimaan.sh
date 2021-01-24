@@ -140,6 +140,8 @@ cat daftar_penerimaan_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_sun
 cat daftar_penerimaan_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_sungai_tiung/g | sed -e s/"id_skpd = 1"/"id_skpd = 129"/g > daftar_penerimaan_sdn_3_sungai_tiung.sql
 cat daftar_penerimaan_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_sungai_ulin/g | sed -e s/"id_skpd = 1"/"id_skpd = 130"/g > daftar_penerimaan_sdn_3_sungai_ulin.sql
 cat daftar_penerimaan_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_syamsudin_noor/g | sed -e s/"id_skpd = 1"/"id_skpd = 131"/g > daftar_penerimaan_sdn_3_syamsudin_noor.sql
+cat daftar_penerimaan_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_landasan_ulin_barat/g | sed -e s/"id_skpd = 1"/"id_skpd = 242"/g > daftar_penerimaan_sdn_3_landasan_ulin_barat.sql
+cat daftar_penerimaan_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_landasan_ulin_utara/g | sed -e s/"id_skpd = 1"/"id_skpd = 243"/g > daftar_penerimaan_sdn_3_landasan_ulin_utara.sql
 cat daftar_penerimaan_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_4_cempaka/g | sed -e s/"id_skpd = 1"/"id_skpd = 132"/g > daftar_penerimaan_sdn_4_cempaka.sql
 cat daftar_penerimaan_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_4_guntung_manggis/g | sed -e s/"id_skpd = 1"/"id_skpd = 133"/g > daftar_penerimaan_sdn_4_guntung_manggis.sql
 cat daftar_penerimaan_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_4_komet/g | sed -e s/"id_skpd = 1"/"id_skpd = 134"/g > daftar_penerimaan_sdn_4_komet.sql

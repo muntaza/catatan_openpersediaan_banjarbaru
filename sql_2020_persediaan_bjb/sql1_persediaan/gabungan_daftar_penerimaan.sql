@@ -2221,6 +2221,25 @@ REVOKE INSERT, UPDATE, DELETE ON view_daftar_penerimaan_sdn_3_komet, sub_skpd FR
 
 GRANT ALL PRIVILEGES ON sub_skpd, skpd, view_tahun, asal_usul TO sdn_3_komet;
 REVOKE INSERT, UPDATE, DELETE ON sub_skpd, skpd, view_tahun, asal_usul FROM sdn_3_komet;
+DROP VIEW IF EXISTS view_daftar_penerimaan_sdn_3_landasan_ulin_barat;
+
+CREATE VIEW view_daftar_penerimaan_sdn_3_landasan_ulin_barat AS
+
+SELECT
+*
+
+FROM
+view_daftar_penerimaan_kabupaten
+
+WHERE
+1 = 1  AND
+id_skpd = 242;
+
+GRANT ALL PRIVILEGES ON view_daftar_penerimaan_sdn_3_landasan_ulin_barat, sub_skpd TO sdn_3_landasan_ulin_barat;
+REVOKE INSERT, UPDATE, DELETE ON view_daftar_penerimaan_sdn_3_landasan_ulin_barat, sub_skpd FROM sdn_3_landasan_ulin_barat;
+
+GRANT ALL PRIVILEGES ON sub_skpd, skpd, view_tahun, asal_usul TO sdn_3_landasan_ulin_barat;
+REVOKE INSERT, UPDATE, DELETE ON sub_skpd, skpd, view_tahun, asal_usul FROM sdn_3_landasan_ulin_barat;
 DROP VIEW IF EXISTS view_daftar_penerimaan_sdn_3_landasan_ulin_timur;
 
 CREATE VIEW view_daftar_penerimaan_sdn_3_landasan_ulin_timur AS
@@ -2240,6 +2259,25 @@ REVOKE INSERT, UPDATE, DELETE ON view_daftar_penerimaan_sdn_3_landasan_ulin_timu
 
 GRANT ALL PRIVILEGES ON sub_skpd, skpd, view_tahun, asal_usul TO sdn_3_landasan_ulin_timur;
 REVOKE INSERT, UPDATE, DELETE ON sub_skpd, skpd, view_tahun, asal_usul FROM sdn_3_landasan_ulin_timur;
+DROP VIEW IF EXISTS view_daftar_penerimaan_sdn_3_landasan_ulin_utara;
+
+CREATE VIEW view_daftar_penerimaan_sdn_3_landasan_ulin_utara AS
+
+SELECT
+*
+
+FROM
+view_daftar_penerimaan_kabupaten
+
+WHERE
+1 = 1  AND
+id_skpd = 243;
+
+GRANT ALL PRIVILEGES ON view_daftar_penerimaan_sdn_3_landasan_ulin_utara, sub_skpd TO sdn_3_landasan_ulin_utara;
+REVOKE INSERT, UPDATE, DELETE ON view_daftar_penerimaan_sdn_3_landasan_ulin_utara, sub_skpd FROM sdn_3_landasan_ulin_utara;
+
+GRANT ALL PRIVILEGES ON sub_skpd, skpd, view_tahun, asal_usul TO sdn_3_landasan_ulin_utara;
+REVOKE INSERT, UPDATE, DELETE ON sub_skpd, skpd, view_tahun, asal_usul FROM sdn_3_landasan_ulin_utara;
 DROP VIEW IF EXISTS view_daftar_penerimaan_sdn_3_loktabat_utara;
 
 CREATE VIEW view_daftar_penerimaan_sdn_3_loktabat_utara AS
