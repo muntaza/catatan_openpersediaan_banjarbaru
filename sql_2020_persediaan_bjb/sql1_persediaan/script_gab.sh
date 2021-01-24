@@ -23,3 +23,6 @@ cat gabungan_buku_pengeluaran.sql >> persediaan_gabung.sql
 cat gabungan_daftar_penerimaan.sql >> persediaan_gabung.sql
 cat gabungan_daftar_pengadaan.sql >> persediaan_gabung.sql
 cat gabungan_daftar_pengeluaran.sql >> persediaan_gabung.sql
+
+#tahun
+cat tahun.sql >> persediaan_gabung.sql

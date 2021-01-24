@@ -140,6 +140,8 @@ cat persediaan_barang3_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_su
 cat persediaan_barang3_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_sungai_tiung/g | sed -e s/"id_skpd = 1"/"id_skpd = 129"/g > persediaan_barang3_sdn_3_sungai_tiung.sql
 cat persediaan_barang3_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_sungai_ulin/g | sed -e s/"id_skpd = 1"/"id_skpd = 130"/g > persediaan_barang3_sdn_3_sungai_ulin.sql
 cat persediaan_barang3_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_syamsudin_noor/g | sed -e s/"id_skpd = 1"/"id_skpd = 131"/g > persediaan_barang3_sdn_3_syamsudin_noor.sql
+cat persediaan_barang3_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_landasan_ulin_barat/g | sed -e s/"id_skpd = 1"/"id_skpd = 242"/g > persediaan_barang3_sdn_3_landasan_ulin_barat.sql
+cat persediaan_barang3_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_landasan_ulin_utara/g | sed -e s/"id_skpd = 1"/"id_skpd = 243"/g > persediaan_barang3_sdn_3_landasan_ulin_utara.sql
 cat persediaan_barang3_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_4_cempaka/g | sed -e s/"id_skpd = 1"/"id_skpd = 132"/g > persediaan_barang3_sdn_4_cempaka.sql
 cat persediaan_barang3_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_4_guntung_manggis/g | sed -e s/"id_skpd = 1"/"id_skpd = 133"/g > persediaan_barang3_sdn_4_guntung_manggis.sql
 cat persediaan_barang3_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_4_komet/g | sed -e s/"id_skpd = 1"/"id_skpd = 134"/g > persediaan_barang3_sdn_4_komet.sql

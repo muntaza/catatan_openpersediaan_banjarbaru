@@ -14,6 +14,16 @@ union
 select 2019 as tahun
 union
 select 2020 as tahun
+union
+select 2021 as tahun
+union
+select 2022 as tahun
+union
+select 2023 as tahun
+union
+select 2024 as tahun
+union
+select 2025 as tahun
 ;
 
 
