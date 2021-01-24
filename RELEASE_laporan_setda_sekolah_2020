@@ -3,3 +3,9 @@ RELEASE laporan 2-0:
 
 RELEASE laoran 2-1:
     - cvs tag rel-2-1 -OK-
+
+RELEASE laporan rel-2-2:
+    - md5 test production -OK-
+    - md5 test development -OK-
+    - restore database persediaan_2020 ke server development
+    - 

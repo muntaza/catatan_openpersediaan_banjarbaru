@@ -140,6 +140,8 @@ cat kartu_barang_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_sungai_b
 cat kartu_barang_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_sungai_tiung/g | sed -e s/"id_skpd = 1"/"id_skpd = 129"/g > kartu_barang_sdn_3_sungai_tiung.sql
 cat kartu_barang_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_sungai_ulin/g | sed -e s/"id_skpd = 1"/"id_skpd = 130"/g > kartu_barang_sdn_3_sungai_ulin.sql
 cat kartu_barang_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_syamsudin_noor/g | sed -e s/"id_skpd = 1"/"id_skpd = 131"/g > kartu_barang_sdn_3_syamsudin_noor.sql
+cat kartu_barang_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_landasan_ulin_barat/g | sed -e s/"id_skpd = 1"/"id_skpd = 242"/g > kartu_barang_sdn_3_landasan_ulin_barat.sql
+cat kartu_barang_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_3_landasan_ulin_utara/g | sed -e s/"id_skpd = 1"/"id_skpd = 243"/g > kartu_barang_sdn_3_landasan_ulin_utara.sql
 cat kartu_barang_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_4_cempaka/g | sed -e s/"id_skpd = 1"/"id_skpd = 132"/g > kartu_barang_sdn_4_cempaka.sql
 cat kartu_barang_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_4_guntung_manggis/g | sed -e s/"id_skpd = 1"/"id_skpd = 133"/g > kartu_barang_sdn_4_guntung_manggis.sql
 cat kartu_barang_dinas_pendidikan.sql | sed -e s/dinas_pendidikan/sdn_4_komet/g | sed -e s/"id_skpd = 1"/"id_skpd = 134"/g > kartu_barang_sdn_4_komet.sql

@@ -5,3 +5,14 @@ rel-1-9:
 	- python manage.py migrate  -OK-
 
 
+rel-1-11:
+	- restart apache -OK-
+	- entry 2 sekolah -OK-
+	- stop apache2 -OK-
+	- ssh-add cvs user -OK-
+	- migrate -OK-
+	- start apache -OK-
+	- sh clean -OK-
+	- test -OK-
+	- pkill ssh-agent -OK-
+	- exit -OK-

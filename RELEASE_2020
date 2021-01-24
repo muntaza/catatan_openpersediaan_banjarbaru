@@ -82,7 +82,19 @@ rel-1-10:
    - cvs tag rel-1-10 -OK-
 
 rel-1-11:
+    - test persediaan_banjarbaru_2020 md5 di production -OK-
+    - test persediaan_banjarbaru_2020 md5 di development -OK-
+    - rubah setting static ke server yang sama, INGAT, harus di rubah
+      ke server muhammad.muntaza.id sebelum deploy -OK-
+    - edit models dan admin sekolah_setda -OK-
+    - gabung models dan admin -OK-
+    - makemigrations dan migrate -OK-
+    - restart apache, test entry -OK-
+    - cvs ci -OK-
+    - md5 test -OK-
+    - cvs tag rel-1-11 -OK-
 
-   - cvs tag rel-1-11
+rel-1-12:
+    
 
 

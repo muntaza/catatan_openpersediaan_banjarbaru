@@ -2338,6 +2338,26 @@ id_skpd = 124;
 
 GRANT ALL PRIVILEGES ON view_kartu_barang2_sdn_3_komet TO sdn_3_komet;
 REVOKE INSERT, UPDATE, DELETE ON view_kartu_barang2_sdn_3_komet FROM sdn_3_komet;
+DROP VIEW IF EXISTS view_kartu_barang2_sdn_3_landasan_ulin_barat;
+
+CREATE VIEW view_kartu_barang2_sdn_3_landasan_ulin_barat AS
+
+SELECT
+*,
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
+
+
+FROM
+view_kartu_barang_sdn_3_landasan_ulin_barat
+
+WHERE
+1 = 1  AND
+id_skpd = 242;
+
+
+
+GRANT ALL PRIVILEGES ON view_kartu_barang2_sdn_3_landasan_ulin_barat TO sdn_3_landasan_ulin_barat;
+REVOKE INSERT, UPDATE, DELETE ON view_kartu_barang2_sdn_3_landasan_ulin_barat FROM sdn_3_landasan_ulin_barat;
 DROP VIEW IF EXISTS view_kartu_barang2_sdn_3_landasan_ulin_timur;
 
 CREATE VIEW view_kartu_barang2_sdn_3_landasan_ulin_timur AS
@@ -2358,6 +2378,26 @@ id_skpd = 125;
 
 GRANT ALL PRIVILEGES ON view_kartu_barang2_sdn_3_landasan_ulin_timur TO sdn_3_landasan_ulin_timur;
 REVOKE INSERT, UPDATE, DELETE ON view_kartu_barang2_sdn_3_landasan_ulin_timur FROM sdn_3_landasan_ulin_timur;
+DROP VIEW IF EXISTS view_kartu_barang2_sdn_3_landasan_ulin_utara;
+
+CREATE VIEW view_kartu_barang2_sdn_3_landasan_ulin_utara AS
+
+SELECT
+*,
+sum(pra_saldo) OVER (PARTITION BY kode_barang, id_gudang ORDER BY tanggal, id_persediaan) as saldo
+
+
+FROM
+view_kartu_barang_sdn_3_landasan_ulin_utara
+
+WHERE
+1 = 1  AND
+id_skpd = 243;
+
+
+
+GRANT ALL PRIVILEGES ON view_kartu_barang2_sdn_3_landasan_ulin_utara TO sdn_3_landasan_ulin_utara;
+REVOKE INSERT, UPDATE, DELETE ON view_kartu_barang2_sdn_3_landasan_ulin_utara FROM sdn_3_landasan_ulin_utara;
 DROP VIEW IF EXISTS view_kartu_barang2_sdn_3_loktabat_utara;
 
 CREATE VIEW view_kartu_barang2_sdn_3_loktabat_utara AS
