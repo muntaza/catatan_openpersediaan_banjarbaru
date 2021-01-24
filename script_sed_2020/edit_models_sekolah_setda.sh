@@ -62,6 +62,8 @@ cat models_tt_satker.py | sed -e s/TebingTinggi/SDN_3_SUNGAI_BESAR/g | sed -e s/
 cat models_tt_satker.py | sed -e s/TebingTinggi/SDN_3_SUNGAI_TIUNG/g | sed -e s/38/129/g | sed -e s/Tebing\ Tinggi/SDN\ 3\ SUNGAI\ TIUNG/g >> model_gabungan_satker
 cat models_tt_satker.py | sed -e s/TebingTinggi/SDN_3_SUNGAI_ULIN/g | sed -e s/38/130/g | sed -e s/Tebing\ Tinggi/SDN\ 3\ SUNGAI\ ULIN/g >> model_gabungan_satker
 cat models_tt_satker.py | sed -e s/TebingTinggi/SDN_3_SYAMSUDIN_NOOR/g | sed -e s/38/131/g | sed -e s/Tebing\ Tinggi/SDN\ 3\ SYAMSUDIN\ NOOR/g >> model_gabungan_satker
+cat models_tt_satker.py | sed -e s/TebingTinggi/SDN_3_LANDASAN_ULIN_BARAT/g | sed -e s/38/242/g | sed -e s/Tebing\ Tinggi/SDN\ 3\ LANDASAN\ ULIN\ BARAT/g >> model_gabungan_satker
+cat models_tt_satker.py | sed -e s/TebingTinggi/SDN_3_LANDASAN_ULIN_UTARA/g | sed -e s/38/243/g | sed -e s/Tebing\ Tinggi/SDN\ 3\ LANDASAN\ ULIN\ UTARA/g >> model_gabungan_satker
 cat models_tt_satker.py | sed -e s/TebingTinggi/SDN_4_CEMPAKA/g | sed -e s/38/132/g | sed -e s/Tebing\ Tinggi/SDN\ 4\ CEMPAKA/g >> model_gabungan_satker
 cat models_tt_satker.py | sed -e s/TebingTinggi/SDN_4_GUNTUNG_MANGGIS/g | sed -e s/38/133/g | sed -e s/Tebing\ Tinggi/SDN\ 4\ GUNTUNG\ MANGGIS/g >> model_gabungan_satker
 cat models_tt_satker.py | sed -e s/TebingTinggi/SDN_4_KOMET/g | sed -e s/38/134/g | sed -e s/Tebing\ Tinggi/SDN\ 4\ KOMET/g >> model_gabungan_satker
@@ -77,6 +79,9 @@ cat models_tt_satker.py | sed -e s/TebingTinggi/SDN_5_SUNGAI_BESAR/g | sed -e s/
 cat models_tt_satker.py | sed -e s/TebingTinggi/SDN_5_SUNGAI_ULIN/g | sed -e s/38/144/g | sed -e s/Tebing\ Tinggi/SDN\ 5\ SUNGAI\ ULIN/g >> model_gabungan_satker
 cat models_tt_satker.py | sed -e s/TebingTinggi/SDN_5_SYAMSUDIN_NOOR/g | sed -e s/38/145/g | sed -e s/Tebing\ Tinggi/SDN\ 5\ SYAMSUDIN\ NOOR/g >> model_gabungan_satker
 cat models_tt_satker.py | sed -e s/TebingTinggi/SDN_6_CEMPAKA/g | sed -e s/38/146/g | sed -e s/Tebing\ Tinggi/SDN\ 6\ CEMPAKA/g >> model_gabungan_satker
+
+#SMP Negeri
+
 cat models_tt_satker.py | sed -e s/TebingTinggi/SMP_NEGERI_1/g | sed -e s/38/147/g | sed -e s/Tebing\ Tinggi/SMP\ NEGERI\ 1/g >> model_gabungan_satker
 cat models_tt_satker.py | sed -e s/TebingTinggi/SMP_NEGERI_2/g | sed -e s/38/148/g | sed -e s/Tebing\ Tinggi/SMP\ NEGERI\ 2/g >> model_gabungan_satker
 cat models_tt_satker.py | sed -e s/TebingTinggi/SMP_NEGERI_3/g | sed -e s/38/149/g | sed -e s/Tebing\ Tinggi/SMP\ NEGERI\ 3/g >> model_gabungan_satker
@@ -91,11 +96,17 @@ cat models_tt_satker.py | sed -e s/TebingTinggi/SMP_NEGERI_12/g | sed -e s/38/15
 cat models_tt_satker.py | sed -e s/TebingTinggi/SMP_NEGERI_13/g | sed -e s/38/158/g | sed -e s/Tebing\ Tinggi/SMP\ NEGERI\ 13/g >> model_gabungan_satker
 cat models_tt_satker.py | sed -e s/TebingTinggi/SMP_NEGERI_14/g | sed -e s/38/159/g | sed -e s/Tebing\ Tinggi/SMP\ NEGERI\ 14/g >> model_gabungan_satker
 cat models_tt_satker.py | sed -e s/TebingTinggi/SMP_NEGERI_15/g | sed -e s/38/160/g | sed -e s/Tebing\ Tinggi/SMP\ NEGERI\ 15/g >> model_gabungan_satker
+
+#TK Negeri
+
 cat models_tt_satker.py | sed -e s/TebingTinggi/TK_NEGERI_IDAMAN/g | sed -e s/38/161/g | sed -e s/Tebing\ Tinggi/TK\ NEGERI\ IDAMAN/g >> model_gabungan_satker
 cat models_tt_satker.py | sed -e s/TebingTinggi/TK_NEGERI_PEMBINA_CEMPAKA/g | sed -e s/38/162/g | sed -e s/Tebing\ Tinggi/TK\ NEGERI\ PEMBINA\ CEMPAKA/g >> model_gabungan_satker
 cat models_tt_satker.py | sed -e s/TebingTinggi/TK_NEGERI_PEMBINA_KOTA/g | sed -e s/38/163/g | sed -e s/Tebing\ Tinggi/TK\ NEGERI\ PEMBINA\ KOTA/g >> model_gabungan_satker
 cat models_tt_satker.py | sed -e s/TebingTinggi/TK_NEGERI_PEMBINA_L_ULIN/g | sed -e s/38/164/g | sed -e s/Tebing\ Tinggi/TK\ NEGERI\ PEMBINA\ L\ ULIN/g >> model_gabungan_satker
 cat models_tt_satker.py | sed -e s/TebingTinggi/TK_NEGERI_PEMBINA_L_ANGGANG/g | sed -e s/38/165/g | sed -e s/Tebing\ Tinggi/TK\ NEGERI\ PEMBINA\ L\ ANGGANG/g >> model_gabungan_satker
+
+#Setda
+
 cat models_tt_satker.py | sed -e s/TebingTinggi/BAG_PEMERINTAHAN/g | sed -e s/38/166/g | sed -e s/Tebing\ Tinggi/BAG\ PEMERINTAHAN/g >> model_gabungan_satker
 cat models_tt_satker.py | sed -e s/TebingTinggi/BAG_KERJASAMA_DAN_AGRARIA/g | sed -e s/38/167/g | sed -e s/Tebing\ Tinggi/BAG\ KERJASAMA\ DAN\ AGRARIA/g >> model_gabungan_satker
 cat models_tt_satker.py | sed -e s/TebingTinggi/BAG_HUKUM/g | sed -e s/38/168/g | sed -e s/Tebing\ Tinggi/BAG\ HUKUM/g >> model_gabungan_satker
