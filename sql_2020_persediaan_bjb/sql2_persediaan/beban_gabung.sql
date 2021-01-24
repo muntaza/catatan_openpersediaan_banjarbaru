@@ -2923,6 +2923,31 @@ id_skpd = 124;
 
 GRANT ALL PRIVILEGES ON view_beban_barang3_sdn_3_komet TO sdn_3_komet;
 REVOKE INSERT, UPDATE, DELETE ON view_beban_barang3_sdn_3_komet FROM sdn_3_komet;
+DROP VIEW IF EXISTS view_beban_barang3_sdn_3_landasan_ulin_barat;
+
+CREATE VIEW view_beban_barang3_sdn_3_landasan_ulin_barat AS
+
+SELECT
+*,
+CASE	WHEN id_jenis_transaksi = 1 AND pra_saldo < 0
+	    THEN jumlah
+	WHEN id_jenis_transaksi = 1 AND pra_saldo < jumlah
+	    THEN (jumlah - pra_saldo)
+	ELSE 0
+END	AS beban
+
+
+FROM
+view_persediaan_barang2_sdn_3_landasan_ulin_barat
+
+WHERE
+1 = 1  AND
+id_skpd = 242;
+
+
+
+GRANT ALL PRIVILEGES ON view_beban_barang3_sdn_3_landasan_ulin_barat TO sdn_3_landasan_ulin_barat;
+REVOKE INSERT, UPDATE, DELETE ON view_beban_barang3_sdn_3_landasan_ulin_barat FROM sdn_3_landasan_ulin_barat;
 DROP VIEW IF EXISTS view_beban_barang3_sdn_3_landasan_ulin_timur;
 
 CREATE VIEW view_beban_barang3_sdn_3_landasan_ulin_timur AS
@@ -2948,6 +2973,31 @@ id_skpd = 125;
 
 GRANT ALL PRIVILEGES ON view_beban_barang3_sdn_3_landasan_ulin_timur TO sdn_3_landasan_ulin_timur;
 REVOKE INSERT, UPDATE, DELETE ON view_beban_barang3_sdn_3_landasan_ulin_timur FROM sdn_3_landasan_ulin_timur;
+DROP VIEW IF EXISTS view_beban_barang3_sdn_3_landasan_ulin_utara;
+
+CREATE VIEW view_beban_barang3_sdn_3_landasan_ulin_utara AS
+
+SELECT
+*,
+CASE	WHEN id_jenis_transaksi = 1 AND pra_saldo < 0
+	    THEN jumlah
+	WHEN id_jenis_transaksi = 1 AND pra_saldo < jumlah
+	    THEN (jumlah - pra_saldo)
+	ELSE 0
+END	AS beban
+
+
+FROM
+view_persediaan_barang2_sdn_3_landasan_ulin_utara
+
+WHERE
+1 = 1  AND
+id_skpd = 243;
+
+
+
+GRANT ALL PRIVILEGES ON view_beban_barang3_sdn_3_landasan_ulin_utara TO sdn_3_landasan_ulin_utara;
+REVOKE INSERT, UPDATE, DELETE ON view_beban_barang3_sdn_3_landasan_ulin_utara FROM sdn_3_landasan_ulin_utara;
 DROP VIEW IF EXISTS view_beban_barang3_sdn_3_loktabat_utara;
 
 CREATE VIEW view_beban_barang3_sdn_3_loktabat_utara AS
@@ -6688,6 +6738,26 @@ id_skpd = 124;
 
 GRANT ALL PRIVILEGES ON view_beban_barang4_sdn_3_komet TO sdn_3_komet;
 REVOKE INSERT, UPDATE, DELETE ON view_beban_barang4_sdn_3_komet FROM sdn_3_komet;
+DROP VIEW IF EXISTS view_beban_barang4_sdn_3_landasan_ulin_barat;
+
+CREATE VIEW view_beban_barang4_sdn_3_landasan_ulin_barat AS
+
+SELECT
+*,
+beban * harga AS jumlah_harga
+
+FROM
+view_beban_barang3_sdn_3_landasan_ulin_barat
+
+WHERE
+1 = 1  AND
+beban > 0 AND
+id_skpd = 242;
+
+
+
+GRANT ALL PRIVILEGES ON view_beban_barang4_sdn_3_landasan_ulin_barat TO sdn_3_landasan_ulin_barat;
+REVOKE INSERT, UPDATE, DELETE ON view_beban_barang4_sdn_3_landasan_ulin_barat FROM sdn_3_landasan_ulin_barat;
 DROP VIEW IF EXISTS view_beban_barang4_sdn_3_landasan_ulin_timur;
 
 CREATE VIEW view_beban_barang4_sdn_3_landasan_ulin_timur AS
@@ -6708,6 +6778,26 @@ id_skpd = 125;
 
 GRANT ALL PRIVILEGES ON view_beban_barang4_sdn_3_landasan_ulin_timur TO sdn_3_landasan_ulin_timur;
 REVOKE INSERT, UPDATE, DELETE ON view_beban_barang4_sdn_3_landasan_ulin_timur FROM sdn_3_landasan_ulin_timur;
+DROP VIEW IF EXISTS view_beban_barang4_sdn_3_landasan_ulin_utara;
+
+CREATE VIEW view_beban_barang4_sdn_3_landasan_ulin_utara AS
+
+SELECT
+*,
+beban * harga AS jumlah_harga
+
+FROM
+view_beban_barang3_sdn_3_landasan_ulin_utara
+
+WHERE
+1 = 1  AND
+beban > 0 AND
+id_skpd = 243;
+
+
+
+GRANT ALL PRIVILEGES ON view_beban_barang4_sdn_3_landasan_ulin_utara TO sdn_3_landasan_ulin_utara;
+REVOKE INSERT, UPDATE, DELETE ON view_beban_barang4_sdn_3_landasan_ulin_utara FROM sdn_3_landasan_ulin_utara;
 DROP VIEW IF EXISTS view_beban_barang4_sdn_3_loktabat_utara;
 
 CREATE VIEW view_beban_barang4_sdn_3_loktabat_utara AS
@@ -15082,6 +15172,68 @@ id_jenis_barang
 
 GRANT ALL PRIVILEGES ON view_beban_barang5_sdn_3_komet TO sdn_3_komet;
 REVOKE INSERT, UPDATE, DELETE ON view_beban_barang5_sdn_3_komet FROM sdn_3_komet;
+DROP VIEW IF EXISTS view_beban_barang5_sdn_3_landasan_ulin_barat CASCADE;
+
+CREATE VIEW view_beban_barang5_sdn_3_landasan_ulin_barat AS
+
+SELECT
+nama_provinsi,
+id_provinsi,
+
+nama_kabupaten,
+id_kabupaten,
+
+nama_lokasi_bidang,
+id_lokasi_bidang,
+
+nama_skpd,
+id_skpd,
+
+nama_barang,
+kode_barang,
+
+satuan,
+id_satuan,
+
+jenis_barang,
+id_jenis_barang,
+
+gudang,
+id_gudang,
+
+sum(beban) AS total_beban_barang,
+sum(jumlah_harga) AS total_harga
+
+FROM
+view_beban_barang4_sdn_3_landasan_ulin_barat
+
+WHERE
+1 = 1  AND
+id_skpd = 242
+
+GROUP BY
+nama_provinsi,
+id_provinsi,
+nama_kabupaten,
+id_kabupaten,
+nama_lokasi_bidang,
+id_lokasi_bidang,
+nama_skpd,
+id_skpd,
+nama_barang,
+kode_barang,
+satuan,
+id_satuan,
+gudang,
+id_gudang,
+jenis_barang,
+id_jenis_barang
+
+;
+
+
+GRANT ALL PRIVILEGES ON view_beban_barang5_sdn_3_landasan_ulin_barat TO sdn_3_landasan_ulin_barat;
+REVOKE INSERT, UPDATE, DELETE ON view_beban_barang5_sdn_3_landasan_ulin_barat FROM sdn_3_landasan_ulin_barat;
 DROP VIEW IF EXISTS view_beban_barang5_sdn_3_landasan_ulin_timur CASCADE;
 
 CREATE VIEW view_beban_barang5_sdn_3_landasan_ulin_timur AS
@@ -15144,6 +15296,68 @@ id_jenis_barang
 
 GRANT ALL PRIVILEGES ON view_beban_barang5_sdn_3_landasan_ulin_timur TO sdn_3_landasan_ulin_timur;
 REVOKE INSERT, UPDATE, DELETE ON view_beban_barang5_sdn_3_landasan_ulin_timur FROM sdn_3_landasan_ulin_timur;
+DROP VIEW IF EXISTS view_beban_barang5_sdn_3_landasan_ulin_utara CASCADE;
+
+CREATE VIEW view_beban_barang5_sdn_3_landasan_ulin_utara AS
+
+SELECT
+nama_provinsi,
+id_provinsi,
+
+nama_kabupaten,
+id_kabupaten,
+
+nama_lokasi_bidang,
+id_lokasi_bidang,
+
+nama_skpd,
+id_skpd,
+
+nama_barang,
+kode_barang,
+
+satuan,
+id_satuan,
+
+jenis_barang,
+id_jenis_barang,
+
+gudang,
+id_gudang,
+
+sum(beban) AS total_beban_barang,
+sum(jumlah_harga) AS total_harga
+
+FROM
+view_beban_barang4_sdn_3_landasan_ulin_utara
+
+WHERE
+1 = 1  AND
+id_skpd = 243
+
+GROUP BY
+nama_provinsi,
+id_provinsi,
+nama_kabupaten,
+id_kabupaten,
+nama_lokasi_bidang,
+id_lokasi_bidang,
+nama_skpd,
+id_skpd,
+nama_barang,
+kode_barang,
+satuan,
+id_satuan,
+gudang,
+id_gudang,
+jenis_barang,
+id_jenis_barang
+
+;
+
+
+GRANT ALL PRIVILEGES ON view_beban_barang5_sdn_3_landasan_ulin_utara TO sdn_3_landasan_ulin_utara;
+REVOKE INSERT, UPDATE, DELETE ON view_beban_barang5_sdn_3_landasan_ulin_utara FROM sdn_3_landasan_ulin_utara;
 DROP VIEW IF EXISTS view_beban_barang5_sdn_3_loktabat_utara CASCADE;
 
 CREATE VIEW view_beban_barang5_sdn_3_loktabat_utara AS
@@ -20632,6 +20846,23 @@ WHERE
 
 GRANT ALL PRIVILEGES ON view_daftar_barang_sdn_3_komet TO sdn_3_komet;
 REVOKE INSERT, UPDATE, DELETE ON view_daftar_barang_sdn_3_komet FROM sdn_3_komet;
+DROP VIEW IF EXISTS view_daftar_barang_sdn_3_landasan_ulin_barat;
+
+CREATE VIEW view_daftar_barang_sdn_3_landasan_ulin_barat AS
+
+SELECT
+*
+
+FROM
+view_daftar_barang_kabupaten
+
+WHERE
+1 = 1;
+
+
+
+GRANT ALL PRIVILEGES ON view_daftar_barang_sdn_3_landasan_ulin_barat TO sdn_3_landasan_ulin_barat;
+REVOKE INSERT, UPDATE, DELETE ON view_daftar_barang_sdn_3_landasan_ulin_barat FROM sdn_3_landasan_ulin_barat;
 DROP VIEW IF EXISTS view_daftar_barang_sdn_3_landasan_ulin_timur;
 
 CREATE VIEW view_daftar_barang_sdn_3_landasan_ulin_timur AS
@@ -20649,6 +20880,23 @@ WHERE
 
 GRANT ALL PRIVILEGES ON view_daftar_barang_sdn_3_landasan_ulin_timur TO sdn_3_landasan_ulin_timur;
 REVOKE INSERT, UPDATE, DELETE ON view_daftar_barang_sdn_3_landasan_ulin_timur FROM sdn_3_landasan_ulin_timur;
+DROP VIEW IF EXISTS view_daftar_barang_sdn_3_landasan_ulin_utara;
+
+CREATE VIEW view_daftar_barang_sdn_3_landasan_ulin_utara AS
+
+SELECT
+*
+
+FROM
+view_daftar_barang_kabupaten
+
+WHERE
+1 = 1;
+
+
+
+GRANT ALL PRIVILEGES ON view_daftar_barang_sdn_3_landasan_ulin_utara TO sdn_3_landasan_ulin_utara;
+REVOKE INSERT, UPDATE, DELETE ON view_daftar_barang_sdn_3_landasan_ulin_utara FROM sdn_3_landasan_ulin_utara;
 DROP VIEW IF EXISTS view_daftar_barang_sdn_3_loktabat_utara;
 
 CREATE VIEW view_daftar_barang_sdn_3_loktabat_utara AS
