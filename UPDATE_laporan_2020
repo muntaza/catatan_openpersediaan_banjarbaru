@@ -8,3 +8,11 @@ RELEASE laporan rel-2-1:
 
 RELEASE laporan rel-2-2:
     - cvs up -OK-
+
+RELEASE laporan rel-2-4:
+    - ssh-add cvs user -OK-
+    - chmod_plus -OK-
+    - cvs up -OK-
+    - chmod_min -OK-
+    - pkill ssh-agent -OK-
+    - exit -OK-

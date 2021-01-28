@@ -2,8 +2,15 @@ RELEASE laporan rel-2-1:
     - cvs up -OK-
 
 RELEASE laporan rel-2-3:
+    - doas su - _postgresql
     - createuser -U postgres sdn_3_landasan_ulin_barat -P
     - createuser -U postgres sdn_3_landasan_ulin_utara -P
     - psql -h localhost persediaan_banjarbaru_2020 persediaan_banjarbaru_2020 < persediaan_gabung.sql
     - psql -h localhost persediaan_banjarbaru_2020 persediaan_banjarbaru_2020 < beban_gabung.sql
     - psql -h localhost persediaan_banjarbaru_2020 persediaan_banjarbaru_2020 < kartu_gabung.sql
+    - sh chmod_plus.sh -OK-
+    - cvs up -OK-
+    - chmod_min.sh -OK-
+    - test laporan -OK-
+    - pkill ssh-agent
+    - exit -OK-

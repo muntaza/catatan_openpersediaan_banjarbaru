@@ -97,10 +97,15 @@ Laporan RELEASE 2.2:
 Laporan RELEASE 2.3:
 	- perubahan sql tambah 2 sekolah -OK-
 	- file script cp_report -OK-
-	- cvs ci
-	- md5 test
-	- cvs tag rel-2-3
+	- cvs ci -OK-
+	- md5 test -OK-
+	- cvs tag rel-2-3 -OK-
 
-
+laporan RELEASE 2.4:
+	
+	- cvs ci -OK-
+	- cvs up -OK-
+	- md5 test -OK-
+	- cvs tag rel-2-4 -OK-
 
 
