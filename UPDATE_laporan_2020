@@ -16,3 +16,17 @@ RELEASE laporan rel-2-4:
     - chmod_min -OK-
     - pkill ssh-agent -OK-
     - exit -OK-
+
+SERVER:
+    - delete projects pada php5_laporan_2020
+    - ln -s ke projects
+    - delete projects pada php5_laporan_sekolah_2020
+    - ln -s ke projects
+    - copy php5_laporan_2019
+    - delete projects pada php5_laporan_2019
+    - ln -s ke projects
+    - edit chmod_min dan chmod_plus
+    - test chmod_min dan chmod_plus
+    - edit cron dari folder root tiap 1 jam menjalankan chmod_min -OK-
+    - setting clear abusive_host di muhammad.muntaza.id tiap 5 menit
+    - setting clear abusive_host di server tiap 1 menit
