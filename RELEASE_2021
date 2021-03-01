@@ -1,0 +1,116 @@
+rel-1-1:
+
+    - stop apache2
+	rcctl stop apache2
+    - delete database
+	doas su _postgresql
+	dropdb -U _postgresql persediaan_banjarbaru_2020
+    - restore database 2019 terakhir
+	createdb -U _postgresql -O persediaan_banjarbaru_2020 persediaan_banjarbaru_2020
+	bunzip2 persediaan_banjarbaru_2019_2020-02-24_00_20.sql.bz2
+	psql -U _postgresql persediaan_banjarbaru_2020 < persediaan_banjarbaru_2019_2020-02-24_00_20.sql
+    - ganti kepemilikan dari persediaan_banjarbaru_2019 ke persediaan_banjarbaru_2020
+        psql -U _postgresql persediaan_banjarbaru_2020
+        REASSIGN OWNED BY persediaan_banjarbaru_2019 TO persediaan_banjarbaru_2020;
+    - delete isi table persediaan, masuk, keluar, transaksi dan django_admin_log
+	psql -U persediaan_banjarbaru_2020 -h localhost persediaan_banjarbaru_2020
+        persediaan_banjarbaru_2020=> delete from persediaan ;
+        persediaan_banjarbaru_2020=> delete from masuk;
+        persediaan_banjarbaru_2020=> delete from keluar;
+        persediaan_banjarbaru_2020=> delete from transaksi;
+        persediaan_banjarbaru_2020=> delete from django_admin_log ;
+    - restart apache2
+	doas rcctl restart apache2
+    - ganti password -OK-
+    - buat back_up harian -OK-
+
+rel-1-2:
+
+    - tambah 2020: -OK-
+	rsync_backup_persediaan_banjarbaru.sh -OK-
+    - cek back_up -OK-
+    - persediaan_2020 ganti links statics nya -OK-
+    - test
+	melambat di server persediaan.banjarbarukota.go.id
+    - kembalikan static ke server muhammad.muntaza.id -OK-
+
+rel-1-3:
+    - back_up global bulanan -OK-
+    - back_up 2019 mingguan -OK-
+    - back_up 2020 harian -OK-
+    - ip_safe, masukkan IP github -OK-
+    - saldo awal -OK-
+    - entry data -OK-
+
+rel-1-4:
+
+    - git tag rel-1-4
+    - git push --tags
+
+rel-1-5:
+
+    - test cvs pada production -OK-
+    - test cvs pada local -OK-
+    - restore global bjb -OK-
+    - restore db persediaan_banjarbaru_2020 -OK-
+    - cvs co persediaan_banjarbaru_2020 pada local -OK-
+    - settings domain mint.paringin.com pada local -OK-
+    - restart apache2 -OK-
+    - test koneksi -OK-
+    - entry sub SKPD sekolah BOSREG pada production
+    - puskesmas blud
+    - sekolah bosreg
+    - cvs tag rel-1-5
+
+rel-1-6:
+    - cvs tag rel-1-6 -OK-
+
+rel-1-7:
+   - tambah model Gudang -OK-
+   - cvs tag rel-1-7 -OK-
+   - test -OK-
+
+rel-1-8:
+   - cvs tag rel-1-8 -OK-
+
+rel-1-9:
+   - tambah field gudang di table transaksi -OK-
+   - cvs tag rel-1-9 -OK-
+
+rel-1-10:
+   - tambah list_filter di transaksi untuk memfilter gudang -OK-
+   - cvs tag rel-1-10 -OK-
+
+rel-1-11:
+    - test persediaan_banjarbaru_2020 md5 di production -OK-
+    - test persediaan_banjarbaru_2020 md5 di development -OK-
+    - rubah setting static ke server yang sama, INGAT, harus di rubah
+      ke server muhammad.muntaza.id sebelum deploy -OK-
+    - edit models dan admin sekolah_setda -OK-
+    - gabung models dan admin -OK-
+    - makemigrations dan migrate -OK-
+    - restart apache, test entry -OK-
+    - cvs ci -OK-
+    - md5 test -OK-
+    - cvs tag rel-1-11 -OK-
+
+rel-1-12:
+    
+
+
+rel-1-13:
+    createuser  -P persediaan_banjarbaru_2021
+    createdb -O persediaan_banjarbaru_2021 persediaan_banjarbaru_2021
+    psql persediaan_banjarbaru_2021 < persediaan_banjarbaru_2020_2021-03-01_00_25.sql
+    psql persediaan_banjarbaru_2021
+    REASSIGN OWNED BY persediaan_banjarbaru_2020 TO persediaan_banjarbaru_2021;
+    delete from persediaan ;
+    delete from masuk;
+    delete from keluar;
+    delete from transaksi;
+    delete from django_admin_log ;
+    ALTER SEQUENCE persediaan_id_seq RESTART;
+    ALTER SEQUENCE django_admin_log_id_seq RESTART;
+    ALTER SEQUENCE transaksi_id_seq RESTART;
+
+    backup tiap malam -belum-

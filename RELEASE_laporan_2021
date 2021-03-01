@@ -1,0 +1,131 @@
+rel-2.0:
+
+	- cvs tag rel-2-0 -OK-
+	- test framework -OK-
+
+rel-2-1:
+	- sql view pindah ke git -OK-
+	    cek sql view 2020
+	    pindah ke git
+	    push di git
+	- daftar pengadaan dengan gudang -OK-
+	- buku penerimaaan dengan gudang -OK-
+	- buku pengeluaran dengan gudang -OK-
+	- daftar penerimaan dengan gudang -OK-
+	- daftar pengeluaran dengan gudang -OK-
+	- persediaan_barang_masuk -OK-
+	- persediaan_barang_keluar -OK-
+	- persediaan_sql, persediaan_sql2, persediaan_sql5
+	    group by pada sql5:
+		-OK-
+	    testing:
+	    - partition by id_gudang -OK-
+	- beban_sql3, beban_sql4, beban_sql5 -OK-
+	- kartu_sql1, kartu_sql2, kartu_sql3 -OK-
+	- refactoring semua script per skpd
+	- laporan:
+	    daftar penerimaan disdik -OK-
+	    buku persediaan disdik -OK-
+	- perbaiki file cp_satker: -OK-
+	- buku_beban -OK-
+	    - tambah field gudang dan id_gudang.
+	    - hidden kan field gudang dan id_gudang.
+	    - header gudang
+	    - susunan: skpd(satker), lokasi_bidang(skpd), gudang, jenis_barang
+	- buku_penerimaan -OK-
+	    - tambah field gudang dan id_gudang.
+	    - hidden kan field gudang dan id_gudang.
+	    - header gudang
+	    - susunan: skpd(satker), lokasi_bidang(skpd), gudang, jenis_barang
+	- buku_pengeluaran: -OK-
+	    - tambah field gudang dan id_gudang.
+	    - hidden kan field gudang dan id_gudang.
+	    - header gudang
+	    - susunan: skpd(satker), lokasi_bidang(skpd), gudang, jenis_barang
+	- buku_persediaan: -OK-
+	    - tambah field gudang dan id_gudang.
+	    - hidden kan field gudang dan id_gudang.
+	    - header gudang
+	    - susunan: skpd(satker), lokasi_bidang(skpd), gudang, jenis_barang
+	- daftar_beban: -OK-
+	    - tambah field gudang dan id_gudang.
+	    - hidden kan field gudang dan id_gudang.
+	    - header gudang
+	    - susunan: skpd(satker), lokasi_bidang(skpd), gudang, jenis_barang
+	- daftar_penerimaan: -OK-
+	    - tambah field gudang dan id_gudang.
+	    - hidden kan field gudang dan id_gudang.
+	    - header gudang
+	    - susunan: skpd(satker), lokasi_bidang(skpd), gudang, jenis_barang
+	- daftar_pengadaan: -OK-
+	    - tambah field gudang dan id_gudang.
+	    - hidden kan field gudang dan id_gudang.
+	    - header gudang
+	    - susunan: skpd(satker), lokasi_bidang(skpd), gudang, jenis_barang
+	- daftar_pengeluaran: -OK-
+	    - tambah field gudang dan id_gudang.
+	    - hidden kan field gudang dan id_gudang.
+	    - header gudang
+	    - susunan: skpd(satker), lokasi_bidang(skpd), gudang, jenis_barang
+	- daftar_persediaan: -OK-
+	    - tambah field gudang dan id_gudang.
+	    - hidden kan field gudang dan id_gudang.
+	    - header gudang
+	    - susunan: skpd(satker), lokasi_bidang(skpd), gudang, jenis_barang
+	- kartu_barang: -OK-
+	    - tambah field gudang dan id_gudang.
+	    - hidden kan field gudang dan id_gudang.
+	    - header gudang
+	    - susunan: skpd(satker), lokasi_bidang(skpd), gudang, jenis_barang
+	- rekap_kartu_barang: -OK-
+	    - tambah field gudang dan id_gudang.
+	    - hidden kan field gudang dan id_gudang.
+	    - header gudang
+	    - susunan: skpd(satker), lokasi_bidang(skpd), gudang, jenis_barang
+	- perbaiki default gudang:
+	    - disdik -OK-
+	    - uptd sanggar belajar -OK-
+	- perubahan selanjutnya, agar default gudang di disdik di rubah menjadi -> 3 -OK-
+	- cvs tag rel-2-1 -OK-
+
+Laporan RELEASE 2.2:
+
+	- perubahan gudang dinas_pendidikan dan uptd_sgr_keg_belajar menjadi "umum" -OK-
+	- cvs tag rel-2-2 -OK-
+	- test -OK-
+
+Laporan RELEASE 2.3:
+	- perubahan sql tambah 2 sekolah -OK-
+	- file script cp_report -OK-
+	- cvs ci -OK-
+	- md5 test -OK-
+	- cvs tag rel-2-3 -OK-
+
+laporan RELEASE 2.4:
+	
+	- cvs ci -OK-
+	- cvs up -OK-
+	- md5 test -OK-
+	- cvs tag rel-2-4 -OK-
+
+
+laporan RELEASE 2.5:
+	- copy folder utama
+	- chown -R www:www folder utama:
+	    doas chown -R www:www php5_laporan_persediaan_banjarbaru_2021
+	- hapus dir CVS:
+	    find -name "CVS" -exec rm -rf {} +
+	- cvs import -m "start" nama_modul nama_modul start
+	    cvs import -m "start" projects_persediaan_banjarbaru_setda_disdik_2021 projects_persediaan_banjarbaru_setda_disdik_2021 start
+	- cvs co nama_modul pada tujuan
+	    cvs co projects_persediaan_banjarbaru_setda_disdik_2021
+	- soft link:
+	    ln -s projects_persediaan_banjarbaru_setda_disdik_2021 projects
+	- edit chmod_min dan chmod_plus
+	- test laporan
+	- edit config.php mengganti nama database:
+	    find . -name "config.php" -exec sed -i -e 's/2020/2021/g' {} +
+	- template_c folder:
+	    sudo chmod -R g+w templates_c
+	- rubah tahun di languange:
+	    2020 -> 2021    
