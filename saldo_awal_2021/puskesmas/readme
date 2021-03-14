@@ -1,0 +1,6 @@
+Insert saldo awal Puskesmas:
+
+tanggal 4 Januari 2021
+
+
+psql -h localhost -U persediaan_banjarbaru_2021 persediaan_banjarbaru_2021 < gabungan_puskesmas.sql
