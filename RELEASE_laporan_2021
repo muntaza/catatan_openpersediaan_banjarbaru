@@ -129,7 +129,7 @@ laporan RELEASE 2.5:
 	    sudo chmod -R g+w templates_c
 	- rubah tahun di languange:
 	    2020 -> 2021    
-	- update tahun
+	- update tahun sampai 2025:
 	    psql -h localhost  -U persediaan_banjarbaru_2021 persediaan_banjarbaru_2021 < tahun2.sql
 	- edit tahun default:
 	    find . -name "*.xml" -exec sed -i -e 's/2020/2021/g' {} +
