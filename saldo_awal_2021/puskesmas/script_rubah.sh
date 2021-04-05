@@ -14,9 +14,5 @@ cat pkm_liang_anggang_umum.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_trans
 cat pkm_sungai_ulin_umum.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(862\,/g -e s/$/\)\;/g > pkm_sungai_ulin_umum_insert.sql
 cat pkm_sungai_ulin_blud.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(863\,/g -e s/$/\)\;/g > pkm_sungai_ulin_blud_insert.sql
 cat pkm_sungai_ulin_hibah_pihak_ketiga_covid.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(864\,/g -e s/$/\)\;/g > pkm_sungai_ulin_hibah_pihak_ketiga_covid_insert.sql
-cat rsud_skpd_btt.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(1\,/g -e s/$/\)\;/g > rsud_skpd_btt_insert.sql
-cat rsud_skpd_btt.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(1\,/g -e s/$/\)\;/g > rsud_skpd_btt_insert.sql
-cat rsud_skpd_btt.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(1\,/g -e s/$/\)\;/g > rsud_skpd_btt_insert.sql
-cat rsud_skpd_btt.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(1\,/g -e s/$/\)\;/g > rsud_skpd_btt_insert.sql
-cat rsud_skpd_btt.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(1\,/g -e s/$/\)\;/g > rsud_skpd_btt_insert.sql
-cat rsud_skpd_btt.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(1\,/g -e s/$/\)\;/g > rsud_skpd_btt_insert.sql
+cat pkm_guntung_manggis_umum.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(865\,/g -e s/$/\)\;/g > pkm_guntung_manggis_umum_insert.sql
+cat pkm_guntung_manggis_blud.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(866\,/g -e s/$/\)\;/g > pkm_guntung_manggis_blud_insert.sql
