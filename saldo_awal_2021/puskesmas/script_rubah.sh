@@ -4,8 +4,8 @@ cat pkm_banjarbaru_selatan_umum.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_
 cat pkm_banjarbaru_selatan_blud.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(8\,/g -e s/$/\)\;/g > pkm_banjarbaru_selatan_blud_insert.sql
 cat pkm_sungai_besar_umum.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(820\,/g -e s/$/\)\;/g > pkm_sungai_besar_umum_insert.sql
 cat pkm_sungai_besar_blud.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(814\,/g -e s/$/\)\;/g > pkm_sungai_besar_blud_insert.sql
-cat rsud_skpd_btt.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(1\,/g -e s/$/\)\;/g > rsud_skpd_btt_insert.sql
-cat rsud_skpd_btt.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(1\,/g -e s/$/\)\;/g > rsud_skpd_btt_insert.sql
+cat pkm_landasan_ulin_timur_umum.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(829\,/g -e s/$/\)\;/g > pkm_landasan_ulin_timur_umum_insert.sql
+cat pkm_landasan_ulin_timur_hibah_pihak_ketiga_covid.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(830\,/g -e s/$/\)\;/g > pkm_landasan_ulin_timur_hibah_pihak_ketiga_covid_insert.sql
 cat rsud_skpd_btt.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(1\,/g -e s/$/\)\;/g > rsud_skpd_btt_insert.sql
 cat rsud_skpd_btt.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(1\,/g -e s/$/\)\;/g > rsud_skpd_btt_insert.sql
 cat rsud_skpd_btt.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(1\,/g -e s/$/\)\;/g > rsud_skpd_btt_insert.sql

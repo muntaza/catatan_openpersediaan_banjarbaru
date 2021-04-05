@@ -1,0 +1,10 @@
+INSERT INTO persediaan (id_transaksi, id_barang, jumlah, harga) VALUES (830,9005,8,60000);
+INSERT INTO persediaan (id_transaksi, id_barang, jumlah, harga) VALUES (830,22389,50,7000);
+INSERT INTO persediaan (id_transaksi, id_barang, jumlah, harga) VALUES (830,16890,3,350000);
+INSERT INTO persediaan (id_transaksi, id_barang, jumlah, harga) VALUES (830,5615,10,60500);
+INSERT INTO persediaan (id_transaksi, id_barang, jumlah, harga) VALUES (830,9522,5,100000);
+INSERT INTO persediaan (id_transaksi, id_barang, jumlah, harga) VALUES (830,9522,20,100000);
+INSERT INTO persediaan (id_transaksi, id_barang, jumlah, harga) VALUES (830,5021,2,62700);
+INSERT INTO persediaan (id_transaksi, id_barang, jumlah, harga) VALUES (830,5021,2,62700);
+INSERT INTO persediaan (id_transaksi, id_barang, jumlah, harga) VALUES (830,5021,1,62700);
+INSERT INTO persediaan (id_transaksi, id_barang, jumlah, harga) VALUES (830,11999,20,71500);
