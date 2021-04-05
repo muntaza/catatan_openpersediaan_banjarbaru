@@ -9,7 +9,7 @@ cat pkm_landasan_ulin_timur_hibah_pihak_ketiga_covid.sql | sed -e s/^/INSERT\ IN
 cat pkm_rawat_inap_cempaka_umum.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(832\,/g -e s/$/\)\;/g > pkm_rawat_inap_cempaka_umum_insert.sql
 cat pkm_rawat_inap_cempaka_blud.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(836\,/g -e s/$/\)\;/g > pkm_rawat_inap_cempaka_blud_insert.sql
 cat pkm_guntung_payung_umum.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(845\,/g -e s/$/\)\;/g > pkm_guntung_payung_umum_insert.sql
-cat rsud_skpd_btt.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(1\,/g -e s/$/\)\;/g > rsud_skpd_btt_insert.sql
+cat pkm_landasan_ulin_umum.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(859\,/g -e s/$/\)\;/g > pkm_landasan_ulin_umum_insert.sql
 cat rsud_skpd_btt.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(1\,/g -e s/$/\)\;/g > rsud_skpd_btt_insert.sql
 cat rsud_skpd_btt.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(1\,/g -e s/$/\)\;/g > rsud_skpd_btt_insert.sql
 cat rsud_skpd_btt.sql | sed -e s/^/INSERT\ INTO\ persediaan\ \(id_transaksi\,\ id_barang\,\ jumlah\,\ harga\)\ VALUES\ \(1\,/g -e s/$/\)\;/g > rsud_skpd_btt_insert.sql
